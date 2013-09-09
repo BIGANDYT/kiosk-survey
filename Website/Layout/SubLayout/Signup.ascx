@@ -9,7 +9,7 @@
 <div class="row-fluid">
     <div class="span2 offset1">
         <div class="signup">
-            Name:
+            Name
         </div>
     </div>
     <div class="span6">
@@ -23,7 +23,7 @@
 <div class="row-fluid">
     <div class="span2 offset1">
         <div class="signup">
-            Company:
+            Company
         </div>
     </div>
     <div class="span6">
@@ -37,7 +37,7 @@
 <div class="row-fluid">
     <div class="span2 offset1">
         <div class="signup">
-            Email:
+            Email
         </div>
     </div>
     <div class="span6">

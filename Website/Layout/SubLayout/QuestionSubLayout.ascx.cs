@@ -30,7 +30,9 @@ namespace Website.Layout.SubLayout
             Log.Info("ANDYT ANSWER USERR" + CurrentUser.Name, this);
             Log.Info("ANDYT ANSWER COMMANDARG" + (String)e.CommandArgument, this);
 
-            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
+            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];         
+
+            if (!String.IsNullOrWhiteSpace(radioValue)) {
             
             Sitecore.Data.Items.Item answer = master.GetItem(radioValue);
             Sitecore.Data.Fields.MultilistField multilistField = answer.Fields["Levels"];
@@ -67,6 +69,7 @@ namespace Website.Layout.SubLayout
             if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
             {
                 Response.Redirect(Sitecore.Context.Item["Next Question"]);
+            }
             }
         }
     }

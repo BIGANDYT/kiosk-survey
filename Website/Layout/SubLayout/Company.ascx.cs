@@ -30,19 +30,23 @@ namespace Website.Layout.SubLayout
 
         public void GreetingBtn_Click(Object sender, EventArgs e)
         {
-            using (new Sitecore.SecurityModel.SecurityDisabler())
+            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
+            if (!String.IsNullOrWhiteSpace(radioValue))
             {
-                Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
-                String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
-                Item answer = master.GetItem(radioValue);
-                answer.CloneTo(newQuestion, answer.Name, false);
-                if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
+                using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    Response.Redirect(CurrentUser.Paths.FullPath);
-                }
-                else
-                {
-                    Response.Redirect(Sitecore.Context.Item["Next Question"]);
+                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
+                    
+                    Item answer = master.GetItem(radioValue);
+                    answer.CloneTo(newQuestion, answer.Name, false);
+                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
+                    {
+                        Response.Redirect(CurrentUser.Paths.FullPath);
+                    }
+                    else
+                    {
+                        Response.Redirect(Sitecore.Context.Item["Next Question"]);
+                    }
                 }
             }
         }

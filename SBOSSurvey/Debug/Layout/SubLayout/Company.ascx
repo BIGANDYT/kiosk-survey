@@ -1,9 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="Company.ascx.cs" Inherits="Website.Layout.SubLayout.Company" %>
 <div class="bs-docs-grid, wrapper">
     <div class="row-fluid show-grid">
-        <div class="span12, fancyInput" style="text-align:center;width:100%;">
-            <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
-            <input type='text' />
+        <div class="span12 question">
+            <h1><sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" /></h1>
         </div>
     </div>
     <div class="row-fluid show-grid" style="text-align:center">
@@ -20,7 +19,7 @@
     </div>
     <div class="row-fluid show-grid">
         <div class="span12">
-            <asp:Button class="fancyInput" Style="text-align: center" ID="Buttonlink" Text="Submit" OnCommand="GreetingBtn_Click" runat="server" />
+            <asp:Button ID="Buttonlink" class="emailbutton" Text="Submit" OnCommand="GreetingBtn_Click" runat="server" />
         </div>
     </div>
 </div>
