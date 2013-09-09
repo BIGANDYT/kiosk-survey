@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {AAC448D6-FCA4-4ABA-951D-91EE38358AE3}
+database: master
+path: /sitecore/content/Home/MultiAnswerQuestions/Question2/Answer8
+parent: {F18764E4-AFB7-4644-A55A-8D7DDDE083CC}
+name: Answer8
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+
+----version----
+language: en
+version: 1
+revision: 3bac64c5-e273-4081-b68d-61d8b0cdb096
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 12
+
+1000 or over
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130902T212709
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3bac64c5-e273-4081-b68d-61d8b0cdb096
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130902T212715:635137540359856459
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

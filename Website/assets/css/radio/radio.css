@@ -1,0 +1,87 @@
+﻿body {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: red;
+}
+
+div {
+    text-align: left;
+}
+
+#attendee {
+    margin: 10px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: red;
+    margin: 5px;
+    font-size: 30px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin: 5px;
+    font-size: 30px;
+    width: 600px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1);
+}
+
+/* hide input */
+input.radio:empty {
+    margin-left: -9999px;
+}
+
+    /* style label */
+    input.radio:empty ~ label {
+        position: relative;
+        float: left;
+        line-height: 2.5em;
+        text-indent: 3em;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+        input.radio:empty ~ label:before {
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 2.5em;
+            background: white;
+        }
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: white;
+    background-color:black;
+}
+
+input.radio:checked ~ label {
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+}
