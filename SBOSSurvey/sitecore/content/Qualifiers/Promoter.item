@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {BD394A85-4097-41CE-94FC-C8B276840C3C}
+database: master
+path: /sitecore/content/Qualifiers/Promoter
+parent: {9B468CEA-1C8B-4FF9-B5C6-0364B814B473}
+name: Promoter
+master: {00000000-0000-0000-0000-000000000000}
+template: {5383815E-FA40-4EF3-BAE9-FF2D8393806F}
+templatekey: Qualifier
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+50
+----version----
+language: en
+version: 1
+revision: ac7564b8-f932-4075-bb09-0155d2936c10
+
+----field----
+field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
+name: Initiate
+key: initiate
+content-length: 1
+
+2
+----field----
+field: {5A5D22F8-5703-4B93-86D4-8730A90CB050}
+name: Radiate
+key: radiate
+content-length: 1
+
+3
+----field----
+field: {458B2026-AB8B-43AC-8252-F5A5AF12ABBC}
+name: Description
+key: description
+content-length: 179
+
+Your organization focuses on distributing content across channels, starting with the most used channels, such as establishing a mobile site and sharing content on social networks.
+----field----
+field: {80AD6FD2-EF09-45ED-949D-294144F213BA}
+name: Order
+key: order
+content-length: 1
+
+2
+----field----
+field: {A886380E-AC58-4B48-ABB1-FC6548B4041D}
+name: Heading
+key: heading
+content-length: 18
+
+You are a Promoter
+----field----
+field: {162C3AE7-3827-4B94-980F-F58BF447FE18}
+name: SubHeading
+key: subheading
+content-length: 16
+
+Recommendations 
+----field----
+field: {065DB8A2-1D05-4B60-BEE0-B3A10997150A}
+name: SubDescription
+key: subdescription
+content-length: 301
+
+In this phase ensure configure your goals in all your digital channels with proper weighting, based on how valuable they are for the strategic objectives. Begin to track your marketing initiatives as you are driving traffic more to owned vs. earned channels as a way to ensure higher quality traffic. 
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130902T120250
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ac7564b8-f932-4075-bb09-0155d2936c10
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130905T135339:635139860193342605
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
