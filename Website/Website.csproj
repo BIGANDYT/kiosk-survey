@@ -120,6 +120,7 @@
     <Content Include="Layout\SubLayout\Attendee.ascx" />
     <Content Include="Layout\SubLayout\Company.ascx" />
     <Content Include="Layout\Main.aspx" />
+    <Content Include="Layout\SubLayout\MultiAnswerQuestion.ascx" />
     <Content Include="Layout\SubLayout\QuestionSubLayout.ascx" />
     <Content Include="Layout\SubLayout\Signup.ascx" />
     <Content Include="sitecore\admin\cache.aspx" />
@@ -7244,6 +7245,13 @@
     </Compile>
     <Compile Include="Layout\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs">
+      <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs">
+      <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Layout\SubLayout\QuestionSubLayout.ascx.cs">
       <DependentUpon>QuestionSubLayout.ascx</DependentUpon>

@@ -29,6 +29,11 @@ label {
 }
 
 /* hide input */
+input.checkbox:empty {
+    margin-left: -9999px;
+}
+
+/* hide input */
 input.radio:empty {
     margin-left: -9999px;
 }

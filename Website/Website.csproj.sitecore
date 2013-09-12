@@ -22,5 +22,10 @@
       <Item DatabaseName="master">{B37B6AD8-E282-4A7A-AB72-C2AD68F43D35}</Item>
     </File>
     <File Include="Layout\SubLayout\Company.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{BC0A1BB1-F79F-44FA-86F6-072979EB34B5}</Item>
+    </File>
+    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   </ItemGroup>
 </Project>
