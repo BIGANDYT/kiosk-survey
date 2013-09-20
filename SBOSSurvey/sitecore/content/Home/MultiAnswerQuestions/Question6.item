@@ -12,7 +12,7 @@ templatekey: MultiAnswerQuestion
 ----version----
 language: en
 version: 1
-revision: d35cebee-4efb-4e7b-a18a-70e6333590d3
+revision: 2df2cf9d-d344-4d45-9978-cd79ed5b69f7
 
 ----field----
 field: {8EFCE24D-437A-43C7-952E-09546FA02C19}
@@ -21,13 +21,6 @@ key: question
 content-length: 96
 
 Do you think your organization currently have the right resources to reach high Digital Maturity
-----field----
-field: {F45AF467-276A-4612-A178-171123A2512A}
-name: Next Question
-key: next question
-content-length: 53
-
-/sitecore/content/Home/MultiAnswerQuestions/Question7
 ----field----
 field: {FF7E4147-6F91-48B3-BCA4-65F66294EAE8}
 name: Order
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d35cebee-4efb-4e7b-a18a-70e6333590d3
+2df2cf9d-d344-4d45-9978-cd79ed5b69f7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T132034:635139840349128335
+20130913T124040:635146728408925905
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

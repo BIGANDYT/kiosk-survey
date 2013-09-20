@@ -12,7 +12,7 @@ templatekey: MultiAnswerQuestion
 ----version----
 language: en
 version: 1
-revision: 668ed530-7abd-4166-8c68-c437e46d107e
+revision: 77e67ed9-5aaa-43d5-bd40-64383476e1f3
 
 ----field----
 field: {8EFCE24D-437A-43C7-952E-09546FA02C19}
@@ -21,13 +21,6 @@ key: question
 content-length: 49
 
 How many employees are there in your organisation
-----field----
-field: {F45AF467-276A-4612-A178-171123A2512A}
-name: Next Question
-key: next question
-content-length: 53
-
-/sitecore/content/Home/MultiAnswerQuestions/Question2
 ----field----
 field: {FF7E4147-6F91-48B3-BCA4-65F66294EAE8}
 name: Order
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-668ed530-7abd-4166-8c68-c437e46d107e
+77e67ed9-5aaa-43d5-bd40-64383476e1f3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T132017:635139840177871211
+20130913T124026:635146728266575905
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

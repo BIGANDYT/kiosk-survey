@@ -12,7 +12,7 @@ templatekey: MultiAnswerQuestion
 ----version----
 language: en
 version: 1
-revision: c1be7918-439c-4ade-a6fa-da5ea35ecef6
+revision: e4e1688b-7c5a-4fed-b734-8982a9a7e2b1
 
 ----field----
 field: {8EFCE24D-437A-43C7-952E-09546FA02C19}
@@ -21,13 +21,6 @@ key: question
 content-length: 43
 
 How important are Digital for your industry
-----field----
-field: {F45AF467-276A-4612-A178-171123A2512A}
-name: Next Question
-key: next question
-content-length: 53
-
-/sitecore/content/Home/MultiAnswerQuestions/Question5
 ----field----
 field: {FF7E4147-6F91-48B3-BCA4-65F66294EAE8}
 name: Order
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c1be7918-439c-4ade-a6fa-da5ea35ecef6
+e4e1688b-7c5a-4fed-b734-8982a9a7e2b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T132029:635139840290972520
+20130913T124034:635146728349795905
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
