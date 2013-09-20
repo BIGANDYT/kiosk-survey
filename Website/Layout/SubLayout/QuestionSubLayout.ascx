@@ -2,7 +2,7 @@
 <div class="bs-docs-grid, wrapper">
     <div class="row-fluid show-grid">
         <div class="span12 question">
-            <h1><sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" /></h1>
+            <h2><sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" /></h2>
         </div>
     </div>
     <div class="row-fluid show-grid" style="text-align:center">

@@ -37,6 +37,20 @@
 <div class="row-fluid">
     <div class="span2 offset1">
         <div class="signup">
+            Job Title
+        </div>
+    </div>
+    <div class="span6">
+        <div class="signupinput">
+            <input class="input-xxlarge" type="text" runat="server" id="JobTitle" autocomplete="off" required>
+        </div>
+    </div>
+    <div class="span2">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span2 offset1">
+        <div class="signup">
             Email
         </div>
     </div>

@@ -1,29 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <Site Server="SBOS" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="survey.web" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <ItemGroup>
-    <File Include="Layout\SubLayout\Signup.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{663F8BB7-2456-4255-957F-51E2453C0BC5}</Item>
-    </File>
-    <File Include="Layout\SubLayout\Signup.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\QuestionSubLayout.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{D1226A1E-7A3C-413A-B8A4-316DE9BB2063}</Item>
-    </File>
-    <File Include="Layout\SubLayout\QuestionSubLayout.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\QuestionSubLayout.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\Attendee.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{BF6C65A5-8DAA-411E-A372-3D9D14DE22BA}</Item>
-    </File>
-    <File Include="Layout\SubLayout\Attendee.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\Attendee.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\Company.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{B37B6AD8-E282-4A7A-AB72-C2AD68F43D35}</Item>
-    </File>
-    <File Include="Layout\SubLayout\Company.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
     <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{BC0A1BB1-F79F-44FA-86F6-072979EB34B5}</Item>
+      <Item DatabaseName="master">{3F1F4A46-6FBC-4BF8-A905-5D6620530272}</Item>
     </File>
     <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
     <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />

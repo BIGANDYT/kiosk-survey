@@ -123,6 +123,7 @@
     <Content Include="Layout\SubLayout\MultiAnswerQuestion.ascx" />
     <Content Include="Layout\SubLayout\QuestionSubLayout.ascx" />
     <Content Include="Layout\SubLayout\Signup.ascx" />
+    <Content Include="Layout\SubLayout\Welcome.ascx" />
     <Content Include="sitecore\admin\cache.aspx" />
     <Content Include="sitecore\admin\dbbrowser.aspx" />
     <Content Include="sitecore\admin\dbbrowser.css" />
@@ -7266,6 +7267,10 @@
     </Compile>
     <Compile Include="Layout\SubLayout\Signup.ascx.designer.cs">
       <DependentUpon>Signup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubLayout\Welcome.ascx.cs">
+      <DependentUpon>Welcome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sitecore\shell\Templates\CSharp.cs" />

@@ -12,7 +12,7 @@ templatekey: MultiAnswerQuestion
 ----version----
 language: en
 version: 1
-revision: 87a23a95-38c0-4707-904d-e7991abd271e
+revision: 20bce785-7269-4fdd-aef7-0eaed910d2ad
 
 ----field----
 field: {8EFCE24D-437A-43C7-952E-09546FA02C19}
@@ -21,13 +21,6 @@ key: question
 content-length: 80
 
 How would you rank your organisation's Digital Maturity based on the model below
-----field----
-field: {F45AF467-276A-4612-A178-171123A2512A}
-name: Next Question
-key: next question
-content-length: 53
-
-/sitecore/content/Home/MultiAnswerQuestions/Question6
 ----field----
 field: {FF7E4147-6F91-48B3-BCA4-65F66294EAE8}
 name: Order
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-87a23a95-38c0-4707-904d-e7991abd271e
+20bce785-7269-4fdd-aef7-0eaed910d2ad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T132032:635139840321475570
+20130913T124038:635146728381725905
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

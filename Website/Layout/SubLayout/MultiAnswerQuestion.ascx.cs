@@ -43,13 +43,13 @@ namespace Website.Layout.SubLayout
                         answerItem.CloneTo(newQuestion, answerItem.Name, false);
                     }
 
-                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
+                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
                     {
                         Response.Redirect(CurrentUser.Paths.FullPath);
                     }
                     else
                     {
-                        Response.Redirect(Sitecore.Context.Item["Next Question"]);
+                        Response.Redirect(Sitecore.Context.Item["Next Page"]);
                     }
                 }
             }

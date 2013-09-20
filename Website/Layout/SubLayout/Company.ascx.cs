@@ -45,7 +45,7 @@ namespace Website.Layout.SubLayout
                     }
                     else
                     {
-                        Response.Redirect(Sitecore.Context.Item["Next Question"]);
+                        Response.Redirect(Sitecore.Context.Item["Next Page"]);
                     }
                 }
             }

@@ -65,10 +65,10 @@ namespace Website.Layout.SubLayout
                     Log.Info("ANDYT LEVEL: " + CurrentUser[targetItem["Type"]], this);
                 }
             }
-            Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Question"].ToString(), this);
-            if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
+            Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
+            if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
             {
-                Response.Redirect(Sitecore.Context.Item["Next Question"]);
+                Response.Redirect(Sitecore.Context.Item["Next Page"]);
             }
             }
         }
