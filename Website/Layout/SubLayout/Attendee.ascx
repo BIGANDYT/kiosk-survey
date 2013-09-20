@@ -34,9 +34,4 @@
             <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
         </div>
     </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <%=Sitecore.Context.Item["Stage"] %>
-        </div>
-    </div>
 </body>

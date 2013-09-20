@@ -67,9 +67,4 @@
             <a class="emailbutton" href="<%=Sitecore.Context.Site.StartPath %>">Restart</a>
         </div>
     </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <%=Sitecore.Context.Item["Stage"] %>
-        </div>
-    </div>
 </div>

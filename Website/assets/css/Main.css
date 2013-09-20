@@ -1,34 +1,169 @@
-﻿body, html { height: 100%; }
+﻿body, html {
+    height: 100%;
+}
 
-#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -120px; background-color: #e8e8e8; }
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -120px;
+    background-color: #e8e8e8;
+}
 
-#footer { height: 120px; background-color: #000000; }
+#footer {
+    height: 120px;
+    background-color: #000000;
+}
 
-.background { }
-
-
-
-.container-fluid.wrapmain { padding: 0px; }
-
-.header { height: 216px; }
-
-.logo { margin: 15px 0px 15px 15px; width: 300px; }
-
-.ownit { margin: 50px 25px 15px 15px; font-family: Arial, sans-serif; font-weight: 300; color: #FFF; text-align: right; font-size: 4em; }
-
-.signup { text-align: right; border-radius: 10px 10px 10px 10px; overflow: hidden; vertical-align: middle; font-family: 'Fjalla One',sans-serif; font-size: 35px; font-weight: bold; color: #7F7F7F; line-height: 2.5; padding: 5px; }
-
-.signupinput { text-align: left; padding: 15px 0px 0px 0px; font-size: 0.8em; line-height: 0.8em; height: 100%; display: table; vertical-align: middle; }
-
-.title { margin: 10px; font-family: Arial; color: #000000; text-decoration: none; word-spacing: normal; text-align: left; letter-spacing: 0; line-height: 1em; font-size: 3.5em; font-weight: bold; }
-
-.emailbutton { text-align: center; border-radius: 10px 10px 10px 10px; overflow: hidden; vertical-align: middle; font-family: 'Fjalla One',sans-serif; font-size: 45px; color: #FFF; background-color: #92D050; line-height: 1.3; padding: 20px 40px 20px 40px; }
-
-.question { color: black; }
+.background {
+}
 
 
-h1.welcome { font-size: 400%; line-height: 120%; font-weight: bold; text-transform: uppercase; color: #000; }
 
-.welcomealign { text-align: right; }
+.container-fluid.wrapmain {
+    padding: 0px;
+}
 
-.welcomebutton { padding-top: 75px; }
+.header {
+    height: 216px;
+}
+
+.logo {
+    margin: 15px 0px 15px 15px;
+    width: 300px;
+}
+
+.ownit {
+    margin: 50px 25px 15px 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    text-align: right;
+    font-size: 4em;
+}
+
+.signup {
+    text-align: right;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-family: 'Fjalla One',sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #7F7F7F;
+    line-height: 2.5;
+    padding: 5px;
+}
+
+.signupinput {
+    text-align: left;
+    padding: 15px 0px 0px 0px;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+.title {
+    margin: 10px;
+    font-family: Arial;
+    color: #000000;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1em;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.stage {
+    margin: 10px;
+    height:5em;
+    font-family: Arial;
+    color: #000000;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #e8e8e8;
+}
+
+.emailbutton {
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-family: 'Fjalla One',sans-serif;
+    font-size: 45px;
+    color: #FFF;
+    background-color: #92D050;
+    line-height: 1.3;
+    padding: 20px 40px 20px 40px;
+}
+
+.question {
+    color: black;
+}
+
+
+h1.welcome {
+    font-size: 400%;
+    line-height: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.welcomealign {
+    text-align: right;
+}
+
+.welcomebutton {
+    padding-top: 75px;
+}
+
+.line {
+    width: 12em;
+    height: 1em;
+    position: absolute;    
+    top: 58px;
+    z-index:1;    
+}
+
+.linesel {
+   background-color: orange;
+}
+
+.hider {
+   background-color: #e8e8e8;
+}
+
+.lineunsel {
+    background-color: #F5D0A9;
+}
+
+.sel {
+   border: 15px solid orange;
+}
+
+.unsel {
+    border: 15px solid #F5D0A9;
+}
+
+.circle {
+    margin-top: 30px;
+    width: 3em;
+    height: 3em;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    background-color:#e8e8e8;
+    z-index: 10;   
+    position:relative;
+}
+
+

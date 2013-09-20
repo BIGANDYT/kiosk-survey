@@ -9,9 +9,52 @@ namespace Website.Layout
 {
     public partial class Main : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+
+        private Boolean activated = false;
+
+        protected string circle(String name)
         {
 
+            if (activated)
+            {
+                return "unsel";
+            }
+            else
+            {
+                return "sel";
+            }
+            if (Sitecore.Context.Item["Stage"] == name)
+            {
+                activated = true;
+            }
+        }
+
+        protected string line(String name)
+        {
+            if (name == "Finish") {
+                return "hider";
+            }
+            if (Sitecore.Context.Item["Stage"] == name)
+            {
+                activated = true;
+            }
+            if (activated)
+            {
+                return "lineunsel";
+            }
+            else
+            {
+                return "linesel";
+            }
+        }
+
+        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            activated = false;
+            ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
+            ProgressRepeater.DataBind();
         }
     }
 }
