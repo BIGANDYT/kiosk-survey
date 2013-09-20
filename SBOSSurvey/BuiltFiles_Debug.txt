@@ -36,8 +36,10 @@
 .\Debug\Layout\SubLayout\Attendee.ascx
 .\Debug\Layout\SubLayout\Company.ascx
 .\Debug\Layout\Main.aspx
+.\Debug\Layout\SubLayout\MultiAnswerQuestion.ascx
 .\Debug\Layout\SubLayout\QuestionSubLayout.ascx
 .\Debug\Layout\SubLayout\Signup.ascx
+.\Debug\Layout\SubLayout\Welcome.ascx
 .\Debug\sitecore\admin\cache.aspx
 .\Debug\sitecore\admin\dbbrowser.aspx
 .\Debug\sitecore\admin\dbbrowser.css
@@ -7341,7 +7343,9 @@
 .\Debug\bin\Sitecore.Rocks.Server.Lucene.2313.dll
 .\Debug\bin\Sitecore.Rocks.Server.Lucene.2941.dll
 .\Debug\bin\Sitecore.Rocks.Server.Lucene.3030.dll
+.\Debug\bin\Sitecore.Rocks.Server.MediaUploader.dll
 .\Debug\bin\Sitecore.Rocks.Server.Speak.dll
+.\Debug\bin\Sitecore.Rocks.Server.TemplateAssigner.dll
 .\Debug\bin\Sitecore.Rocks.Server.Validation.dll
 .\Debug\bin\Sitecore.Security.AntiCsrf.dll
 .\Debug\bin\Sitecore.SegmentBuilder.dll

@@ -1,106 +1,34 @@
-﻿body, html {
-    height: 100%;
-    width: 100%;
-}
+﻿body, html { height: 100%; }
 
-.background {
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-}
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -120px; background-color: #e8e8e8; }
 
-.content {
-    height:750px;
-}
+#footer { height: 120px; background-color: #000000; }
 
-.header {
-    height: 216px;   
-}
+.background { }
 
-.footer {
-    background: #a52d1d; /* Old browsers */
-    background: -moz-linear-gradient(left, #a52d1d 36%, #d81b06 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(36%,#a52d1d), color-stop(100%,#d81b06)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* IE10+ */
-    background: linear-gradient(to right, #a52d1d 36%,#d81b06 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a52d1d', endColorstr='#d81b06',GradientType=1 ); /* IE6-9 */
-}
 
-.logo {
-    float: left;
-    margin: 10px 10px 10px 10px;
-    width: 300px;
-}
 
-.ownit {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    color: #ffeff1;
-    text-decoration: none;
-    word-spacing: normal;
-    text-align: right;
-    letter-spacing: 0;
-    line-height: 1.5em;
-    font-size: 6em;
-    line-height: 1.2;
-}
+.container-fluid.wrapmain { padding: 0px; }
 
-.signup {
-    text-align: right;
-    border-radius: 10px 10px 10px 10px;
-    overflow: hidden;
-    vertical-align: middle;
-    font-family: 'Fjalla One',sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    color: #7F7F7F;
-    line-height: 2.5;
-    padding: 5px;
-}
+.header { height: 216px; }
 
-.signupinput {
-    text-align: left;
-    padding: 15px 0px 0px 0px;
-    font-size: 0.8em;
-    line-height: 0.8em;
-    height: 100%;
-    display: table;
-    vertical-align: middle;
-}
+.logo { margin: 15px 0px 15px 15px; width: 300px; }
 
-.title {
-    margin: 10px;
-    font-family: Arial;
-    color: #000000;
-    text-decoration: none;
-    word-spacing: normal;
-    text-align: left;
-    letter-spacing: 0;
-    line-height: 1em;
-    font-size: 3.5em;
-    font-weight: bold;
-}
+.ownit { margin: 50px 25px 15px 15px; font-family: Arial, sans-serif; font-weight: 300; color: #FFF; text-align: right; font-size: 4em; }
 
-.emailbutton {
-    text-align: center;
-    border-radius: 10px 10px 10px 10px;
-    overflow: hidden;
-    vertical-align: middle;
-    font-family: 'Fjalla One',sans-serif;
-    font-size: 45px;
-    color: #FFF;
-    background-color: #92D050;
-    line-height: 1.3;
-    padding: 20px 40px 20px 40px;
-}
+.signup { text-align: right; border-radius: 10px 10px 10px 10px; overflow: hidden; vertical-align: middle; font-family: 'Fjalla One',sans-serif; font-size: 35px; font-weight: bold; color: #7F7F7F; line-height: 2.5; padding: 5px; }
 
-.question {
-    color:black;
-}
+.signupinput { text-align: left; padding: 15px 0px 0px 0px; font-size: 0.8em; line-height: 0.8em; height: 100%; display: table; vertical-align: middle; }
+
+.title { margin: 10px; font-family: Arial; color: #000000; text-decoration: none; word-spacing: normal; text-align: left; letter-spacing: 0; line-height: 1em; font-size: 3.5em; font-weight: bold; }
+
+.emailbutton { text-align: center; border-radius: 10px 10px 10px 10px; overflow: hidden; vertical-align: middle; font-family: 'Fjalla One',sans-serif; font-size: 45px; color: #FFF; background-color: #92D050; line-height: 1.3; padding: 20px 40px 20px 40px; }
+
+.question { color: black; }
+
+
+h1.welcome { font-size: 400%; line-height: 120%; font-weight: bold; text-transform: uppercase; color: #000; }
+
+.welcomealign { text-align: right; }
+
+.welcomebutton { padding-top: 75px; }

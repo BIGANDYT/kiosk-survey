@@ -14,7 +14,7 @@ using System.Web.UI.WebControls;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Company : System.Web.UI.UserControl
+    public partial class MultiAnswerQuestion : System.Web.UI.UserControl
     {
 
         private Sitecore.Data.Items.Item CurrentUser { get; set; }
@@ -36,10 +36,14 @@ namespace Website.Layout.SubLayout
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
                     Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
-                    
-                    Item answer = master.GetItem(radioValue);
-                    answer.CloneTo(newQuestion, answer.Name, false);
-                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
+                    String[] checkedAns = radioValue.Split(',');
+                    foreach (String answer in checkedAns)
+                    {
+                        Item answerItem = master.GetItem(answer);
+                        answerItem.CloneTo(newQuestion, answerItem.Name, false);
+                    }
+
+                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
                     {
                         Response.Redirect(CurrentUser.Paths.FullPath);
                     }

@@ -12,33 +12,31 @@ namespace Website.Layout.SubLayout
     public partial class Signup : System.Web.UI.UserControl
     {
 
-
+        private Sitecore.Data.Items.Item CurrentUser { get; set; }
+        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
+            CurrentUser = master.GetItem(currentUserId);
         }
 
         public void GreetingBtn_Click(Object sender, EventArgs e)
         {
             
-                Log.Info("ANDYT" + String.Format("Name {0} Company {1} Email {2}", Name.Value, Company.Value, Email.Value), this);
-                Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-                Sitecore.Data.Items.Item parent = master.GetItem("/sitecore/content/Attendees");
-                TemplateItem attendeeTemplate = Sitecore.Configuration.Factory.GetDatabase("master").Templates["{AD71F430-184A-4DDE-B84C-E28FA6FCB5D0}"];
+                Log.Info(String.Format("Name {0} Company {1} JobTitle {2} Email {3}", Name.Value, Company.Value, JobTitle.Value, Email.Value), this);
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    Log.Info("ANDYT" + "CREATING ITEM", this);
-                    Item newAttendee = parent.Add(Name.Value.ToString(), attendeeTemplate);
-                    newAttendee.Editing.BeginEdit();
-                    newAttendee.Fields["Name"].Value = Name.Value;
-                    newAttendee.Fields["Company"].Value = Company.Value;
-                    newAttendee.Fields["Email"].Value = Email.Value;
-                    newAttendee.Editing.EndEdit();
-                    Sitecore.Context.ClientData.SetValue("CurrentUser", newAttendee.ID.ToString());
-                    Log.Info("ANDYT" + "ITEM CREATED", this);
+                    Log.Info("updating atendee", this);
+                    CurrentUser.Editing.BeginEdit();
+                    CurrentUser.Fields["Name"].Value = Name.Value;
+                    CurrentUser.Fields["Company"].Value = Company.Value;
+                    CurrentUser.Fields["Email"].Value = Email.Value;
+                    CurrentUser.Fields["JobTitle"].Value = JobTitle.Value;
+                    CurrentUser.Editing.EndEdit();
+                    Log.Info("attendee updated", this);
                 }
-                Response.Redirect(Sitecore.Context.Item["Link"]);
-            
+                Response.Redirect(Sitecore.Context.Item["Next Page"]);            
         }
     }
 }

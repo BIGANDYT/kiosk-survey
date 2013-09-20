@@ -10,43 +10,25 @@
 namespace Website.Layout.SubLayout {
     
     
-    public partial class Signup {
+    public partial class MultiAnswerQuestion {
         
         /// <summary>
-        /// Name control.
+        /// FieldRenderer1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Name;
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer FieldRenderer1;
         
         /// <summary>
-        /// Company control.
+        /// AnswerRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Company;
-        
-        /// <summary>
-        /// JobTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText JobTitle;
-        
-        /// <summary>
-        /// Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Email;
+        protected global::System.Web.UI.WebControls.DataList AnswerRepeater;
         
         /// <summary>
         /// Buttonlink control.

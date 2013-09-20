@@ -1,13 +1,4 @@
-﻿body {
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    background-color: red;
-}
-
-div {
-    text-align: left;
-}
-
+﻿
 #attendee {
     margin: 10px;
     color: white;
@@ -20,12 +11,16 @@ div {
 }
 
 label {
-    margin: 5px;
-    font-size: 40px;
-    width: 800px;
-    height: 130px;
+    margin: 10px;
+    font-size: 38px;
+    width: 550px;
+    height: 100px;
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
     background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1);
+}
+/* hide input */
+input.checkbox:empty {
+    margin-left: -9999px;
 }
 
 /* hide input */
@@ -37,7 +32,7 @@ input.radio:empty {
     input.radio:empty ~ label {
         position: relative;
         float: left;
-        line-height: 3.2em;
+        line-height: 2.5em;
         text-indent: 3em;
         cursor: pointer;
         -webkit-user-select: none;
@@ -62,7 +57,7 @@ input.radio:empty {
 /* toggle hover */
 input.radio:hover:not(:checked) ~ label:before {
     content: '\2714';
-    text-indent: .9em;
+    text-indent: .5em;
     color: #C2C2C2;
 }
 
@@ -73,7 +68,7 @@ input.radio:hover:not(:checked) ~ label {
 /* toggle on */
 input.radio:checked ~ label:before {
     content: '\2714';
-    text-indent: .9em;
+    text-indent: .5em;
     color: white;
     background-color:black;
 }
