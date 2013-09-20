@@ -25,8 +25,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>D:\Websites\_dev\survey\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://survey.web</SitecoreWebUrl>
+    <SitecoreDeployFolder>D:\Websites\_poc\SBOS\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://SBOS</SitecoreWebUrl>
     <SitecoreAccessGuid>574f3076-393d-4408-8a05-09d7c1b6be91</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>

@@ -60,8 +60,16 @@
         </div>
     </div>
     <div class="span2">
-        <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report >" OnClick="GreetingBtn_Click" runat="server" />
+        <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report >" OnClick="Email_Click" runat="server" />
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <a class="emailbutton" href="<%=Sitecore.Context.Site.StartPath %>">Restart</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <%=Sitecore.Context.Item["Stage"] %>
+        </div>
     </div>
 </div>
-
-

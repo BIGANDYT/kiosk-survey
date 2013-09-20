@@ -17,9 +17,17 @@
             </ItemTemplate>
         </asp:DataList>
     </div>
-    <div class="row-fluid show-grid">
+    <div class="row-fluid show-grid">       
+        <div class="span4">
+            <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
+        </div>
+        <div class="span4">
+            <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
+        </div>
+    </div>
+    <div class="row-fluid">
         <div class="span12">
-            <asp:Button class="emailbutton" ID="Buttonlink" Text="Next" OnCommand="GreetingBtn_Click" runat="server" />
+            <%=Sitecore.Context.Item["Stage"] %>
         </div>
     </div>
 </div>

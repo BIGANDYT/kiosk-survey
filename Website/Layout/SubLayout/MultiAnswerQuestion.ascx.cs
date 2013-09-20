@@ -28,7 +28,16 @@ namespace Website.Layout.SubLayout
             AnswerRepeater.DataBind();
         }
 
-        public void GreetingBtn_Click(Object sender, EventArgs e)
+        protected void Restart_Click(object sender, CommandEventArgs e)
+        {
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                CurrentUser.Delete();
+            }
+            Response.Redirect(Sitecore.Context.Site.StartPath);
+        }
+
+        public void Next_Click(Object sender, EventArgs e)
         {
             String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
             if (!String.IsNullOrWhiteSpace(radioValue))
@@ -42,15 +51,7 @@ namespace Website.Layout.SubLayout
                         Item answerItem = master.GetItem(answer);
                         answerItem.CloneTo(newQuestion, answerItem.Name, false);
                     }
-
-                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
-                    {
-                        Response.Redirect(CurrentUser.Paths.FullPath);
-                    }
-                    else
-                    {
-                        Response.Redirect(Sitecore.Context.Item["Next Page"]);
-                    }
+                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
                 }
             }
         }

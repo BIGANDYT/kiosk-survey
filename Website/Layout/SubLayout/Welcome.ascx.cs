@@ -19,11 +19,11 @@ namespace Website.Layout.SubLayout
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 Log.Info("ANDYT" + "CREATING ITEM", this);
-                Item newAttendee = parent.Add(new Guid().ToString(), attendeeTemplate);               
+                Item newAttendee = parent.Add(Guid.NewGuid().ToString(), attendeeTemplate);               
                 Sitecore.Context.ClientData.SetValue("CurrentUser", newAttendee.ID.ToString());
                 Log.Info("ANDYT" + "ITEM CREATED", this);
             }  
-            Response.Redirect(Sitecore.Context.Item["Link"]);
+            Response.Redirect(Sitecore.Context.Item["Next Page"]);
         }
     }
 }

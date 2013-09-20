@@ -3,8 +3,6 @@
 
 <div class="row-fluid">
     <div class="span6 welcomealign">
-
-
         <h1 class="welcome">CUSTOMER<br />
             EXPERIENCE<br />
             MATURITY<br />
@@ -13,5 +11,10 @@
     </div>
     <div class="span6 welcomebutton">
         <asp:Button class="emailbutton" ID="Buttonlink" Text="Start &raquo;" OnClick="Buttonlink_Click" runat="server" />
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <%=Sitecore.Context.Item["Stage"] %>
+        </div>
     </div>
 </div>

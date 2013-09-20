@@ -85,7 +85,7 @@ name: __Renderings
 key: __renderings
 content-length: 794
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{6EEC6E84-514F-44B6-9240-40754F4DBB50}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><p uid="{4A0A5ECE-F83B-4461-B568-2394132BB16B}" p:before="r[@uid='{9F166E5D-B46E-44EB-ACC3-65A8A634D117}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{9F166E5D-B46E-44EB-ACC3-65A8A634D117}" s:id="{663F8BB7-2456-4255-957F-51E2453C0BC5}" s:ph="content" /><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d><d id="{46D2F427-4CE5-4E1F-BA10-EF3636F43534}"><r uid="{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}" s:cac="0" s:cnd="" s:mvt="" s:vbd="0" s:vbdev="0" s:vbl="0" s:vbp="0" s:vbqs="0" s:vbu="0" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{6EEC6E84-514F-44B6-9240-40754F4DBB50}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><p uid="{4A0A5ECE-F83B-4461-B568-2394132BB16B}" p:before="r[@uid='{E4252665-31B1-4E84-9D7E-FAB4DC19F974}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{E4252665-31B1-4E84-9D7E-FAB4DC19F974}" s:id="{68CFFC13-5DF4-4986-8EEC-98430956D4B5}" s:ph="content" /><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d><d id="{46D2F427-4CE5-4E1F-BA10-EF3636F43534}"><r uid="{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}" s:cac="0" s:cnd="" s:mvt="" s:vbd="0" s:vbdev="0" s:vbl="0" s:vbp="0" s:vbqs="0" s:vbu="0" /></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -316,8 +316,22 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: f6521660-793e-47cd-ad79-4b9b7e9e3c42
+revision: d7567106-b9b0-4838-86b9-f5ffab585127
 
+----field----
+field: {9FCA13DB-B568-4925-B569-5147F4D47724}
+name: Next Page
+key: next page
+content-length: 42
+
+/sitecore/content/Home/Questions/Question1
+----field----
+field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
+name: Stage
+key: stage
+content-length: 5
+
+Start
 ----field----
 field: {75577384-3C97-45DA-A847-81B00500E250}
 name: Title
@@ -334,13 +348,6 @@ content-length: 32
 
 		<p>Welcome to Sitecore</p>
 
-----field----
-field: {59F45BAA-9040-4B15-AFC1-F691E3B179A1}
-name: Link
-key: link
-content-length: 42
-
-/sitecore/content/Home/Questions/Question1
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
@@ -403,14 +410,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6521660-793e-47cd-ad79-4b9b7e9e3c42
+d7567106-b9b0-4838-86b9-f5ffab585127
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130903T211349:635138396297524348
+20130920T154424:635152886645887982
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

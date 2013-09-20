@@ -31,12 +31,21 @@ namespace Website.Layout.SubLayout {
         protected global::System.Web.UI.WebControls.DataList AnswerRepeater;
         
         /// <summary>
-        /// Buttonlink control.
+        /// Restart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Buttonlink;
+        protected global::System.Web.UI.WebControls.Button Restart;
+        
+        /// <summary>
+        /// Next control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Next;
     }
 }

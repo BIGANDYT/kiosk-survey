@@ -28,25 +28,26 @@ namespace Website.Layout.SubLayout
             AnswerRepeater.DataBind();
         }
 
-        public void GreetingBtn_Click(Object sender, EventArgs e)
+        protected void Restart_Click(object sender, CommandEventArgs e)
+        {
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                CurrentUser.Delete();
+            }
+            Response.Redirect(Sitecore.Context.Site.StartPath);
+        }
+
+        public void Next_Click(Object sender, EventArgs e)
         {
             String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
-                    
+                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);                    
                     Item answer = master.GetItem(radioValue);
-                    answer.CloneTo(newQuestion, answer.Name, false);
-                    if (String.IsNullOrEmpty(Sitecore.Context.Item["Next Question"]))
-                    {
-                        Response.Redirect(CurrentUser.Paths.FullPath);
-                    }
-                    else
-                    {
-                        Response.Redirect(Sitecore.Context.Item["Next Page"]);
-                    }
+                    answer.CloneTo(newQuestion, answer.Name, false);                   
+                    Response.Redirect(Sitecore.Context.Item["Next Page"]);                  
                 }
             }
         }

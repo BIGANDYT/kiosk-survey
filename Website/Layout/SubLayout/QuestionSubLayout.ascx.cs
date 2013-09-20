@@ -1,7 +1,10 @@
-﻿using Sitecore.Data.Items;
+﻿using Sitecore.Data;
+using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
+using Sitecore.Globalization;
 using Sitecore.Links;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +19,10 @@ namespace Website.Layout.SubLayout
         private Sitecore.Data.Items.Item CurrentUser { get; set; }
         private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
 
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
             //int TotalQs = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='question' or @@templatekey='multianswerquestion']").Count();
             String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
             CurrentUser = master.GetItem(currentUserId);
@@ -25,51 +30,84 @@ namespace Website.Layout.SubLayout
             AnswerRepeater.DataBind();
         }
 
-        protected void GreetingBtn_Click(object sender, CommandEventArgs e)
+        //private static Item[] GetLinkedItems(Database database, Language language, Item refItem)
+        //{
+        //   ItemLink[] links = Sitecore.Globals.LinkDatabase.GetReferrers(refItem);
+        //    if (links == null)
+        //    {
+        //        return null;
+        //    }
+        //    ArrayList result = new ArrayList(links.Length);
+        //
+        //  foreach (ItemLink link in links)
+        //{
+
+        //      Item item = database.Items[link.SourceItemID, language];
+        // adding the Item to an array if the Item is not null
+        //    if (item != null)
+        //  {
+        //    result.Add(item);
+        //}
+
+        //}
+        //return (Item[])result.ToArray(typeof(Item));
+        // }
+
+        protected void Restart_Click(object sender, CommandEventArgs e)
+        {
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                CurrentUser.Delete();
+            }
+            Response.Redirect(Sitecore.Context.Site.StartPath);
+        }
+
+        protected void Next_Click(object sender, CommandEventArgs e)
         {
             Log.Info("ANDYT ANSWER USERR" + CurrentUser.Name, this);
             Log.Info("ANDYT ANSWER COMMANDARG" + (String)e.CommandArgument, this);
 
-            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];         
+            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
 
-            if (!String.IsNullOrWhiteSpace(radioValue)) {
-            
-            Sitecore.Data.Items.Item answer = master.GetItem(radioValue);
-            Sitecore.Data.Fields.MultilistField multilistField = answer.Fields["Levels"];
-
-            if (multilistField != null)
+            if (!String.IsNullOrWhiteSpace(radioValue))
             {
 
-                //Iterate over all the selected items by using the property TargetIDs
+                Sitecore.Data.Items.Item answer = master.GetItem(radioValue);
+                Sitecore.Data.Fields.MultilistField multilistField = answer.Fields["Levels"];
 
-                foreach (var id in multilistField.TargetIDs)
+                if (multilistField != null)
                 {
 
-                    Item targetItem = master.Items[id];
-                    int value = 0;
-                    if (String.IsNullOrEmpty(targetItem["Value"]) == false)
+                    //Iterate over all the selected items by using the property TargetIDs
+
+                    foreach (var id in multilistField.TargetIDs)
                     {
-                        value = Convert.ToInt32(targetItem["Value"]);
+
+                        Item targetItem = master.Items[id];
+                        int value = 0;
+                        if (String.IsNullOrEmpty(targetItem["Value"]) == false)
+                        {
+                            value = System.Convert.ToInt32(targetItem["Value"]);
+                        }
+                        int oldValue = 0;
+                        if (String.IsNullOrEmpty(CurrentUser[targetItem["Type"]]) == false)
+                        {
+                            oldValue = System.Convert.ToInt32(CurrentUser[targetItem["Type"]]);
+                        }
+                        using (new Sitecore.SecurityModel.SecurityDisabler())
+                        {
+                            CurrentUser.Editing.BeginEdit();
+                            CurrentUser[targetItem["Type"]] = (oldValue + value).ToString();
+                            CurrentUser.Editing.EndEdit();
+                        }
+                        Log.Info("ANDYT LEVEL: " + CurrentUser[targetItem["Type"]], this);
                     }
-                    int oldValue = 0;
-                    if (String.IsNullOrEmpty(CurrentUser[targetItem["Type"]]) == false)
-                    {
-                        oldValue = Convert.ToInt32(CurrentUser[targetItem["Type"]]);
-                    } 
-                    using (new Sitecore.SecurityModel.SecurityDisabler())
-                    {
-                        CurrentUser.Editing.BeginEdit();
-                        CurrentUser[targetItem["Type"]] = (oldValue + value).ToString();
-                        CurrentUser.Editing.EndEdit();
-                    }
-                    Log.Info("ANDYT LEVEL: " + CurrentUser[targetItem["Type"]], this);
                 }
-            }
-            Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
-            if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
-            {
-                Response.Redirect(Sitecore.Context.Item["Next Page"]);
-            }
+                Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
+                if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
+                {
+                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                }
             }
         }
     }

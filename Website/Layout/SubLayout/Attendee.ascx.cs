@@ -82,11 +82,21 @@ namespace Website.Layout.SubLayout
             {
                 return (obj["Initiate"].Equals(obj2["Initiate"]) && obj["Radiate"].Equals(obj2["Radiate"]));
             }
-            if (obj.ID.ToString() == "{EC712628-FA63-45B7-8AFB-039F53500457}")            
+            if (obj.ID.ToString() == "{EC712628-FA63-45B7-8AFB-039F53500457}")
             {
                 return (obj["Initiate"].Equals(obj2["Initiate"]));
             }
             return false;
+        }
+
+        public void Next_Click(Object sender, EventArgs e)
+        {
+            Response.Redirect(Sitecore.Context.Item["Next Page"]);
+        }
+
+        protected void Restart_Click(object sender, CommandEventArgs e)
+        {            
+            Response.Redirect(Sitecore.Context.Site.StartPath);
         }
     }
 }
