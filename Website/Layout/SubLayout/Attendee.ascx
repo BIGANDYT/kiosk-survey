@@ -31,7 +31,7 @@
             <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
         <div class="span6">
-            <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
+            <asp:Button class="emailbutton" ID="Next" Text="Give Me My Full Report" OnCommand="Next_Click" runat="server" />
         </div>
     </div>
 </body>

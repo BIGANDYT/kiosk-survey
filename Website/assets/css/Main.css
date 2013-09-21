@@ -12,7 +12,13 @@
 
 #footer {
     height: 120px;
-    background-color: #000000;
+    background: -moz-linear-gradient(left, #a52d1d 36%, #d81b06 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(36%,#a52d1d), color-stop(100%,#d81b06)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* IE10+ */
+    background: linear-gradient(to right, #a52d1d 36%,#d81b06 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a52d1d', endColorstr='#d81b06',GradientType=1 ); /* IE6-9 */
 }
 
 .background {
@@ -80,7 +86,7 @@
 
 .stage {
     margin: 10px;
-    height:5em;
+    height: 5em;
     font-family: Arial;
     color: #000000;
     text-decoration: none;
@@ -130,17 +136,17 @@ h1.welcome {
 .line {
     width: 12em;
     height: 1em;
-    position: absolute;    
+    position: absolute;
     top: 58px;
-    z-index:1;    
+    z-index: 1;
 }
 
 .linesel {
-   background-color: orange;
+    background-color: orange;
 }
 
 .hider {
-   background-color: #e8e8e8;
+    background-color: #e8e8e8;
 }
 
 .lineunsel {
@@ -148,7 +154,7 @@ h1.welcome {
 }
 
 .sel {
-   border: 15px solid orange;
+    border: 15px solid orange;
 }
 
 .unsel {
@@ -162,9 +168,7 @@ h1.welcome {
     border-radius: 10em;
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
-    background-color:#e8e8e8;
-    z-index: 10;   
-    position:relative;
+    background-color: #e8e8e8;
+    z-index: 10;
+    position: relative;
 }
-
-

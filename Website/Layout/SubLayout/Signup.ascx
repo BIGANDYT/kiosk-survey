@@ -60,7 +60,7 @@
         </div>
     </div>
     <div class="span2">
-        <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report >" OnClick="Email_Click" runat="server" />
+        <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report" OnClick="Email_Click" runat="server" />
     </div>
     <div class="row-fluid">
         <div class="span4">

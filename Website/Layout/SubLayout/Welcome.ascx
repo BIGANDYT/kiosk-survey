@@ -10,6 +10,6 @@
         </h1>
     </div>
     <div class="span6 welcomebutton">
-        <asp:Button class="emailbutton" ID="Buttonlink" Text="Start &raquo;" OnClick="Buttonlink_Click" runat="server" />
+        <asp:Button class="emailbutton" ID="Buttonlink" Text="Take it now" OnClick="Buttonlink_Click" runat="server" />
     </div>
 </div>
