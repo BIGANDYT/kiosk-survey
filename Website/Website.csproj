@@ -104,6 +104,7 @@
     <Content Include="assets\js\fancyInput.js" />
     <Content Include="assets\js\jquery-1.9.1.min.js" />
     <Content Include="assets\js\jquery-ui-1.8.22.custom.min.js" />
+    <Content Include="assets\js\jquery.fittext.js" />
     <Content Include="assets\js\jquery.imagesloaded.min.js" />
     <Content Include="assets\js\jquery.scrollTo.js" />
     <Content Include="assets\js\modernizr-2.5.3.min.js" />

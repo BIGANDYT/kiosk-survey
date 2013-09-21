@@ -15,6 +15,8 @@
 
     <link href="/assets/css/radio/radio.css" rel="stylesheet" />
 
+    <script src="/assets/js/jquery.fittext.js"></script>
+
 </head>
 <body>
 
@@ -62,6 +64,9 @@
                 <div class="ownit">Own the Experience</div>
             </div>
         </div>
-    </div>
+    </div>    
+    <script>
+        jQuery(".responsive_text").fitText(2)
+    </script>
 </body>
 </html>

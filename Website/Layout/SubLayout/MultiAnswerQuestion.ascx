@@ -11,7 +11,7 @@
                 <div class="span1">
                     <input type="checkbox" name='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Parent.ID %>' id='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' value='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' class="radio" />
                     <label for='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>'>
-                        <asp:Literal ID="Literal1" Text='<%# ((Sitecore.Data.Items.Item)(Container.DataItem))["Answer"] %>' runat="server" />
+                       <div class="responsive_text" ><%# ((Sitecore.Data.Items.Item)(Container.DataItem))["Answer"] %></div>
                     </label>
                 </div>
             </ItemTemplate>
