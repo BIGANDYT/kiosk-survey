@@ -2,7 +2,7 @@
 <body style="background-color: white">
     <div style="z-index: 3; position: absolute; left: 146px; top: 460px">
         <div>
-            <input id="andythompson" style="text-align: center; width: 225px; border: none; color: red; font-family: 'Fjalla One', sans-serif; font-size: 60px;" type="text">
+            <input id="andythompson" style="text-align: center; width: 225px; border: none; color: red; font-family: 'Fjalla One', sans-serif; font-size: 50px; background:none;" type="text" disabled>
             <input id="stopper" type="hidden" runat="server">
         </div>
     </div>

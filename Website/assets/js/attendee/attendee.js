@@ -69,7 +69,7 @@
                 }
                 break;
             case 100:
-                document.getElementById('andythompson').value = 'Lifetime Customer Champion';
+                document.getElementById('andythompson').value = 'Lifetime';
                 myColor = '#008B48';
                 window.clearInterval(tmr);
                 $(document.getElementById('andythompson2')).fadeIn("slow");
