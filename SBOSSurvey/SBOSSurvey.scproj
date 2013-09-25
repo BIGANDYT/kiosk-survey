@@ -62,242 +62,182 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question1.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question1\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question1\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer3.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question1\Answer3.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer4.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question1\Answer4.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer5.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question1\Answer6.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question10.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question10\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question10\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer3.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer4.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer5.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer6.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer7.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question2\Answer8.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3\Answer3.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2\Answer3.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3\Answer4.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2\Answer4.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question3\Answer5.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question2\Answer5.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question4.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question3.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question4\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question3\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question4\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question3\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question4\Answer3.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question4\Answer4.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question4.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question4\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question4\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer3.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer4.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer5.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer6.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question5\Answer7.item">
-      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question6.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question5.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question6\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question5\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question6\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question5\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question6.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question6\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question6\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer3.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question7.item">
+      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question7\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer4.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question7\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer5.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question8.item">
+      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question8\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer6.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question8\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer7.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question9.item">
+      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question9\Answer1.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\MultiAnswerQuestions\Question7\Answer8.item">
+    <SitecoreItem Include="sitecore\content\Home\QualifierQuestions\Question9\Answer2.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -332,17 +272,12 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question10.item">
-      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question10\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question1\Answer5.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question10\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question1\Answer6.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -377,6 +312,21 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question2\Answer6.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question2\Answer7.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question2\Answer8.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Questions\Question3.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -388,6 +338,21 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Questions\Question3\Answer2.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question3\Answer3.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question3\Answer4.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question3\Answer5.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -407,6 +372,16 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question4\Answer3.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question4\Answer4.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Questions\Question5.item">
       <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -418,6 +393,31 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer2.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer3.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer4.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer5.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer6.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question5\Answer7.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -452,42 +452,42 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question8.item">
-      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question8\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer3.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question8\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer4.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question9.item">
-      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question9\Answer1.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer5.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Questions\Question9\Answer2.item">
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer6.item">
       <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Results.item">
-      <Icon>/temp/IconCache/Applications/32x32/document_ok.png</Icon>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer7.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Questions\Question7\Answer8.item">
+      <Icon>/temp/IconCache/Applications/32x32/check.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Signup.item">
+      <Icon>/temp/IconCache/Applications/32x32/document_ok.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Summary.item">
       <Icon>/temp/IconCache/Applications/32x32/document_ok.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -627,27 +627,32 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\Attendee.item">
-      <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\Company.item">
-      <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\MultiAnswerQuestion.item">
       <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\QuestionSubLayout.item">
+    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\QualifierQuestion.item">
       <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\Signup.item">
+      <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\SingleAnswerQuestion.item">
+      <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\SingleAnswerQuestionPicture.item">
+      <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\SBOS\Summary.item">
       <Icon>/temp/IconCache/Software/16x16/element_selection.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -772,31 +777,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\SBOS\MultiAnswerQuestion.item">
-      <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\SBOS\MultiAnswerQuestion\__Standard Values.item">
-      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\SBOS\MultiAnswerQuestion\Question.item">
-      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\SBOS\MultiAnswerQuestion\Question\Order.item">
-      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\SBOS\MultiAnswerQuestion\Question\Question.item">
-      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\SBOS\Qualifier.item">
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -817,6 +797,16 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\AlternateHeading.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\color.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\Description.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -832,12 +822,22 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\height.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\Initiate.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\Lifetime Customers.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\ModelText.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -868,6 +868,31 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\SBOS\Qualifier\Types\SubHeading.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\QualifierQuestion.item">
+      <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\QualifierQuestion\__Standard Values.item">
+      <Icon>/temp/IconCache/Applications/32x32/unknown.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\QualifierQuestion\Question.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\QualifierQuestion\Question\Order.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\SBOS\QualifierQuestion\Question\Question.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>

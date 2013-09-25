@@ -1,0 +1,70 @@
+﻿/* hide input */
+.mwrapper {
+    display: table-cell;
+    vertical-align: bottom;
+    bottom: 0;
+}
+
+.mcol {
+    float: left;
+}
+
+.radio-focus {
+    border: 5px solid red;
+}
+
+.mcoltop {
+    display: block;
+    font-size: 1.2em;
+    line-height: 2em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    text-indent: 0.1em;
+    color: black;
+    background: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+}
+
+.mcolmiddle {
+    color: white;
+}
+
+.mcolbottom {
+    background-color: white;
+    width: inherit;
+    position: absolute;
+    bottom: 5px;
+    font-size: 7em;
+    line-height: 1em;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* hide input */
+input.maturity:empty {
+    margin-left: -9999px;
+}
+
+    /* style label */
+    input.maturity:empty ~ label {
+        height: 30em;
+        width: 14em;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+        margin: 1em;
+        padding: 5px;
+        position: relative;
+        border: 5px solid white;
+    }
+
+input.maturity:checked ~ label {
+    color: red;
+    border: 5px solid red;    
+    
+}

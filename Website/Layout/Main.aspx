@@ -14,6 +14,7 @@
     <script src="/assets/js/attendee/jquery.knob.js"></script>
 
     <link href="/assets/css/radio/radio.css" rel="stylesheet" />
+    <link href="/assets/css/radio/maturitymodel.css" rel="stylesheet" />
 
     <script src="/assets/js/jquery.fittext.js"></script>
 
@@ -25,7 +26,7 @@
             <div class="row-fluid">
                 <div class="span6">
                     <img class="arrows" src="/assets/img/arrows.png" />
-                </div>
+                </div>                
                 <asp:Repeater ID="ProgressRepeater" runat="server">
                     <ItemTemplate>
                         <div class="span1">
@@ -35,7 +36,7 @@
                             <div class="line <%# line(((Sitecore.Data.Items.Item)(Container.DataItem)).Name) %>"></div>
                         </div>
                     </ItemTemplate>
-                </asp:Repeater>
+                </asp:Repeater>                   
             </div>
             <div class="row-fluid">
                 <div class="span1"></div>

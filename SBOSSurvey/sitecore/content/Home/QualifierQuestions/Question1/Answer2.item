@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {787F496A-9270-4D33-A2F8-58A07B6FB607}
+database: master
+path: /sitecore/content/Home/QualifierQuestions/Question1/Answer2
+parent: {5A2AFEE5-5CF9-4E4D-8399-B5D4BE82FCBE}
+name: Answer2
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+
+----version----
+language: en
+version: 1
+revision: 4644bbf2-5b0b-4d1f-a6e7-2e8c848a8c58
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 15
+
+Low Involvement
+----field----
+field: {2E55412B-2A32-4489-A4A5-7DCF66DBED34}
+name: Levels
+key: levels
+content-length: 77
+
+{0B5C5D69-C44D-4C9D-A253-C3C70BEC9792}|{C3F29A92-A263-499C-B434-0D67CE61BE52}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130831T202835
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4644bbf2-5b0b-4d1f-a6e7-2e8c848a8c58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130901T201816:635136634961092393
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -90,12 +90,14 @@
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\fancyInput.css" />
     <Content Include="assets\css\Main.css" />
+    <Content Include="assets\css\radio\maturitymodel.css" />
     <Content Include="assets\css\radio\radio.css" />
     <Content Include="assets\css\styles.css" />
     <Content Include="assets\img\arrows.png" />
     <Content Include="assets\img\glyphicons-halflings-white.png" />
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
+    <Content Include="assets\img\maturitymodel.PNG" />
     <Content Include="assets\img\sitecore.png" />
     <Content Include="assets\js\attendee\attendee.js" />
     <Content Include="assets\js\attendee\jquery.knob.js" />
@@ -118,11 +120,12 @@
     <Content Include="layouts\Sample Sublayout.ascx" />
     <Content Include="layouts\system\VisitorIdentification.aspx" />
     <Content Include="layouts\xmlcontrol.aspx" />
-    <Content Include="Layout\SubLayout\Attendee.ascx" />
-    <Content Include="Layout\SubLayout\Company.ascx" />
+    <Content Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" />
+    <Content Include="Layout\SubLayout\Summary.ascx" />
+    <Content Include="Layout\SubLayout\SingleAnswerQuestion.ascx" />
     <Content Include="Layout\Main.aspx" />
     <Content Include="Layout\SubLayout\MultiAnswerQuestion.ascx" />
-    <Content Include="Layout\SubLayout\QuestionSubLayout.ascx" />
+    <Content Include="Layout\SubLayout\QualifierQuestion.ascx" />
     <Content Include="Layout\SubLayout\Signup.ascx" />
     <Content Include="Layout\SubLayout\Welcome.ascx" />
     <Content Include="sitecore\admin\cache.aspx" />
@@ -7227,19 +7230,26 @@
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Layout\SubLayout\Attendee.ascx.cs">
-      <DependentUpon>Attendee.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs">
+      <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\Attendee.ascx.designer.cs">
-      <DependentUpon>Attendee.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs">
+      <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Layout\SubLayout\Company.ascx.cs">
-      <DependentUpon>Company.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\Summary.ascx.cs">
+      <DependentUpon>Summary.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\Company.ascx.designer.cs">
-      <DependentUpon>Company.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\Summary.ascx.designer.cs">
+      <DependentUpon>Summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubLayout\SingleAnswerQuestion.ascx.cs">
+      <DependentUpon>SingleAnswerQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\SubLayout\SingleAnswerQuestion.ascx.designer.cs">
+      <DependentUpon>SingleAnswerQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Layout\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -7255,12 +7265,12 @@
     <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs">
       <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Layout\SubLayout\QuestionSubLayout.ascx.cs">
-      <DependentUpon>QuestionSubLayout.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\QualifierQuestion.ascx.cs">
+      <DependentUpon>QualifierQuestion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\QuestionSubLayout.ascx.designer.cs">
-      <DependentUpon>QuestionSubLayout.ascx</DependentUpon>
+    <Compile Include="Layout\SubLayout\QualifierQuestion.ascx.designer.cs">
+      <DependentUpon>QualifierQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Layout\SubLayout\Signup.ascx.cs">
       <DependentUpon>Signup.ascx</DependentUpon>
