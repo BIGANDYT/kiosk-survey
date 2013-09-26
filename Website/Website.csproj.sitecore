@@ -9,5 +9,9 @@
     </File>
     <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
     <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\Finished.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{836B8E82-4EAF-4208-9D38-1B390E73616D}</Item>
+    </File>
+    <File Include="Layout\SubLayout\Finished.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   </ItemGroup>
 </Project>

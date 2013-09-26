@@ -120,6 +120,7 @@
     <Content Include="layouts\Sample Sublayout.ascx" />
     <Content Include="layouts\system\VisitorIdentification.aspx" />
     <Content Include="layouts\xmlcontrol.aspx" />
+    <Content Include="Layout\SubLayout\Finished.ascx" />
     <Content Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" />
     <Content Include="Layout\SubLayout\Summary.ascx" />
     <Content Include="Layout\SubLayout\SingleAnswerQuestion.ascx" />
@@ -7230,6 +7231,10 @@
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layout\SubLayout\Finished.ascx.cs">
+      <DependentUpon>Finished.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs">
       <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

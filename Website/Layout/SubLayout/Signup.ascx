@@ -65,7 +65,7 @@
         <asp:Button class="emailbutton" ID="Button1" Text="Restart" OnClick="Restart_Click" runat="server" />
     </div>
     <div class="span4 offset2">
-        <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report" OnClick="Email_Click" runat="server" />
+        <asp:Button class="emailbutton" ID="Buttonlink" Text="Start" OnClick="Email_Click" runat="server" />
     </div>
 </div>
 <script>
