@@ -22,6 +22,8 @@
             <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
         <div class="span4">
+        </div>
+        <div class="span4">
             <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
         </div>
     </div>

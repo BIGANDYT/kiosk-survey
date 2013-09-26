@@ -59,12 +59,17 @@
             <input class="input-xxlarge" runat="server" id="Email" autocomplete="off" type="email" required>
         </div>
     </div>
-    <div class="span2">
+</div>
+<div class="row-fluid">    
+    <div class="span4 offset2" onclick="forcesubmit()">
+        <asp:Button class="emailbutton" ID="Button1" Text="Restart" OnClick="Restart_Click" runat="server" />
+    </div>
+    <div class="span4 offset2">
         <asp:Button class="emailbutton" ID="Buttonlink" Text="Email Report" OnClick="Email_Click" runat="server" />
     </div>
-    <div class="row-fluid">
-        <div class="span4">
-            <a class="emailbutton" href="<%=Sitecore.Context.Site.StartPath %>">Restart</a>
-        </div>
-    </div>
 </div>
+<script>
+    function forcesubmit() {
+        $('input').removeAttr("required")
+    }
+</script>
