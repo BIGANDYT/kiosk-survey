@@ -21,8 +21,12 @@ namespace Website.Layout.SubLayout
             CurrentUser = master.GetItem(currentUserId);
         }
 
-         public void Restart_Click(Object sender, EventArgs e)
+        protected void Restart_Click(object sender, CommandEventArgs e)
         {
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                CurrentUser.Delete();
+            }
             Response.Redirect(Sitecore.Context.Site.StartPath);
         }
 
