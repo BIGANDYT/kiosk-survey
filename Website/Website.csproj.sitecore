@@ -13,5 +13,9 @@
       <Item DatabaseName="master">{836B8E82-4EAF-4208-9D38-1B390E73616D}</Item>
     </File>
     <File Include="Layout\SubLayout\Finished.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\MainVideo.aspx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{31596FE5-F178-4F45-9A2A-9DA6A59517D7}</Item>
+    </File>
+    <File Include="Layout\MainVideo.aspx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   </ItemGroup>
 </Project>

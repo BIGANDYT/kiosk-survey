@@ -92,6 +92,7 @@
     <Content Include="assets\css\Main.css" />
     <Content Include="assets\css\radio\maturitymodel.css" />
     <Content Include="assets\css\radio\radio.css" />
+    <Content Include="assets\css\style.css" />
     <Content Include="assets\css\styles.css" />
     <Content Include="assets\img\arrows.png" />
     <Content Include="assets\img\glyphicons-halflings-white.png" />
@@ -112,8 +113,13 @@
     <Content Include="assets\js\modernizr-2.5.3.min.js" />
     <Content Include="assets\img\search.gif" />
     <Content Include="assets\js\radio\radio.js" />
+    <Content Include="assets\vids\dock.mp4" />
+    <Content Include="assets\vids\frontier.mp4" />
+    <Content Include="assets\vids\river.mp4" />
+    <Content Include="assets\vids\Tiesto live at Creamfields 2013.mp4" />
     <Content Include="default.css" />
     <Content Include="Global.asax" />
+    <Content Include="Layout\MainVideo.aspx" />
     <Content Include="layouts\Sample Datasource Sublayout.ascx" />
     <Content Include="layouts\Sample Inner Sublayout.ascx" />
     <Content Include="layouts\Sample layout.aspx" />
@@ -7231,6 +7237,13 @@
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layout\MainVideo.aspx.cs">
+      <DependentUpon>MainVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\MainVideo.aspx.designer.cs">
+      <DependentUpon>MainVideo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Layout\SubLayout\Finished.ascx.cs">
       <DependentUpon>Finished.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7431,6 +7444,8 @@
     <Content Include="App_Config\Security\Domains.config" />
     <Content Include="App_Config\Security\GlobalRoles.config" />
     <Content Include="App_Config\XamlSharp.config" />
+    <Content Include="assets\vids\river.ogv" />
+    <Content Include="assets\vids\river.webm" />
     <None Include="sitecore\shell\Schemas\Sitecore xhtml.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -14,24 +14,27 @@ namespace Website.Layout
 
         protected string circle(String name)
         {
-
+            String sel = String.Empty;
             if (activated)
             {
-                return "unsel";
+                sel = "unsel";
             }
             else
             {
-                return "sel";
+                sel = "sel";
             }
             if (Sitecore.Context.Item["Stage"] == name)
             {
                 activated = true;
             }
+            return sel;
+
         }
 
         protected string line(String name)
         {
-            if (name == "Finish") {
+            if (name == "Finish")
+            {
                 return "hider";
             }
             if (Sitecore.Context.Item["Stage"] == name)

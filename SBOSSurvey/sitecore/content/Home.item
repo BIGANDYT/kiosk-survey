@@ -85,7 +85,7 @@ name: __Renderings
 key: __renderings
 content-length: 794
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{6EEC6E84-514F-44B6-9240-40754F4DBB50}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><p uid="{4A0A5ECE-F83B-4461-B568-2394132BB16B}" p:before="r[@uid='{E4252665-31B1-4E84-9D7E-FAB4DC19F974}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{E4252665-31B1-4E84-9D7E-FAB4DC19F974}" s:id="{68CFFC13-5DF4-4986-8EEC-98430956D4B5}" s:ph="content" /><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d><d id="{46D2F427-4CE5-4E1F-BA10-EF3636F43534}"><r uid="{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}" s:cac="0" s:cnd="" s:mvt="" s:vbd="0" s:vbdev="0" s:vbl="0" s:vbp="0" s:vbqs="0" s:vbu="0" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{31596FE5-F178-4F45-9A2A-9DA6A59517D7}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><p uid="{4A0A5ECE-F83B-4461-B568-2394132BB16B}" p:before="r[@uid='{E4252665-31B1-4E84-9D7E-FAB4DC19F974}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{E4252665-31B1-4E84-9D7E-FAB4DC19F974}" s:id="{68CFFC13-5DF4-4986-8EEC-98430956D4B5}" s:ph="content" /><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d><d id="{46D2F427-4CE5-4E1F-BA10-EF3636F43534}"><r uid="{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}" s:cac="0" s:cnd="" s:mvt="" s:vbd="0" s:vbdev="0" s:vbl="0" s:vbp="0" s:vbqs="0" s:vbu="0" /></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -316,7 +316,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: a66a8632-be0e-407c-9555-09f97a36ed74
+revision: a7accdc9-7130-4f0e-ab0e-7a91cd591791
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -410,14 +410,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a66a8632-be0e-407c-9555-09f97a36ed74
+a7accdc9-7130-4f0e-ab0e-7a91cd591791
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130926T081753:635157802735252236
+20130926T121645:635157946059216723
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
