@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title></title>
-    
+
     <link href="/assets/css/Main.css" rel="stylesheet" />
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen" />
@@ -14,25 +14,38 @@
     <script src="/assets/js/attendee/jquery.knob.js"></script>
 
     <link href="/assets/css/radio/radio.css" rel="stylesheet" />
+    <link href="/assets/css/radio/maturitymodel.css" rel="stylesheet" />
+
+    <script src="/assets/js/jquery.fittext.js"></script>
 
 </head>
 <body>
 
     <div id="wrap">
-        <div class="container-fluid wrapmain">
+        <div class="container-fluid wrapmain">           
             <div class="row-fluid">
-                <div class="span12">
+                <div class="span6">
                     <img class="arrows" src="/assets/img/arrows.png" />
-                </div>
+                </div>                
+                <asp:Repeater ID="ProgressRepeater" runat="server">
+                    <ItemTemplate>
+                        <div class="span1">
+                            <div class="circle <%# circle(((Sitecore.Data.Items.Item)(Container.DataItem)).Name) %>">
+                            </div>
+                            <div class="stage"><%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Name %></div>                            
+                            <div class="line <%# line(((Sitecore.Data.Items.Item)(Container.DataItem)).Name) %>"></div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>                   
             </div>
             <div class="row-fluid">
                 <div class="span1"></div>
                 <div class="span10">
                     <div class="content">
                         <form id="form1" runat="server">
-                            
-                        <sc:Placeholder ID="content" Key="content" runat="server" />
-                            
+
+                            <sc:Placeholder ID="content" Key="content" runat="server" />
+
                         </form>
                     </div>
                 </div>
@@ -52,6 +65,9 @@
                 <div class="ownit">Own the Experience</div>
             </div>
         </div>
-    </div>
+    </div>    
+    <script>
+        jQuery(".responsive_text").fitText(2)
+    </script>
 </body>
 </html>

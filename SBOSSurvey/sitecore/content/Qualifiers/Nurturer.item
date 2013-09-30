@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 973c5de0-93f1-481c-98d0-831f4f680f2b
+revision: 00b8270e-53f5-4713-9706-d7cb888ac652
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -92,6 +92,34 @@ content-length: 512
 
 Your short-term focus is to map customer touch points and begin to unify customer data into a single data repository so that you can extend automation capabilities, bridging online and offline touches. At this point establishing the processes and governance to manage shared data is important. Long term, focus on establishing processes around analyzing Big Data sets for better predictors of customer behavior. You should also start to use cross-channel attribution to further optimize the customer experience. 
 ----field----
+field: {B4E41EA6-9F53-407D-8796-6513005BCA98}
+name: ModelText
+key: modeltext
+content-length: 165
+
+Putting the customer in focus and build strong relationship, through automated trigger based dialogue, where the relevant conversation happens in preferred channels.
+----field----
+field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
+name: AlternateHeading
+key: alternateheading
+content-length: 7
+
+Nurture
+----field----
+field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
+name: height
+key: height
+content-length: 2
+
+26
+----field----
+field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
+name: color
+key: color
+content-length: 7
+
+#803A9A
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -104,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-973c5de0-93f1-481c-98d0-831f4f680f2b
+00b8270e-53f5-4713-9706-d7cb888ac652
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T140910:635139869503483573
+20130924T150156:635156317168686826
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 340dd616-c3f9-4b8d-aa6f-67e5bf7a06f1
+revision: c5456c37-158c-4165-b002-3bbdb58ffcf3
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -85,6 +85,34 @@ content-length: 606
 
 Although you are always attracting traffic, in this phase your main focus should shift to converting visitors. In the short term you should begin to extend your digital optimization with more advanced techniques such as onsite behavioral targeting, where you can deliver relevant, personalized content based on implicit browsing behavior. You can also start to automate triggers for straightforward programs like newsletter subscription, welcome programs and shopping cart abandonment. Long term, consider integrating automated email marketing so you can trigger emails based on activity from any channel. 
 ----field----
+field: {B4E41EA6-9F53-407D-8796-6513005BCA98}
+name: ModelText
+key: modeltext
+content-length: 214
+
+Focus is to optimize digital initiatives, which is initiated by blending measurement, where analytics is used for actionable insights with execution by optimization initiatives, such as testing and personalization.
+----field----
+field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
+name: AlternateHeading
+key: alternateheading
+content-length: 8
+
+Optimize
+----field----
+field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
+name: height
+key: height
+content-length: 2
+
+24
+----field----
+field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
+name: color
+key: color
+content-length: 7
+
+#B83C81
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -97,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-340dd616-c3f9-4b8d-aa6f-67e5bf7a06f1
+c5456c37-158c-4165-b002-3bbdb58ffcf3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T140811:635139868918505081
+20130924T150202:635156317223572314
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

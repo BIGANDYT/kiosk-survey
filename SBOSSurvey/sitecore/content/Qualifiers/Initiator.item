@@ -19,7 +19,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 0e051e84-6386-4e1f-90e5-e43209dc13e9
+revision: bbb61865-da30-48b5-b244-9f8a9e206816
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -64,6 +64,34 @@ content-length: 433
 
 Your main focus should be to attract traffic. In the short term start to align digital goals with your strategic objectives, to demonstrate how digital is contributing to your company’s wider goals, and so you can get more executive buy-in to your customer experience initiatives. At this stage you’ll want to distribute content to the channels where your customers are present, starting with mobile enabled sites and social sharing.
 ----field----
+field: {B4E41EA6-9F53-407D-8796-6513005BCA98}
+name: ModelText
+key: modeltext
+content-length: 137
+
+At this first step organizations have a "brochure site" presence on the web, with email campaign capabilities and web analytics in place.
+----field----
+field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
+name: AlternateHeading
+key: alternateheading
+content-length: 8
+
+Initiate
+----field----
+field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
+name: height
+key: height
+content-length: 2
+
+18
+----field----
+field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
+name: color
+key: color
+content-length: 7
+
+#F99501
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0e051e84-6386-4e1f-90e5-e43209dc13e9
+bbb61865-da30-48b5-b244-9f8a9e206816
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T134841:635139857215664867
+20130924T150217:635156317370867042
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

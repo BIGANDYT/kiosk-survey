@@ -1,13 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <Site Server="survey.web" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="SBOS" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <ItemGroup>
-    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{3F1F4A46-6FBC-4BF8-A905-5D6620530272}</Item>
+    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{F8C6935F-D20F-48A3-BCF5-CC48F4E662B3}</Item>
     </File>
-    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\SubLayout\Finished.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{836B8E82-4EAF-4208-9D38-1B390E73616D}</Item>
+    </File>
+    <File Include="Layout\SubLayout\Finished.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Layout\MainVideo.aspx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{31596FE5-F178-4F45-9A2A-9DA6A59517D7}</Item>
+    </File>
+    <File Include="Layout\MainVideo.aspx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   </ItemGroup>
 </Project>

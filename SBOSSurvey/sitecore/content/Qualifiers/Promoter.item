@@ -19,7 +19,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: ac7564b8-f932-4075-bb09-0155d2936c10
+revision: 4c96da63-3110-4aed-a180-6a369bd484cf
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -71,6 +71,34 @@ content-length: 301
 
 In this phase ensure configure your goals in all your digital channels with proper weighting, based on how valuable they are for the strategic objectives. Begin to track your marketing initiatives as you are driving traffic more to owned vs. earned channels as a way to ensure higher quality traffic. 
 ----field----
+field: {B4E41EA6-9F53-407D-8796-6513005BCA98}
+name: ModelText
+key: modeltext
+content-length: 159
+
+Focus is to distribute content across channels starting with the most used channels, such as establishing a mobile site and sharing content on social networks.
+----field----
+field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
+name: AlternateHeading
+key: alternateheading
+content-length: 7
+
+Radiate
+----field----
+field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
+name: height
+key: height
+content-length: 2
+
+20
+----field----
+field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
+name: color
+key: color
+content-length: 7
+
+#F4572D
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -83,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ac7564b8-f932-4075-bb09-0155d2936c10
+4c96da63-3110-4aed-a180-6a369bd484cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T135339:635139860193342605
+20130924T150318:635156317983578307
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

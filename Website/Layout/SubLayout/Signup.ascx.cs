@@ -21,9 +21,17 @@ namespace Website.Layout.SubLayout
             CurrentUser = master.GetItem(currentUserId);
         }
 
-        public void GreetingBtn_Click(Object sender, EventArgs e)
+        protected void Restart_Click(object sender, EventArgs e)
         {
-            
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                CurrentUser.Delete();
+            }
+            Response.Redirect(Sitecore.Context.Site.StartPath);
+        }
+
+        public void Email_Click(Object sender, EventArgs e)
+        {            
                 Log.Info(String.Format("Name {0} Company {1} JobTitle {2} Email {3}", Name.Value, Company.Value, JobTitle.Value, Email.Value), this);
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
@@ -36,7 +44,7 @@ namespace Website.Layout.SubLayout
                     CurrentUser.Editing.EndEdit();
                     Log.Info("attendee updated", this);
                 }
-                Response.Redirect(Sitecore.Context.Item["Next Page"]);            
+                Response.Redirect(Sitecore.Context.Item["Next Page"]);
         }
     }
 }

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F5678769-402D-4404-A930-826AF73D757C}
+id: {FF150B03-16CE-44A3-89EC-D58FCB4CD453}
 database: master
 path: /sitecore/templates/SBOS/Question/Question
-parent: {52A2D57F-236A-485E-B5AD-99C3C59BC9B9}
+parent: {786E0AA4-5E3B-433B-90EB-9A80CA9EA9F5}
 name: Question
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: 39578a4c-2c1b-467c-8a5c-30fc91a7ce1c
+revision: 72bdd389-c5cd-4c26-b7fb-1cb6f6475e57
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-39578a4c-2c1b-467c-8a5c-30fc91a7ce1c
+72bdd389-c5cd-4c26-b7fb-1cb6f6475e57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130902T162910:635137361503527208
+20130920T154201:635152885219645372
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

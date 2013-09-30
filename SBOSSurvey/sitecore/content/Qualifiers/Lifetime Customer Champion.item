@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 2203555c-c9ad-4242-a34b-a4dde8697927
+revision: 2178c6de-33e6-4984-bf99-65d4ddda0f55
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -106,6 +106,34 @@ content-length: 416
 
 As a Lifetime Customer Champion you should continue to broaden processes around analyzing Big Data sets to further optimize customer behavior predictions. You should also start to use cross channel attribution to optimize marketing initiatives across channels. Continue to optimize your organization’s Customer Experience by automating content optimization by personalizing based on an outcome-based decision engine.
 ----field----
+field: {B4E41EA6-9F53-407D-8796-6513005BCA98}
+name: ModelText
+key: modeltext
+content-length: 159
+
+Use intelligence and predictions to optimize cross channel customer experience, by anticipating the needs of the customer and initiating relevant 1:1 dialogue.
+----field----
+field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
+name: AlternateHeading
+key: alternateheading
+content-length: 18
+
+Lifetime customers
+----field----
+field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
+name: height
+key: height
+content-length: 2
+
+30
+----field----
+field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
+name: color
+key: color
+content-length: 7
+
+#008B48
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -118,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2203555c-c9ad-4242-a34b-a4dde8697927
+2178c6de-33e6-4984-bf99-65d4ddda0f55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130905T141043:635139870436836899
+20130924T142121:635156292810631170
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
