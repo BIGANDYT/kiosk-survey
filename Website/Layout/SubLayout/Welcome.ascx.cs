@@ -4,14 +4,12 @@ using System.Linq;
 using System.Web;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
+using Website.model;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Welcome : System.Web.UI.UserControl
+    public partial class Welcome : Survey
     {
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-
         protected void Buttonlink_Click(object sender, EventArgs e)
         {
             Sitecore.Data.Items.Item parent = master.GetItem("/sitecore/content/Attendees");

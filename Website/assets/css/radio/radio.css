@@ -11,10 +11,9 @@
 }
 
 label {
-    margin: 10px;
+    margin: 5px;
     width: 550px;
-    height: 100px;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2) inset, 0px 0px 12px rgba(255, 255, 255, 0.1);
+    height: 80px;    
     background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1);
 }
 /* hide input */
@@ -31,7 +30,6 @@ input.radio:empty {
     input.radio:empty ~ label {
         position: relative;
         float: left;
-        line-height: 2.5em;
         padding-left: 9em;
         cursor: pointer;
         -webkit-user-select: none;
@@ -45,7 +43,7 @@ input.radio:empty {
             position: absolute;
             line-height: 1em;
             display: block;
-            font-size: 7.5em;
+            font-size: 6.5em;
             top: 0;
             bottom: 0;
             left: 0;

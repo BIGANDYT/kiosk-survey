@@ -63,6 +63,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.EmailCampaign, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Sitecore.EmailCampaign.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
@@ -93,12 +97,13 @@
     <Content Include="assets\css\radio\maturitymodel.css" />
     <Content Include="assets\css\radio\radio.css" />
     <Content Include="assets\css\style.css" />
-    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\img\amazon-com-logo.png" />
     <Content Include="assets\img\arrows.png" />
     <Content Include="assets\img\glyphicons-halflings-white.png" />
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
     <Content Include="assets\img\maturitymodel.PNG" />
+    <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />
     <Content Include="assets\js\attendee\attendee.js" />
     <Content Include="assets\js\attendee\jquery.knob.js" />
@@ -116,8 +121,113 @@
     <Content Include="assets\vids\dock.mp4" />
     <Content Include="assets\vids\frontier.mp4" />
     <Content Include="assets\vids\river.mp4" />
-    <Content Include="assets\vids\Tiesto live at Creamfields 2013.mp4" />
+    <Content Include="assets\vids\video1-new.m4v" />
+    <Content Include="assets\vids\video1-new.mp4" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\AntiXSSLibrary.dll" />
+    <Content Include="bin\AntiXSSLibrary.xml" />
+    <Content Include="bin\ASR.dll" />
+    <Content Include="bin\ASR.Reports.dll" />
+    <Content Include="bin\ChilkatDotNet2.dll" />
+    <Content Include="bin\ComponentArt.Web.UI.dll" />
+    <Content Include="bin\CorePoint.DomainObjects.dll" />
+    <Content Include="bin\da\Website.resources.dll" />
+    <Content Include="bin\de\Website.resources.dll" />
+    <Content Include="bin\dotless.Core.dll" />
+    <Content Include="bin\HedgehogDevelopment.SitecoreProject.Service.dll" />
+    <Content Include="bin\HtmlAgilityPack.dll" />
+    <Content Include="bin\HtmlAgilityPack.xml" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\ITHit.WebDAV.Server.dll" />
+    <Content Include="bin\ja-JP\Website.resources.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Analyzers.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Core.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.FastVectorHighlighter.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Memory.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Queries.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Regex.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.SimpleFacetedSearch.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.Snowball.dll" />
+    <Content Include="bin\Lucene.Net.Contrib.SpellChecker.dll" />
+    <Content Include="bin\Lucene.Net.dll" />
+    <Content Include="bin\Lucene.Net.xml" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.xml" />
+    <Content Include="bin\MoreLinq.dll" />
+    <Content Include="bin\MoreLinq.pdb" />
+    <Content Include="bin\MoreLinq.xml" />
+    <Content Include="bin\Mvp.Xml.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\RadEditor.Net2.dll" />
+    <Content Include="bin\Sitecore.Analytics.dll" />
+    <Content Include="bin\Sitecore.Apps.Loader.dll" />
+    <Content Include="bin\Sitecore.Automation.MarketingAutomation.dll" />
+    <Content Include="bin\Sitecore.Buckets.Client.dll" />
+    <Content Include="bin\Sitecore.Buckets.dll" />
+    <Content Include="bin\Sitecore.Client.dll" />
+    <Content Include="bin\Sitecore.Client.Extensions.Compiler.dll" />
+    <Content Include="bin\Sitecore.Client.Extensions.Compiler.pdb" />
+    <Content Include="bin\Sitecore.Client.Extensions.dll" />
+    <Content Include="bin\Sitecore.Client.Extensions.pdb" />
+    <Content Include="bin\Sitecore.Client.XML" />
+    <Content Include="bin\Sitecore.ContentSearch.Client.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.Linq.Lucene.dll" />
+    <Content Include="bin\Sitecore.ContentSearch.LuceneProvider.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.App.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.Data.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.Domain.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.Presentation.dll" />
+    <Content Include="bin\Sitecore.EmailCampaign.Presentation.UI.dll" />
+    <Content Include="bin\Sitecore.Kernel.dll" />
+    <Content Include="bin\Sitecore.Kernel.xml" />
+    <Content Include="bin\Sitecore.Logging.dll" />
+    <Content Include="bin\Sitecore.Mvc.Analytics.dll" />
+    <Content Include="bin\Sitecore.Mvc.DeviceSimulator.dll" />
+    <Content Include="bin\Sitecore.Mvc.dll" />
+    <Content Include="bin\Sitecore.Mvc.ExperienceEditor.dll" />
+    <Content Include="bin\sitecore.nexus.dll" />
+    <Content Include="bin\Sitecore.NVelocity.dll" />
+    <Content Include="bin\Sitecore.Oracle.dll" />
+    <Content Include="bin\Sitecore.Publishing.WebDeploy.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Core.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.HedgehogDevelopment.Diagrammer.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Lucene.2313.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Lucene.2941.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Lucene.3030.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.MediaUploader.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Speak.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.TemplateAssigner.dll" />
+    <Content Include="bin\Sitecore.Rocks.Server.Validation.dll" />
+    <Content Include="bin\Sitecore.Security.AntiCsrf.dll" />
+    <Content Include="bin\Sitecore.SegmentBuilder.dll" />
+    <Content Include="bin\Sitecore.Shell.MarketingAutomation.dll" />
+    <Content Include="bin\Sitecore.Speak.dll" />
+    <Content Include="bin\Sitecore.Speak.pdb" />
+    <Content Include="bin\Sitecore.Speak.WebSite.dll" />
+    <Content Include="bin\Sitecore.Speak.WebSite.pdb" />
+    <Content Include="bin\Sitecore.Update.dll" />
+    <Content Include="bin\Sitecore.Zip.dll" />
+    <Content Include="bin\Stimulsoft.Base.dll" />
+    <Content Include="bin\Stimulsoft.Database.dll" />
+    <Content Include="bin\Stimulsoft.Report.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="bin\Telerik.Web.UI.xml" />
+    <Content Include="bin\WebFormsMvp.dll" />
+    <Content Include="bin\WebFormsMvp.Unity.dll" />
+    <Content Include="bin\WebFormsMvp.xml" />
+    <Content Include="bin\Website.dll" />
+    <Content Include="bin\Website.pdb" />
+    <Content Include="Default.aspx" />
     <Content Include="default.css" />
+    <Content Include="default.js" />
+    <Content Include="EmailCampaign.css" />
+    <Content Include="EmailCampaign.js" />
     <Content Include="Global.asax" />
     <Content Include="Layout\MainVideo.aspx" />
     <Content Include="layouts\Sample Datasource Sublayout.ascx" />
@@ -126,6 +236,7 @@
     <Content Include="layouts\Sample Sublayout.ascx" />
     <Content Include="layouts\system\VisitorIdentification.aspx" />
     <Content Include="layouts\xmlcontrol.aspx" />
+    <Content Include="Layout\SubLayout\EmailTest.ascx" />
     <Content Include="Layout\SubLayout\Finished.ascx" />
     <Content Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" />
     <Content Include="Layout\SubLayout\Summary.ascx" />
@@ -7244,6 +7355,10 @@
     <Compile Include="Layout\MainVideo.aspx.designer.cs">
       <DependentUpon>MainVideo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Layout\SubLayout\EmailTest.ascx.cs">
+      <DependentUpon>EmailTest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Layout\SubLayout\Finished.ascx.cs">
       <DependentUpon>Finished.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7299,6 +7414,9 @@
     </Compile>
     <Compile Include="Layout\SubLayout\Welcome.ascx.cs">
       <DependentUpon>Welcome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="model\Survey.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -7446,6 +7564,12 @@
     <Content Include="App_Config\XamlSharp.config" />
     <Content Include="assets\vids\river.ogv" />
     <Content Include="assets\vids\river.webm" />
+    <Content Include="assets\vids\video1-new.mp4.andybak" />
+    <Content Include="bin\ChilkatDotNet2.x32" />
+    <Content Include="bin\ChilkatDotNet2.x64" />
+    <Content Include="bin\ComponentArt.UIFramework.lic" />
+    <Content Include="default.htm.sitedown" />
+    <Content Include="Design.config" />
     <None Include="sitecore\shell\Schemas\Sitecore xhtml.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -7499,6 +7623,7 @@
     <EmbeddedResource Include="sitecore\shell\Controls\Rich Text Editor\Localization\RadEditor.Tools.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\bin\da\" />
     <Folder Include="layouts\debug\" />
     <Folder Include="sitecore\samples\Quick Action Bar\" />
     <Folder Include="sitecore\shell\Applications\Analytics\AuthoringFeedback\" />

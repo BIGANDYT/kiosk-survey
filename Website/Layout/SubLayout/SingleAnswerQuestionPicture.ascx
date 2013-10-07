@@ -17,8 +17,8 @@
                         <label for='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' style="background: <%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Fields["color"] %>; height: <%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Fields["height"] %>em;">
                             <div class="mcoltop"> <%# ((Sitecore.Data.Items.Item)(Container.DataItem))["AlternateHeading"] %></div>
                             <div class="mcolmiddle"> <%# ((Sitecore.Data.Items.Item)(Container.DataItem))["ModelText"] %></div>        
-                            <div class="mcolbottom">&#10004;</div>                                           
-                        </label>                        
+                            <div class="mcolbottom">&#10004;</div>
+                        </label>
                     </div>
                 </div>
             </ItemTemplate>
@@ -29,7 +29,7 @@
         <div class="span4">
             <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
-        <div class="span4">            
+        <div class="span4">
         </div>
         <div class="span4 text-right">
             <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />

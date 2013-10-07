@@ -10,7 +10,7 @@
 namespace Website.Layout {
     
     
-    public partial class Main {
+    public partial class MainVideo {
         
         /// <summary>
         /// ProgressRepeater control.

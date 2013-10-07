@@ -25,11 +25,11 @@
             // Store the object
             var $this = $(this);
             $this.css('display', 'table-cell');
-            $this.css('display', 'table-cell');
             $this.css('vertical-align', 'middle');
             $this.css('text-align', 'center');
             $this.css('width', '550px');
-            $this.css('height', '100px');
+            $this.css('height', '80px');
+            $this.css('line-height', '1em');
 
             // Resizer() resizes items based on the object width divided by the compressor * 10
             var resizer = function () {

@@ -43,7 +43,7 @@
             $("body").css("overflow", "hidden");
             var BV = new $.BigVideo();
             BV.init();
-            BV.show('/assets/vids/Tiesto live at Creamfields 2013.mp4', { ambient: true }, { doLoop: true });
+            BV.show('/assets/vids/video1-new.mp4', { ambient: true }, { doLoop: true });
         });
     </script>
 </body>

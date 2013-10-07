@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 00b8270e-53f5-4713-9706-d7cb888ac652
+revision: d2a0e2cc-b5e5-45fe-9020-87cf7dacc60c
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -111,7 +111,7 @@ name: height
 key: height
 content-length: 2
 
-26
+23
 ----field----
 field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
 name: color
@@ -132,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-00b8270e-53f5-4713-9706-d7cb888ac652
+d2a0e2cc-b5e5-45fe-9020-87cf7dacc60c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130924T150156:635156317168686826
+20131002T091619:635163021792939192
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

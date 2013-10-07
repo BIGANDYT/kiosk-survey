@@ -1,26 +1,15 @@
-﻿using Sitecore.Data;
-using Sitecore.Data.Items;
-using Sitecore.Diagnostics;
+﻿using Sitecore.Data.Items;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
+using Website.model;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Summary : System.Web.UI.UserControl
+    public partial class Summary : Survey
     {
-
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
-            CurrentUser = master.GetItem(currentUserId);
+            SetCurrentUser();
             Item qulaifier = GetQualifier();
             stopper.Value = qulaifier.Name;
             Heading.InnerText = qulaifier["Heading"];
@@ -92,9 +81,9 @@ namespace Website.Layout.SubLayout
             Response.Redirect(Sitecore.Context.Item["Next Page"]);
         }
 
-        protected void Restart_Click(object sender, CommandEventArgs e)
-        {            
-            Response.Redirect(Sitecore.Context.Site.StartPath);
+        public void Restart_Click(object sender, CommandEventArgs e)
+        {
+            Restart();
         }
     }
 }

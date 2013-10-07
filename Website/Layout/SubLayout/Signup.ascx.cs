@@ -6,28 +6,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Website.model;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Signup : System.Web.UI.UserControl
+    public partial class Signup : Survey
     {
-
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
-            CurrentUser = master.GetItem(currentUserId);
-        }
-
-        protected void Restart_Click(object sender, EventArgs e)
-        {
-            using (new Sitecore.SecurityModel.SecurityDisabler())
-            {
-                CurrentUser.Delete();
-            }
-            Response.Redirect(Sitecore.Context.Site.StartPath);
+            SetCurrentUser();
         }
 
         public void Email_Click(Object sender, EventArgs e)
@@ -45,6 +32,11 @@ namespace Website.Layout.SubLayout
                     Log.Info("attendee updated", this);
                 }
                 Response.Redirect(Sitecore.Context.Item["Next Page"]);
+        }
+
+        protected void Restart_Click(object sender, EventArgs e)
+        {
+            Restart();
         }
     }
 }

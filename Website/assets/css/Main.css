@@ -1,5 +1,6 @@
 ﻿body, html {
     height: 100%;
+    -ms-content-zooming: none;
 }
 
 #wrap {
@@ -49,12 +50,11 @@
 }
 
 .signup {
-    text-align: right;
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
     vertical-align: middle;
     font-family: 'Fjalla One',sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     color: #7F7F7F;
     line-height: 2.5;
@@ -80,7 +80,7 @@
     text-align: left;
     letter-spacing: 0;
     line-height: 1em;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -98,9 +98,6 @@
     font-weight: bold;
     background-color: #e8e8e8;
 }
-
-
-
 
 .emailbutton {
     text-align: center;
@@ -121,14 +118,58 @@
 
 
 h1.welcome {
-    font-size: 600%;
-    line-height: 120%;
+    font-size: 800%;
+    line-height: 110%;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
-    -webkit-text-fill-color: white;
-        -webkit-text-stroke: 5px black;
+    color: #000000;
+    
 }
+
+h2.welcome {
+    font-size: 281%;
+    line-height: 50%;
+    font-weight: bold;
+    color: #000000;   
+    text-transform:none;
+}
+
+h1.signup {
+    font-size: 400%;
+    line-height: 110%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h2.signup {
+    font-size: 150%;
+    line-height: 75%;
+    font-weight: bold;
+    color: #000000;   
+    text-transform:none;
+}
+
+h1.finish {
+    font-size: 300%;
+    line-height: 110%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h2.finish {
+    font-size: 200%;
+    line-height: 100%;
+    font-weight: 600;
+    color: #000000;   
+    text-transform:uppercase;
+}
+
+.bottom {
+    margin-top:100px;
+}
+
 
 .welcomebutton {
     padding-top: 75px;

@@ -26,7 +26,7 @@ content-length: 319
 ----version----
 language: en
 version: 1
-revision: 0e91cec1-9854-4482-8818-24fbb6c38825
+revision: d0f84611-4a3b-4fc4-acfb-073805e7d21d
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -46,9 +46,9 @@ Digital
 field: {35F4ECD2-59EB-4A02-A524-42FB75FECD5A}
 name: Question
 key: question
-content-length: 50
+content-length: 73
 
-Do you use Marketing Automation for specific flows
+Do you use marketing automation for specific customer journeys/workflows?
 ----field----
 field: {97514D2F-69DA-4E67-A3C6-39EF88DA75C2}
 name: Order
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0e91cec1-9854-4482-8818-24fbb6c38825
+d0f84611-4a3b-4fc4-acfb-073805e7d21d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130924T103546:635156157468568633
+20130930T100101:635161320617930874
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

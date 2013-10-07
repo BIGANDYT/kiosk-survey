@@ -20,7 +20,6 @@
 
 </head>
 <body>
-
     <div id="wrap">
         <div class="container-fluid wrapmain">           
             <div class="row-fluid">
@@ -63,11 +62,23 @@
             </div>
             <div class="span6">
                 <div class="ownit">Own the Experience</div>
+
             </div>
         </div>
     </div>    
     <script>
-        jQuery(".responsive_text").fitText(2)
+        $(".responsive_text").fitText(2);
+
+        var timer;
+        $(document).ready(
+            timer = setTimeout("location.href = '/';", 120000)
+        );
+
+        $('input').click(function () {
+            window.clearTimeout(timer)
+            timer = setTimeout("location.href = '/';", 120000)
+        });
+
     </script>
 </body>
 </html>

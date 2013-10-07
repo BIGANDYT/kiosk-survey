@@ -55,6 +55,7 @@ namespace Website.Layout
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             activated = false;
             ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
             ProgressRepeater.DataBind();

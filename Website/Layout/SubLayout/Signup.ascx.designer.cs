@@ -13,6 +13,24 @@ namespace Website.Layout.SubLayout {
     public partial class Signup {
         
         /// <summary>
+        /// Title control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer Title;
+        
+        /// <summary>
+        /// Subtitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer Subtitle;
+        
+        /// <summary>
         /// Name control.
         /// </summary>
         /// <remarks>

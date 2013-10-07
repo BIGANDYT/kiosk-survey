@@ -6,9 +6,16 @@ path: /sitecore/content/Home/Finished
 parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
 name: Finished
 master: {00000000-0000-0000-0000-000000000000}
-template: {1702BA38-6FC2-48F4-83B4-74C7A0E8BE9D}
-templatekey: Results
+template: {FB11E32C-2EDB-4F42-AB63-597DDD736A8D}
+templatekey: Finish
 
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 96
+
+<tracking><event id="{E4002111-B4B3-48EA-A8D0-323FE4241813}" name="EmailRequested" /></tracking>
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,7 +33,7 @@ content-length: 439
 ----version----
 language: en
 version: 1
-revision: 826e18b7-d526-4384-80fc-773cd6225dbb
+revision: 31399857-d5fe-4540-b3d8-fb452354eeb4
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -36,6 +43,14 @@ content-length: 22
 
 /sitecore/content/Home
 ----field----
+field: {866568BE-77E5-4169-B2C2-10DF254E9B78}
+name: Title
+key: title
+content-length: 73
+
+Thank you for taking the
+Sitecore Customer experience maturity assesment
+----field----
 field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
 name: Stage
 key: stage
@@ -43,26 +58,34 @@ content-length: 6
 
 Finish
 ----field----
+field: {CF66FA3C-583B-4430-9C92-63D13BA5437E}
+name: Subtitle
+key: subtitle
+content-length: 117
+
+Your customised report has been emailed to you!
+You have also been entered into a draw to win a £250 Amazon voucher!
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20130902T102109
+20130902T102100
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-826e18b7-d526-4384-80fc-773cd6225dbb
+31399857-d5fe-4540-b3d8-fb452354eeb4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130926T082622:635157807825203364
+20131004T154958:635164985983522770
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
