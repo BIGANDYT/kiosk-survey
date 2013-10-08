@@ -31,6 +31,7 @@ namespace Website.Layout.SubLayout
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
+                    // should really check here to see if it exists and update if it does
                     Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);                    
                     Item answer = master.GetItem(radioValue);
                     answer.CloneTo(newQuestion, answer.Name, false);                   

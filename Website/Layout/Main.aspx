@@ -18,8 +18,17 @@
 
     <script src="/assets/js/jquery.fittext.js"></script>
 
+    
+    <!-- jQuery & jQuery UI + theme (required) -->
+	<link href="http://code.jquery.com/ui/1.9.0/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.min.js"></script>
+
+	<!-- keyboard widget css & script (required) -->
+	<link href="/assets/css/keyboard.css" rel="stylesheet">
+	<script src="/assets/js/jquery.keyboard.js"></script>
+
 </head>
-<body>
+<body oncontextmenu="return false;">
     <div id="wrap">
         <div class="container-fluid wrapmain">           
             <div class="row-fluid">
@@ -68,16 +77,6 @@
     </div>    
     <script>
         $(".responsive_text").fitText(2);
-
-        var timer;
-        $(document).ready(
-            timer = setTimeout("location.href = '/';", 120000)
-        );
-
-        $('input').click(function () {
-            window.clearTimeout(timer)
-            timer = setTimeout("location.href = '/';", 120000)
-        });
 
     </script>
 </body>

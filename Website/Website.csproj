@@ -93,6 +93,7 @@
     <None Include="assets\css\bootstrap.min.css.bak" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\fancyInput.css" />
+    <Content Include="assets\css\keyboard.css" />
     <Content Include="assets\css\Main.css" />
     <Content Include="assets\css\radio\maturitymodel.css" />
     <Content Include="assets\css\radio\radio.css" />
@@ -114,6 +115,7 @@
     <Content Include="assets\js\jquery-ui-1.8.22.custom.min.js" />
     <Content Include="assets\js\jquery.fittext.js" />
     <Content Include="assets\js\jquery.imagesloaded.min.js" />
+    <Content Include="assets\js\jquery.keyboard.js" />
     <Content Include="assets\js\jquery.scrollTo.js" />
     <Content Include="assets\js\modernizr-2.5.3.min.js" />
     <Content Include="assets\img\search.gif" />

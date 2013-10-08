@@ -25,41 +25,43 @@ namespace Website.Layout.SubLayout
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            SetCurrentUser();
-            var currentUserMaturity = CurrentUser["Qualifier"].ToString();
-            var currentUserEmailAdd = CurrentUser["Email"].ToString();
-            var currentUserName = CurrentUser["Name"].ToString();
-
-            switch (currentUserMaturity)
+            if (!IsPostBack)
             {
-                case "Initiator": //Initiate
-                    SendEmail(Email1Init, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Promoter": //Radiate
-                    SendEmail(Email2Radi, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Aligner": //Align
-                    SendEmail(Email3Alig, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Optimizer": //Optimise
-                    SendEmail(Email4Opti, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Nurturer": //Nurture
-                    SendEmail(Email5Nurt, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Engager": //Engage
-                    SendEmail(Email6Enga, currentUserEmailAdd, currentUserName);
-                    break;
-                case "Lifetime Customer Champion": //Lifetime
-                    SendEmail(Email7Life, currentUserEmailAdd, currentUserName);
-                    break;
-                default:
-                    break;
+                SetCurrentUser();
+                var currentUserMaturity = CurrentUser["Qualifier"].ToString();
+                var currentUserEmailAdd = CurrentUser["Email"].ToString();
+                var currentUserName = CurrentUser["Name"].ToString();
+
+                switch (currentUserMaturity)
+                {
+                    case "Initiator": //Initiate
+                        SendEmail(Email1Init, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Promoter": //Radiate
+                        SendEmail(Email2Radi, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Aligner": //Align
+                        SendEmail(Email3Alig, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Optimizer": //Optimise
+                        SendEmail(Email4Opti, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Nurturer": //Nurture
+                        SendEmail(Email5Nurt, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Engager": //Engage
+                        SendEmail(Email6Enga, currentUserEmailAdd, currentUserName);
+                        break;
+                    case "Lifetime Customer Champion": //Lifetime
+                        SendEmail(Email7Life, currentUserEmailAdd, currentUserName);
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
-        private void SendEmail(Item emailId, string EmailAddress, string emailName) 
+        private void SendEmail(Item emailId, string EmailAddress, string emailName)
         {
             // Define the manager root LIVE: {8021493A-C5FE-4582-BE97-3F137295C432}
             var managerRootItem = Sitecore.Context.Database.GetItem("{8021493A-C5FE-4582-BE97-3F137295C432}");

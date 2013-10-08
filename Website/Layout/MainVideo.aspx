@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/bigvideo.css">
     <link rel="stylesheet" href="/assets/css/Main.css" />
 </head>
-<body>
+<body oncontextmenu="return false;">
     <div class="main">
         <div>
             <div class="container-fluid">

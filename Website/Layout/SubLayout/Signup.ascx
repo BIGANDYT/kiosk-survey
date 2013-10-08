@@ -13,14 +13,14 @@
                 <img src="/assets/img/amazon-com-logo.png" />
         </div>
     </div>
-    <div class="span9">
+    <div class="span9">      
         <div class="row-fluid">
             <div class="span2 text-right signup">
                     Name
             </div>
             <div class="span6">
                 <div class="signupinput">
-                    <input class="input-xxlarge" type="text" runat="server" id="Name" autocomplete="off" required>
+                    <input class="input-xxlarge" type="text" id="Name" autocomplete="off" runat="server" ClientIDMode="Static" required>
                 </div>
             </div>
             <div class="span2">
