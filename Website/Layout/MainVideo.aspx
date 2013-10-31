@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.MainVideo" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="MainVideo.aspx.cs" Inherits="Website.Layout.MainVideo" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 <!doctype html>
@@ -32,7 +32,7 @@
     <script>window.jQuery || document.write('<script src="/assets/js/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="/assets/js/jquery-ui-1.8.22.custom.min.js"></script>
     <script src="/assets/js/jquery.imagesloaded.min.js"></script>
-    <script src="http://vjs.zencdn.net/4.0/video.js"></script>
+    <script src="/assets/js/video.js"></script>
 
     <!-- BigVideo -->
     <script src="/assets/js/bigvideo.js"></script>

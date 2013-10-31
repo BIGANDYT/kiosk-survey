@@ -57,8 +57,8 @@ namespace Website.Layout
         {
 
             activated = false;
-            //ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
-           // ProgressRepeater.DataBind();
+            ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
+            ProgressRepeater.DataBind();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.Main" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.Main" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 
@@ -20,8 +20,8 @@
 
     
     <!-- jQuery & jQuery UI + theme (required) -->
-	<link href="http://code.jquery.com/ui/1.9.0/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
-	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.min.js"></script>
+	<link href="/assets/css/jquery-ui.css" rel="stylesheet">
+	<script src="/assets/js/jquery-ui.min.js"></script>
 
 	<!-- keyboard widget css & script (required) -->
 	<link href="/assets/css/keyboard.css" rel="stylesheet">

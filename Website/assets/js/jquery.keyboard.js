@@ -87,7 +87,7 @@ CSS:
 /*jshint browser:true, jquery:true, unused:false */
 var timer;
 $(document).ready(
-    timer = setTimeout("location.href = '/';", 60000)
+    timer = setTimeout("location.href = '/';", 120000)
 );
 
 ;(function($){

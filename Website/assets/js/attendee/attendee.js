@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     // if the system is windows 7 then show a keyboard otherwise dont
-    if (!(navigator.userAgent.indexOf("NT 6.2") != -1)) {
+    if (navigator.userAgent.indexOf("NT 6.1") != -1) {
         $('input[type=text], input[type=email]').keyboard({
 
             autoAccept: true,
@@ -24,25 +24,25 @@
 
                 'default': [
                     'q w e r t y u i o p {bksp}',
-                    'a s d f g h j k l {enter}',
+                    'a s d f g h j k l',
                     '{s} z x c v b n m @ . {s}',
                     '{meta1} {space} _ - {accept}'
                 ],
                 'shift': [
                     'Q W E R T Y U I O P {bksp}',
-                    'A S D F G H J K L {enter}',
+                    'A S D F G H J K L',
                     '{s} Z X C V B N M @ . {s}',
                     '{meta1} {space} _ - {accept}'
                 ],
                 'meta1': [
                     '1 2 3 4 5 6 7 8 9 0 {bksp}',
-                    '` | { } % ^ * / \' {enter}',
+                    '` | { } % ^ * / \'',
                     '{meta2} $ & ~ # = + . {meta2}',
                     '{default} {space} ! ? {accept}'
                 ],
                 'meta2': [
                     '[ ] { } \u2039 \u203a ^ * " , {bksp}',
-                    '\\ | / &lt; &gt; $ \u00a3 \u00a5 \u2022 {enter}',
+                    '\\ | / &lt; &gt; $ \u00a3 \u00a5 \u2022',
                     '{meta1} \u20ac & ~ # = + . {meta1}',
                     '{default} {space} ! ? {accept}'
                 ]
@@ -50,6 +50,8 @@
             }
 
         });
+		
+    }
         document.getElementById('maintext').style.display = 'none';
         document.getElementById('qualifiertext').value = 'Initiator';
         $('.dial').val(0).trigger('change').delay(2000);
@@ -67,7 +69,6 @@
             'skin': 'tron',
             'displayInput': false
         })
-    }
 
     var tmr = self.setInterval(function () { myDelay() }, 30);
     var m = 0;

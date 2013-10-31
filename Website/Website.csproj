@@ -93,6 +93,7 @@
     <None Include="assets\css\bootstrap.min.css.bak" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\fancyInput.css" />
+    <Content Include="assets\css\jquery-ui.css" />
     <Content Include="assets\css\keyboard.css" />
     <Content Include="assets\css\Main.css" />
     <Content Include="assets\css\radio\maturitymodel.css" />
@@ -113,6 +114,7 @@
     <Content Include="assets\js\fancyInput.js" />
     <Content Include="assets\js\jquery-1.9.1.min.js" />
     <Content Include="assets\js\jquery-ui-1.8.22.custom.min.js" />
+    <Content Include="assets\js\jquery-ui.min.js" />
     <Content Include="assets\js\jquery.fittext.js" />
     <Content Include="assets\js\jquery.imagesloaded.min.js" />
     <Content Include="assets\js\jquery.keyboard.js" />
@@ -120,6 +122,7 @@
     <Content Include="assets\js\modernizr-2.5.3.min.js" />
     <Content Include="assets\img\search.gif" />
     <Content Include="assets\js\radio\radio.js" />
+    <Content Include="assets\js\video.js" />
     <Content Include="assets\vids\dock.mp4" />
     <Content Include="assets\vids\frontier.mp4" />
     <Content Include="assets\vids\river.mp4" />
@@ -7350,6 +7353,9 @@
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layout\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Layout\MainVideo.aspx.cs">
       <DependentUpon>MainVideo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7389,9 +7395,6 @@
     <Compile Include="Layout\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\Main.aspx.designer.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs">
       <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>

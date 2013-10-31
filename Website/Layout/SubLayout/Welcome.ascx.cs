@@ -12,15 +12,7 @@ namespace Website.Layout.SubLayout
     {
         protected void Buttonlink_Click(object sender, EventArgs e)
         {
-            Sitecore.Data.Items.Item parent = master.GetItem("/sitecore/content/Attendees");
-            TemplateItem attendeeTemplate = Sitecore.Configuration.Factory.GetDatabase("master").Templates["{AD71F430-184A-4DDE-B84C-E28FA6FCB5D0}"];
-            using (new Sitecore.SecurityModel.SecurityDisabler())
-            {
-                Log.Info("ANDYT" + "CREATING ITEM", this);
-                Item newAttendee = parent.Add(Guid.NewGuid().ToString(), attendeeTemplate);               
-                Sitecore.Context.ClientData.SetValue("CurrentUser", newAttendee.ID.ToString());
-                Log.Info("ANDYT" + "ITEM CREATED", this);
-            }  
+            CreateUser();
             Response.Redirect(Sitecore.Context.Item["Next Page"]);
         }
     }
