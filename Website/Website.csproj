@@ -87,17 +87,15 @@
   <ItemGroup>
     <Content Include="assets\css\bigvideo.css" />
     <Content Include="assets\css\bigvideo.png" />
-    <Content Include="assets\css\bootstrap-responsive.css" />
-    <Content Include="assets\css\bootstrap-responsive.min.css" />
-    <Content Include="assets\css\bootstrap.css" />
-    <None Include="assets\css\bootstrap.min.css.bak" />
-    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap\bootstrap.min.css" />
     <Content Include="assets\css\fancyInput.css" />
     <Content Include="assets\css\jquery-ui.css" />
     <Content Include="assets\css\keyboard.css" />
     <Content Include="assets\css\Main.css" />
     <Content Include="assets\css\radio\maturitymodel.css" />
     <Content Include="assets\css\radio\radio.css" />
+    <Content Include="assets\css\responsive.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\amazon-com-logo.png" />
     <Content Include="assets\img\arrows.png" />
@@ -105,12 +103,13 @@
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
     <Content Include="assets\img\maturitymodel.PNG" />
+    <Content Include="assets\img\rowfit.png" />
     <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />
     <Content Include="assets\js\attendee\attendee.js" />
     <Content Include="assets\js\attendee\jquery.knob.js" />
     <Content Include="assets\js\bigvideo.js" />
-    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\bootstrap\bootstrap.min.js" />
     <Content Include="assets\js\fancyInput.js" />
     <Content Include="assets\js\jquery-1.9.1.min.js" />
     <Content Include="assets\js\jquery-ui-1.8.22.custom.min.js" />
