@@ -1,37 +1,85 @@
-﻿@media screen and (max-width: 400px) {
+﻿@media screen and (max-width: 767px) {
     h1 {
         font-size: 15px;
     }
 
     h2 {
+        font-size: 15px;
+    }
+
+    h3 {
         font-size: 10px;
     }
 
-    .btn-xlg {
+    h4 {
+        font-size: 10px;
+    }
+
+    .btn-xxlg {
         font-size: 15px;
     }
-}
 
-@media screen and (min-width:401px) and (max-width: 1200px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
+    .btn-xlg {
         font-size: 30px;
     }
 
-    .btn-xlg {
-        font-size: 50px;
+    .labeltext {
+        text-align: left;
     }
 }
 
-@media screen and (min-width:1201px) {
+@media screen and (min-width:768px) and (max-width: 991px) {
     h1 {
-        font-size: 600%;
+        font-size: 400%;
     }
 
     h2 {
         font-size: 200%;
     }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    h4 {
+        font-size: 100%;
+    }
+
+    .btn-xxlg {
+        font-size: 50px;
+    }
+
+    .btn-xlg {
+        font-size: 35px;
+    }
+
+    .labeltext {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width:992px) {
+    h1 {
+        font-size: 600%;
+    }
+
+    h2 {
+        font-size: 300%;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    h4 {
+        font-size: 120%;
+    }
+
+    .labeltext {
+        text-align: right;
+    }
+}
+
+body {
+    background-color:#E8E8E8;
 }
