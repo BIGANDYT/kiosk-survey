@@ -25,6 +25,7 @@
 
     .labeltext {
         text-align: left;
+        font-size: large;
     }
 }
 
@@ -55,6 +56,7 @@
 
     .labeltext {
         text-align: right;
+        font-size: x-large;
     }
 }
 
@@ -77,11 +79,13 @@
 
     .labeltext {
         text-align: right;
+        font-size: xx-large;
     }
 }
 
 body {
     background-color: #E8E8E8;
 }
+
 surveypanel {
 }

@@ -19,7 +19,7 @@
         <div class="btn-group-lg" data-toggle="buttons-radio">
             <% foreach (var answer in items)
                { %>
-            <button type="button" id="<%= answer.ID %>" class="btn btn-default btn-lg btn-block"><%= answer["answer"] %></button>
+            <button type="button" id="<%= answer.ID %>" class="btn btn-default btn-lg btn-block"><h4><%= answer["answer"] %></h4></button>
             <%} %>
         </div>
     </div>

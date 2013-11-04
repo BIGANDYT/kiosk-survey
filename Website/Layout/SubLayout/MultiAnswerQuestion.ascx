@@ -16,13 +16,25 @@
 </div>
 <form id="form1" runat="server">
     <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <div class="btn-group-lg" data-toggle="buttons-radio">
-                <% foreach (var answer in items)
-                   { %>
-                <button type="button" id="<%= answer.ID %>" class="btn btn-default btn-lg btn-block"><%= answer["answer"] %></button>
-                <%} %>
+        <div class="btn-group-lg" data-toggle="buttons-radio">
+            <% for (var i = 0; i < items.Length; i++)
+               { %>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+                <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block">
+                    <h4><%= items[i]["answer"] %></h4>
+                </button>
             </div>
+            <%if (i + 1 < items.Length)
+              {%>
+            <div class="col-xs-12 col-sm-4">
+                <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block">
+                    <h4><%= items[i+1]["answer"] %></h4>
+                </button>
+            </div>
+
+            <%i++;
+               }
+               } %>
         </div>
     </div>
     <div class="row">
@@ -38,7 +50,7 @@
 <div>
 </div>
 <script>
-    $(".btn-group-lg button").click(function () {        
+    $(".btn-group-lg button").click(function () {
         $(this).toggleClass("btn-danger");
     });
     function getChecked() {
