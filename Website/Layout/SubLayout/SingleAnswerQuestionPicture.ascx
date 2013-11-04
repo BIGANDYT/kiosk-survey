@@ -9,22 +9,27 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-2">
         <h3>
             <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
         </h3>
     </div>
 </div>
- <div class="btn-group-lg" data-toggle="buttons-radio">
-<% foreach (var answer in items)
-   { %>
-<div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <button style="min-height: 4em; color: <%= answer["color"] %>;" type="button" id="<%= answer.ID %>" class="btn-sm btn-default btn-block"><strong><%= answer["AlternateHeading"] %></strong> - <%= answer["ModelText"] %></button>
+<div class="btn-group-lg" data-toggle="buttons-radio">
+    <% foreach (var answer in items)
+       { %>
+    <div class="row">
+        <div class="col-xs-12 col-sm-<%= answer["height"] %> col-sm-offset-2">
+            <div id="<%= answer.ID %>" style="color: <%= answer["color"] %>; margin-bottom: 0em; " class="panel panel-default">
+                <div style="color:white;background-color: <%= answer["color"] %>;" class="panel-heading"><%= answer["AlternateHeading"] %></div>
+                <div class="panel-body">
+                    <%= answer["ModelText"] %>
+                </div>
+            </div>
+        </div>
     </div>
+    <%} %>
 </div>
-<%} %>
-     </div>
 <form id="form1" runat="server">
     <div class="row">
         <div class="col-xs-6 col-sm-3 col-sm-offset-2">
@@ -39,9 +44,15 @@
 <div>
 </div>
 <script>
-    $(".btn-group-lg button").click(function () {
+    $(".panel").click(function () {
         $("input[name=buttonvalue]").val(this.id);
-        $("button").removeClass("btn-danger");
-        $(this).addClass("btn-danger");
+        $(".panel-body").css("background-color", "white");
+        $(".panel-body").css("color", "inherit");
+        $(".panel-heading").css("color", "white");
+        $(".panel-heading").css("font-weight", "normal");
+        $(this).find(".panel-heading").css("color", "black");
+        $(this).find(".panel-heading").css("font-weight", "bolder");
+        $(this).find(".panel-body").css("background-color", "red");
+        $(this).find(".panel-body").css("color", "white");
     });
 </script>
