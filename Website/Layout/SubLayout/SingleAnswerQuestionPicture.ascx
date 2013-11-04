@@ -5,7 +5,7 @@
         <img class="img-responsive" src="/assets/img/arrows.png" />
     </div>
     <div class="col-xs-4 col-xs-offset-2">
-        <img class="img-responsive" src="/assets/img/progress.png" />
+        <img class="img-responsive" src="/assets/img/progress_b.png" />
     </div>
 </div>
 <div class="row">
