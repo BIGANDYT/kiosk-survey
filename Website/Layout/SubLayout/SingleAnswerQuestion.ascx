@@ -1,30 +1,47 @@
-﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="SingleAnswerQuestion.ascx.cs" Inherits="Website.Layout.SubLayout.SingleAnswerQuestion" %>
-<div class="bs-docs-grid, wrapper">
-    <div class="row-fluid show-grid">
-        <div class="span12 question">
-            <h1><sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" /></h1>
-        </div>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="QualifierQuestion.ascx.cs" Inherits="Website.Layout.SubLayout.QualifierQuestion" %>
+<div class="row">
+    <div class="col-xs-6">
+        <img class="img-responsive" src="/assets/img/arrows.png" />
     </div>
-    <div class="row-fluid show-grid" style="text-align:center">
-        <asp:DataList ID="AnswerRepeater" RepeatColumns="2" RepeatDirection="Horizontal" runat="server">
-            <ItemTemplate>
-                <div class="span1">
-                    <input type="radio" name='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Parent.ID %>' id='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' value='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' class="radio" />
-                    <label for='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>'>
-                        <div class="responsive_text" ><%# ((Sitecore.Data.Items.Item)(Container.DataItem))["Answer"] %></div>
-                    </label>
-                </div>
-            </ItemTemplate>
-        </asp:DataList>
+    <div class="col-xs-4 col-xs-offset-2">
+        <img class="img-responsive" src="/assets/img/progress.png" />
     </div>
-    <div class="row-fluid show-grid">
-       <div class="span4">
-            <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
-        </div>
-        <div class="span4">
-        </div>
-        <div class="span4">
-            <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h3>
+            <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="btn-group-lg" data-toggle="buttons-radio">
+            <% foreach (var answer in items)
+               { %>
+            <button type="button" id="<%= answer.ID %>" class="btn btn-default btn-lg btn-block"><%= answer["answer"] %></button>
+            <%} %>
         </div>
     </div>
 </div>
+<form id="form1" runat="server">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 col-sm-offset-2">
+            <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
+        </div>
+        <div class="col-xs-6 col-sm-5 col-md-5" style="text-align: right">
+            <asp:Button class="btn-xlg btn-success" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
+        </div>
+    </div>
+    <input type="hidden" name="buttonvalue" id="buttonvalue" />
+</form>
+<div>
+    
+</div>
+<script>
+    $(".btn-group-lg button").click(function () {
+        $("input[name=buttonvalue]").val(this.id);
+        $("button").removeClass("btn-danger");
+        $(this).addClass("btn-danger");
+    });
+</script>

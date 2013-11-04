@@ -13,13 +13,13 @@ namespace Website.Layout.SubLayout {
     public partial class Summary {
         
         /// <summary>
-        /// stopper control.
+        /// FieldRenderer1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden stopper;
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer FieldRenderer1;
         
         /// <summary>
         /// Heading control.
@@ -56,6 +56,15 @@ namespace Website.Layout.SubLayout {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl SubDescription;
+        
+        /// <summary>
+        /// form2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
         /// Restart control.

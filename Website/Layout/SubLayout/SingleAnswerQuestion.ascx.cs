@@ -20,21 +20,24 @@ namespace Website.Layout.SubLayout
         protected void Page_Load(object sender, EventArgs e)
         {
             SetCurrentUser();
-            AnswerRepeater.DataSource = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
-            AnswerRepeater.DataBind();
+            if (!IsPostBack)
+            {
+                AnswerRepeater.DataSource = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
+                AnswerRepeater.DataBind();
+            }
         }
 
         public void Next_Click(Object sender, EventArgs e)
         {
-            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
+            String radioValue = Request.Form["buttonvalue"];
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);                    
+                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
                     Item answer = master.GetItem(radioValue);
-                    answer.CloneTo(newQuestion, answer.Name, false);                   
-                    Response.Redirect(Sitecore.Context.Item["Next Page"]);                  
+                    answer.CloneTo(newQuestion, answer.Name, false);
+                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
                 }
             }
         }

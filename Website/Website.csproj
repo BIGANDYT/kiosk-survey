@@ -103,6 +103,7 @@
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
     <Content Include="assets\img\maturitymodel.PNG" />
+    <Content Include="assets\img\progress.PNG" />
     <Content Include="assets\img\rowfit.png" />
     <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />

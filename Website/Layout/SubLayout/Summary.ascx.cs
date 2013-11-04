@@ -10,16 +10,16 @@ namespace Website.Layout.SubLayout
         protected void Page_Load(object sender, EventArgs e)
         {
             SetCurrentUser();
-            Item qulaifier = GetQualifier();
-            stopper.Value = qulaifier.Name;
-            Heading.InnerText = qulaifier["Heading"];
-            Description.InnerText = qulaifier["Description"];
-            SubHeading.InnerText = qulaifier["SubHeading"];
-            SubDescription.InnerText = qulaifier["SubDescription"];
+            Item qualifier = GetQualifier();
+            //stopper.Value = qulaifier.Name;
+            Heading.InnerHtml = "<h2>" + qualifier["Heading"] + "</h2>";
+            Description.InnerHtml = "<h4>" + qualifier["Description"] + "</h4>";
+            SubHeading.InnerHtml = "<h2>" + qualifier["SubHeading"] + "</h2>";
+            SubDescription.InnerHtml = "<h4>" + qualifier["SubDescription"] + "</h4>";
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 CurrentUser.Editing.BeginEdit();
-                CurrentUser["Qualifier"] = qulaifier.Name;
+                CurrentUser["Qualifier"] = qualifier.Name;
                 CurrentUser.Editing.EndEdit();
             }
         }

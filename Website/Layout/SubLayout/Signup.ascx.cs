@@ -14,7 +14,7 @@ namespace Website.Layout.SubLayout
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetCurrentUser();
+                SetCurrentUser();
         }
 
         public void Email_Click(Object sender, EventArgs e)

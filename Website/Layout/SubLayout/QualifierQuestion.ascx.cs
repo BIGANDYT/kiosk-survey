@@ -17,11 +17,14 @@ namespace Website.Layout.SubLayout
 {
     public partial class QualifierQuestion : Survey
     {
+        public Item[] items = null;
         protected void Page_Load(object sender, EventArgs e)
-        {           
+        {
             SetCurrentUser();
-            AnswerRepeater.DataSource = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
-            AnswerRepeater.DataBind();
+            if (!IsPostBack)
+            {
+                items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
+            }
         }
 
         protected void Next_Click(object sender, CommandEventArgs e)
@@ -29,7 +32,7 @@ namespace Website.Layout.SubLayout
             Log.Info("ANDYT ANSWER USERR" + CurrentUser.Name, this);
             Log.Info("ANDYT ANSWER COMMANDARG" + (String)e.CommandArgument, this);
 
-            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
+            String radioValue = Request.Form["buttonvalue"];
 
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
