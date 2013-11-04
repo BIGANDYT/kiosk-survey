@@ -41,7 +41,7 @@ namespace Website.Layout.SubLayout
                         Item answerItem = master.GetItem(answer);
                         answerItem.CloneTo(newQuestion, answerItem.Name, false);
                     }
-                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                    NextPage();
                 }
             }
         }

@@ -5,6 +5,7 @@ using System.Web;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Website.model;
+using Sitecore.Links;
 
 namespace Website.Layout.SubLayout
 {
@@ -13,7 +14,7 @@ namespace Website.Layout.SubLayout
         protected void Buttonlink_Click(object sender, EventArgs e)
         {
             CreateUser();
-            Response.Redirect(Sitecore.Context.Item["Next Page"]);
+            NextPage();
         }
     }
 }

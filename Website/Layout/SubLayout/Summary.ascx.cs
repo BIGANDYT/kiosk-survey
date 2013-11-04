@@ -78,7 +78,7 @@ namespace Website.Layout.SubLayout
 
         public void Next_Click(Object sender, EventArgs e)
         {
-            Response.Redirect(Sitecore.Context.Item["Next Page"]);
+            NextPage();
         }
 
         public void Restart_Click(object sender, CommandEventArgs e)

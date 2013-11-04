@@ -1,5 +1,6 @@
 ﻿using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
+using Sitecore.Links;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,11 @@ namespace Website.model
                 Sitecore.Context.ClientData.SetValue("CurrentUser", newAttendee.ID.ToString());
                 Log.Info("ANDYT" + "USER CREATED", this);
             }
+        }
+
+        public void NextPage() {
+            Sitecore.Data.Items.Item item = master.GetItem(Sitecore.Context.Item["Next Page"]);
+            Response.Redirect(LinkManager.GetItemUrl(item));
         }
     }
 }

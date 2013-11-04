@@ -71,7 +71,7 @@ namespace Website.Layout.SubLayout
                 Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
                 if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
                 {
-                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                    NextPage();
                 }
             }
         }

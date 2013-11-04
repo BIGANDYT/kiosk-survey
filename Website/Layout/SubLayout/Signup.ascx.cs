@@ -31,7 +31,7 @@ namespace Website.Layout.SubLayout
                     CurrentUser.Editing.EndEdit();
                     Log.Info("attendee updated", this);
                 }
-                Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                NextPage();
         }
 
         protected void Restart_Click(object sender, EventArgs e)

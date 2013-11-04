@@ -37,7 +37,7 @@ namespace Website.Layout.SubLayout
                     Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
                     Item answer = master.GetItem(radioValue);
                     answer.CloneTo(newQuestion, answer.Name, false);
-                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                    NextPage();
                 }
             }
         }
