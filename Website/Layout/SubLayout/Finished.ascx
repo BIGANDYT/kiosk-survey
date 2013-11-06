@@ -27,7 +27,7 @@
     </div>
     <div class="col-xs-12 col-sm-6">
         <form id="form1" runat="server">
-            <asp:Button class="btn-lg btn-success" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
+            <asp:Button class="btn-xlg btn-success" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
         </form>
     </div>
 </div>

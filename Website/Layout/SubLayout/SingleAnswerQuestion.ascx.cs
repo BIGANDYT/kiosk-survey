@@ -17,19 +17,21 @@ namespace Website.Layout.SubLayout
 {
     public partial class SingleAnswerQuestion : Survey
     {
+        public Item[] items = null;
+        String radioValue;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             SetCurrentUser();
-            if (!IsPostBack)
+            if (!IsPostBack || String.IsNullOrWhiteSpace(radioValue))
             {
-                AnswerRepeater.DataSource = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
-                AnswerRepeater.DataBind();
+                items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
             }
         }
 
         public void Next_Click(Object sender, EventArgs e)
         {
-            String radioValue = Request.Form["buttonvalue"];
+            radioValue = Request.Form["buttonvalue"];
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())

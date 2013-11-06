@@ -18,10 +18,11 @@ namespace Website.Layout.SubLayout
     public partial class MultiAnswerQuestion : Survey
     {
         public Item[] items = null;
+        String radioValue;
         protected void Page_Load(object sender, EventArgs e)
         {
             SetCurrentUser();
-            if (!IsPostBack)
+            if (!IsPostBack || String.IsNullOrWhiteSpace(radioValue))
             {
                 items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
             }
@@ -29,7 +30,7 @@ namespace Website.Layout.SubLayout
         
         public void Next_Click(Object sender, EventArgs e)
         {
-            String radioValue = Request.Form["buttonvalue"];
+            radioValue = Request.Form["buttonvalue"];
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())

@@ -18,10 +18,12 @@ namespace Website.Layout.SubLayout
     public partial class QualifierQuestion : Survey
     {
         public Item[] items = null;
+        String radioValue;
         protected void Page_Load(object sender, EventArgs e)
         {
             SetCurrentUser();
-            if (!IsPostBack)
+            radioValue = Request.Form["buttonvalue"];
+            if (!IsPostBack || String.IsNullOrWhiteSpace(radioValue))
             {
                 items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
             }
@@ -32,7 +34,7 @@ namespace Website.Layout.SubLayout
             Log.Info("ANDYT ANSWER USERR" + CurrentUser.Name, this);
             Log.Info("ANDYT ANSWER COMMANDARG" + (String)e.CommandArgument, this);
 
-            String radioValue = Request.Form["buttonvalue"];
+            radioValue = Request.Form["buttonvalue"];
 
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
