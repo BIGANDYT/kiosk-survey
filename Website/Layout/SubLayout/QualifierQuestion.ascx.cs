@@ -62,11 +62,19 @@ namespace Website.Layout.SubLayout
                         using (new Sitecore.SecurityModel.SecurityDisabler())
                         {
                             CurrentUser.Editing.BeginEdit();
-                            CurrentUser[targetItem["Type"]] = (oldValue + value).ToString();
+                            CurrentUser[targetItem["Type"]] = (oldValue + value).ToString();                            
                             CurrentUser.Editing.EndEdit();
                         }
                         Log.Info("ANDYT LEVEL: " + CurrentUser[targetItem["Type"]], this);
                     }
+                }
+                //now save the qestion and asnwer
+                using (new Sitecore.SecurityModel.SecurityDisabler())
+                {
+                    CurrentUser.Editing.BeginEdit();
+                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
+                    answer.CloneTo(newQuestion, answer.Name, false);
+                    CurrentUser.Editing.EndEdit();
                 }
                 Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
                 if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
