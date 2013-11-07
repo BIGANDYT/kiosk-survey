@@ -9,6 +9,14 @@
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
-    <sc:Placeholder ID="content" Key="content" runat="server" />
+    <div class="row">
+        <div class="col-xs-12">
+            <sc:Placeholder ID="content" Key="content" runat="server" />
+        </div>
+    </div>
+    <nav class="footer navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <img class="img-responsive" src="/assets/img/sitecore-50.png" />
+    </nav>
 </body>
 </html>
+

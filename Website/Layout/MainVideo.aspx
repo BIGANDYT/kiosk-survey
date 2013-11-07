@@ -16,6 +16,7 @@
     <script src="/assets/js/jquery.imagesloaded.min.js"></script>
     <script src="/assets/js/video.js"></script>
     <script src="/assets/js/bigvideo.js"></script>
+    <script src="/assets/js/modernizr-2.5.3.min.js"></script>
     <!-- BigVideo -->
     <!-- Bootstrap Dependencies -->
     <script src="/assets/js/bootstrap/bootstrapvideo.js"></script>
@@ -25,7 +26,11 @@
             $("body").css("overflow", "hidden");
             var BV = new $.BigVideo();
             BV.init();
-            BV.show('/assets/vids/video1-new.mp4', { ambient: true }, { doLoop: true });
+            if (Modernizr.touch) {
+                BV.show('/assets/img/poster.png');
+            } else {
+                BV.show('/assets/vids/video1-new.mp4', { ambient: true }, { doLoop: true });
+            }
         });
     </script>
 </body>
