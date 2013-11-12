@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/assets/js/attendee/jquery.knob.js"></script>
 </head>
 <body>
     <div class="row">

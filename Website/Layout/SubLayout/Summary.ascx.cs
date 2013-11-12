@@ -2,17 +2,26 @@
 using System;
 using System.Web.UI.WebControls;
 using Website.model;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using System.Web.UI;
+using System.Text;
 
 namespace Website.Layout.SubLayout
 {
     public partial class Summary : Survey
     {
+        public System.Web.Script.Serialization.JavaScriptSerializer serializer;
+        public List<Item> qualifiers;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            ClientScriptManager cs = Page.ClientScript;
             SetCurrentUser();
-            Item qualifier = GetQualifier();
-            //stopper.Value = qulaifier.Name;
-            Heading.InnerHtml = "<h2>" + qualifier["Heading"] + "</h2>";
+            qualifiers = GetQualifier(master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']"));
+            Item qualifier = qualifiers[0];
+            stopper.Value = qualifier.Name;
+            Heading.InnerHtml = "<h2>You are</h2>";
             Description.InnerHtml = "<h4>" + qualifier["Description"] + "</h4>";
             SubHeading.InnerHtml = "<h2>" + qualifier["SubHeading"] + "</h2>";
             SubDescription.InnerHtml = "<h4>" + qualifier["SubDescription"] + "</h4>";
@@ -22,21 +31,32 @@ namespace Website.Layout.SubLayout
                 CurrentUser["Qualifier"] = qualifier.Name;
                 CurrentUser.Editing.EndEdit();
             }
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<script>");
+            sb.Append("var levels = new Array;");
+            qualifiers.Reverse();
+            foreach (Item item in qualifiers)
+            {
+                sb.Append("levels.push('" + item["Heading"] + "');");
+            }
+            sb.Append("</script>");
+            cs.RegisterStartupScript(this.GetType(), "LevelsScript", sb.ToString());
         }
 
-        private Sitecore.Data.Items.Item GetQualifier()
+        private List<Item> GetQualifier(Item[] qualifiers)
         {
-            Item[] qualifiers = master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']");           
             Array.Reverse(qualifiers);
+            List<Item> items = new List<Item>();
+            items.AddRange(qualifiers);
             foreach (Item qualifier in qualifiers)
             {
-                if (Equals(qualifier, CurrentUser))
+                if (Equals(qualifier, CurrentUser) || qualifier.ID.ToString() == "{EC712628-FA63-45B7-8AFB-039F53500457}")
                 {
-                    return qualifier;
+                    break;
                 }
+                items.Remove(qualifier);
             }
-            // return default  initiate
-            return master.GetItem("{EC712628-FA63-45B7-8AFB-039F53500457}");
+            return items;
         }
 
         public bool Equals(Item obj, Item obj2)
