@@ -15,7 +15,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="btn-group-lg" data-toggle="buttons-radio">
             <% foreach (var answer in items)
                { %>
@@ -26,10 +26,10 @@
 </div>
 <form id="form1" runat="server">
     <div class="row">
-        <div class="col-xs-6 col-sm-3 col-sm-offset-2">
+        <div class="col-xs-6 col-sm-3 col-sm-offset-1">
             <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
-        <div class="col-xs-6 col-sm-5 col-md-5" style="text-align: right">
+        <div class="col-xs-6 col-sm-7" style="text-align: right">
             <asp:Button class="btn-xlg btn-success" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
         </div>
     </div>

@@ -9,7 +9,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-2">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <h3>
             <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
         </h3>
@@ -18,14 +18,12 @@
 <div class="btn-group-lg" data-toggle="buttons-radio">
     <% foreach (var answer in items)
        { %>
-    <div class="row">
-        <div class="col-xs-12 col-sm-<%= answer["height"] %> col-sm-offset-2">
-            <div id="<%= answer.ID %>" style="color: <%= answer["color"] %>; margin-bottom: 0em; " class="panel panel-default">
-                <div style="color:white;background-color: <%= answer["color"] %>;" class="panel-heading"><%= answer["AlternateHeading"] %></div>
-                <div class="panel-body">
-                    <%= answer["ModelText"] %>
-                </div>
-            </div>
+    <div id="<%= answer.ID %>" style="border:3px solid <%= answer["color"] %>; color:<%= answer["color"] %>" class="row answer">
+        <div style="background-color: <%= answer["color"] %>;" class="col-xs-12 col-sm-<%= Convert.ToInt32(answer["height"]) - 2 %> mmodelheader">
+            <span style="font-weight:bold; display: inline-block;  vertical-align: middle; line-height: normal;"><%= answer["AlternateHeading"] %></span>
+        </div>
+        <div style="color: <%= answer["color"] %>;" class="col-xs-12 col-sm-<%= 14 - Convert.ToInt32(answer["height"]) %> mmodelcontent">
+            <span style="display: inline-block;  vertical-align: middle; line-height: normal;"><%= answer["ModelText"] %></span>
         </div>
     </div>
     <%} %>
@@ -35,7 +33,7 @@
         <div class="col-xs-6 col-sm-3 col-sm-offset-2">
             <asp:Button class="btn-lg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
-        <div class="col-xs-6 col-sm-5 col-md-5" style="text-align: right">
+        <div class="col-xs-6 col-sm-6" style="text-align: right">
             <asp:Button class="btn-lg btn-success" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
         </div>
     </div>
@@ -44,15 +42,12 @@
 <div>
 </div>
 <script>
-    $(".panel").click(function () {
+    $(".answer").click(function () {
         $("input[name=buttonvalue]").val(this.id);
-        $(".panel-body").css("background-color", "white");
-        $(".panel-body").css("color", "inherit");
-        $(".panel-heading").css("color", "white");
-        $(".panel-heading").css("font-weight", "normal");
-        $(this).find(".panel-heading").css("color", "black");
-        $(this).find(".panel-heading").css("font-weight", "bolder");
-        $(this).find(".panel-body").css("background-color", "red");
-        $(this).find(".panel-body").css("color", "white");
+        $(".mmodelcontent").css("color", "inherit");
+        $(".mmodelcontent").css("background-color", "white");
+        $(this).find(".mmodelcontent").css("font-weight", "bolder");
+        $(this).find(".mmodelcontent").css("background-color", "red");
+        $(this).find(".mmodelcontent").css("color", "white");
     });
 </script>

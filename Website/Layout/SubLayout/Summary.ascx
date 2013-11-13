@@ -18,11 +18,11 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+    <div class="col-xs-12 col-sm-3 col-sm-offset-1">
          <input type="text" class="dial">
          <input id="stopper" type="hidden" runat="server">
     </div>
-    <div class="col-xs-12  col-sm-8">
+    <div class="col-xs-12  col-sm-7">
         <div class="col-xs-12">
             <div id="Heading" runat="server"></div>
         </div>
