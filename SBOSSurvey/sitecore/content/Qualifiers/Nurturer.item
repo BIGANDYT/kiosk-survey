@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: d2a0e2cc-b5e5-45fe-9020-87cf7dacc60c
+revision: e973f873-d9f0-4946-a84b-2df9f1326a47
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -60,9 +60,9 @@ content-length: 1
 field: {458B2026-AB8B-43AC-8252-F5A5AF12ABBC}
 name: Description
 key: description
-content-length: 181
+content-length: 182
 
-The customer is in focus and your organization is building strong relationships, through automatic trigger based dialogue, where relevant conversation happens in preferred channels.
+The customer is your focus and your organization is building strong relationships through automatic trigger based dialogue, where relevant conversation happens in preferred channels.
 ----field----
 field: {80AD6FD2-EF09-45ED-949D-294144F213BA}
 name: Order
@@ -74,9 +74,9 @@ content-length: 1
 field: {A886380E-AC58-4B48-ABB1-FC6548B4041D}
 name: Heading
 key: heading
-content-length: 19
+content-length: 18
 
-You are an Nurturer
+You are a Nurturer
 ----field----
 field: {162C3AE7-3827-4B94-980F-F58BF447FE18}
 name: SubHeading
@@ -109,9 +109,9 @@ Nurture
 field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
 name: height
 key: height
-content-length: 2
+content-length: 1
 
-23
+7
 ----field----
 field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
 name: color
@@ -132,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2a0e2cc-b5e5-45fe-9020-87cf7dacc60c
+e973f873-d9f0-4946-a84b-2df9f1326a47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131002T091619:635163021792939192
+20131112T120446:635198546861211965
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
