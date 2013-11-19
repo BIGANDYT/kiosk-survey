@@ -1,10 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="MultiAnswerQuestion.ascx.cs" Inherits="Website.Layout.SubLayout.MultiAnswerQuestion" %>
 <div class="row">
     <div class="col-xs-6">
-        <img class="img-responsive" src="/assets/img/arrows.png" />
+        <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
     </div>
     <div class="col-xs-4 col-xs-offset-2">
-        <img class="img-responsive" src="/assets/img/progress_b.png" />
+        <img id="progress" class="img-responsive" src="/assets/img/progress_b.png" />
     </div>
 </div>
 <div class="row">
@@ -20,24 +20,32 @@
             <% for (var i = 0; i < items.Length; i++)
                { %>
             <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-                <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block">
-                    <h4><%= items[i]["answer"] %></h4>
-                </button>
+                <div class="row top-buffer">
+                    <div class="col-xs-12">
+                        <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block btn-block-lg">
+                            <%= items[i]["answer"] %>
+                        </button>
+                    </div>
+                </div>
             </div>
             <%if (i + 1 < items.Length)
               {%>
             <div class="col-xs-12 col-sm-4">
-                <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block">
-                    <h4><%= items[i+1]["answer"] %></h4>
-                </button>
+                <div class="row top-buffer">
+                    <div class="col-xs-12">
+                        <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block btn-block-lg">
+                            <%= items[i+1]["answer"] %>
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <%i++;
-               }
+              }
                } %>
         </div>
     </div>
-    <div class="row">
+    <div class="row top-buffer">
         <div class="col-xs-6 col-sm-3 col-sm-offset-2">
             <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>

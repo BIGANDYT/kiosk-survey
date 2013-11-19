@@ -1,10 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SingleAnswerQuestion.ascx.cs" Inherits="Website.Layout.SubLayout.SingleAnswerQuestion" %>
 <div class="row">
     <div class="col-xs-6">
-        <img class="img-responsive" src="/assets/img/arrows.png" />
+        <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
     </div>
     <div class="col-xs-4 col-xs-offset-2">
-        <img class="img-responsive" src="/assets/img/progress_b.png" />
+        <img id="progress" class="img-responsive" src="/assets/img/progress_b.png" />
     </div>
 </div>
 <div class="row">
@@ -14,22 +14,29 @@
         </h3>
     </div>
 </div>
-<div class="row">
-
+<div class="row top-buffer">
     <div class="btn-group-lg" data-toggle="buttons-radio">
         <% for (var i = 0; i < items.Length; i++)
            { %>
         <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-            <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block">
-                <h4><%= items[i]["answer"] %></h4>
-            </button>
+            <div class="row top-buffer">
+                <div class="col-xs-12">
+                    <button type="button" id="<%= items[i].ID %>" class="btn btn-default btn-lg btn-block btn-block-sm">
+                        <%= items[i]["answer"] %>
+                    </button>
+                </div>
+            </div>
         </div>
         <%if (i + 1 < items.Length)
           {%>
         <div class="col-xs-12 col-sm-5">
-            <button type="button" id="<%= items[i+1].ID %>" class="btn btn-default btn-lg btn-block">
-                <h4><%= items[i+1]["answer"] %></h4>
-            </button>
+            <div class="row top-buffer">
+                <div class="col-xs-12">
+                    <button type="button" id="<%= items[i+1].ID %>" class="btn btn-default btn-lg btn-block btn-block-sm">
+                        <%= items[i+1]["answer"] %>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <%i++;
@@ -38,7 +45,7 @@
     </div>
 </div>
 <form id="form1" runat="server">
-    <div class="row">
+     <div class="row top-buffer">
         <div class="col-xs-6 col-sm-3 col-sm-offset-1">
             <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>

@@ -316,7 +316,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: c63828d7-b9ad-4043-8a43-310bf512fd44
+revision: 97093ccd-a4f8-438a-bfec-65bf042e1ed7
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -347,6 +347,13 @@ content-length: 32
 
 
 		<p>Welcome to Sitecore</p>
+
+----field----
+field: {C26B265D-FAF3-4B2E-95F2-ED8F648DA233}
+name: PrizeImage
+key: prizeimage
+content-length: 0
+
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -410,14 +417,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c63828d7-b9ad-4043-8a43-310bf512fd44
+97093ccd-a4f8-438a-bfec-65bf042e1ed7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131002T080518:635162979187526826
+20131118T232217:635204137375532484
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,26 +1,26 @@
 ﻿@media screen and (max-width: 767px) {
     h1 {
-        font-size: 15px;
+        font-size: 1.4em;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 1.4em;
     }
 
     h3 {
-        font-size: 10px;
+        font-size: 1.2em;
     }
 
     h4 {
-        font-size: 10px;
+        font-size: 1.2em;
     }
 
     .btn-xxlg {
-        font-size: 15px;
+        font-size: 1.4em;
     }
 
     .btn-xlg {
-        font-size: 30px;
+        font-size: 1.6em;
     }
 
     .labeltext {
@@ -29,21 +29,49 @@
     }
 
     .mmodelcontent {
-        font-weight: bold;
-        height: 120px;
-        line-height: 120px;
+        height: 6.7em;
+        line-height: 6.7em;
         text-align: center;
         background-color: white;
     }
+
+        .mmodelcontent span {
+            font-size:1em;
+            display: inline-block;
+            vertical-align: top;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size:1.4em;
+        height: 1.4em;
+        line-height: 1.4em;
+        text-align: center;
+        color: white;
+        padding-left:1em;
+    }
+
+     .top-buffer {
+        margin-top: 0.8em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 0.5em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.25em;
+    }
 }
 
-@media screen and (min-width:768px) and (max-width: 991px) {
+/*piepad*/
+@media screen and (min-width:768px) and (max-width: 1069px) {
     h1 {
         font-size: 400%;
     }
 
     h2 {
-        font-size: 200%;
+        font-size: 185%;
     }
 
     h3 {
@@ -68,44 +96,172 @@
     }
 
     .mmodelcontent {
-        font-weight: bold;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
+        height: 6.3em;
+        line-height: 6.3em;
+        text-align: left;
         background-color: white;
     }
-}
 
-@media screen and (min-width:992px) {
+        .mmodelcontent span {
+            font-size:1em;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size:1.3em;
+        height: 4.8em;
+        line-height: 4.8em;
+        text-align: left;
+        color: white;
+        padding-left:1em;
+    }
+
+    .top-buffer {
+        margin-top: 0.2em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 1em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.4em;
+    }
+
+    .btn-xlg {
+        font-size: 3em;
+        height: 2em;
+        width: 6em;
+    }
+
+    .btn-block {
+        font-size: 1.3em;
+        height: 3.2em;
+    }
+
+    .btn-block-sm {
+        font-size: 1em;
+        height: 7em;
+    }
+
+    .btn-block-lg {
+        font-size: 1.3em;
+        height: 3.6em;
+    }
+
+    .btn-block-start {
+        font-size: 4.5em;
+        width: 6em;
+        height: 2.5em;
+    }
+
+    .btn-block-report {
+        width: 12em;
+    }
+
+    .btn-block-finish {
+        width: 12em;
+        height: 5.5em;
+    }
+}
+/*kiosk*/
+@media screen and (min-width:1070px) {
     h1 {
         font-size: 600%;
     }
 
     h2 {
-        font-size: 300%;
+        font-size: 400%;
     }
 
     h3 {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     h4 {
-        font-size: 120%;
+        font-size: 200%;
     }
 
     .labeltext {
         text-align: right;
-        font-size: xx-large;
+        font-size: 4em;
     }
 
-
+    .form-control {
+        font-size: 4em;
+        height: 1.5em;
+    }
 
     .mmodelcontent {
-        font-weight: bold;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
+        height: 6.3em;
+        line-height: 6.3em;
+        text-align: left;
         background-color: white;
+    }
+
+        .mmodelcontent span {
+            font-size:1.5em;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size:2em;
+        height: 3.1em;
+        line-height: 3.1em;
+        text-align: left;
+        color: white;
+        padding-left:1em;
+    }
+
+    .top-buffer {
+        margin-top: 1.4em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 0.5em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.5em;
+    }
+
+    .btn-xlg {
+        font-size: 4.5em;
+        height: 1.8em;
+        width: 6em;
+    }
+
+    .btn-block {
+        font-size: 3em;
+        height: 2.4em;
+    }
+
+    .btn-block-sm {
+        font-size: 2.5em;
+        height: 4em;
+    }
+
+    .btn-block-lg {
+        font-size: 2.5em;
+        height: 3em;
+    }
+
+    .btn-block-start {
+        width: 12em;
+        height: 5em;
+    }
+
+    .btn-block-report {
+        width: 12em;
+    }
+
+    .btn-block-finish {
+        width: 12em;
+        height: 7em;
     }
 }
 
@@ -124,9 +280,13 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a52d1d', endColorstr='#d81b06',GradientType=1 ); /* IE6-9 */
 }
 
-.mmodelheader {
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    color: white;
-}
+.ownit {
+        height: 6.5em;
+        line-height: 6.5em;
+    }
+
+        .ownit span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }

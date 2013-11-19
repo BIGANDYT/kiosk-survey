@@ -33,7 +33,7 @@ content-length: 439
 ----version----
 language: en
 version: 1
-revision: 31399857-d5fe-4540-b3d8-fb452354eeb4
+revision: 437dc671-0c62-44d4-ae08-1c18ef802d9e
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -61,10 +61,23 @@ Finish
 field: {CF66FA3C-583B-4430-9C92-63D13BA5437E}
 name: Subtitle
 key: subtitle
-content-length: 117
+content-length: 47
 
 Your customised report has been emailed to you!
-You have also been entered into a draw to win a £250 Amazon voucher!
+----field----
+field: {450A497D-424F-4E83-828C-0139CF0EFBAB}
+name: PrizeText
+key: prizetext
+content-length: 0
+
+
+----field----
+field: {E194037B-F0B2-4E77-B710-A1F403615000}
+name: PrizeImage
+key: prizeimage
+content-length: 0
+
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -78,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31399857-d5fe-4540-b3d8-fb452354eeb4
+437dc671-0c62-44d4-ae08-1c18ef802d9e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131004T154958:635164985983522770
+20131118T232251:635204137714932484
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

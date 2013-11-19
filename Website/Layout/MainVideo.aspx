@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="/assets/css/bigvideo.css">
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <title>Customer Experience Maturity Assessment</title>    
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 </head>
-<body>
+<body oncontextmenu="return false;">
     <sc:Placeholder ID="content" Key="content" runat="server" />
     <!-- BigVideo Dependencies -->
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
@@ -26,7 +28,7 @@
             $("body").css("overflow", "hidden");
             var BV = new $.BigVideo();
             BV.init();
-            if (Modernizr.touch) {
+            if (Modernizr.touch && window.screen.availWidth < 1070) {
                 BV.show('/assets/img/poster.png');
             } else {
                 BV.show('/assets/vids/video1-new.mp4', { ambient: true }, { doLoop: true });

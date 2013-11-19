@@ -113,6 +113,13 @@
     <Content Include="assets\img\sitecore-50.png" />
     <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />
+    <Content Include="assets\img\xmas\bg.jpg" />
+    <Content Include="assets\img\xmas\ParticleSmoke.png" />
+    <Content Include="assets\img\xmas\progress_b.png" />
+    <Content Include="assets\img\xmas\progress_f.png" />
+    <Content Include="assets\img\xmas\progress_q.png" />
+    <Content Include="assets\img\xmas\progress_s.png" />
+    <Content Include="assets\img\xmas\wreath.png" />
     <Content Include="assets\js\attendee\attendee.js" />
     <Content Include="assets\js\attendee\jquery.knob.js" />
     <Content Include="assets\js\bigvideo.js" />
@@ -129,6 +136,8 @@
     <Content Include="assets\img\search.gif" />
     <Content Include="assets\js\radio\radio.js" />
     <Content Include="assets\js\video.js" />
+    <Content Include="assets\js\xmas\Snow.js" />
+    <Content Include="assets\js\xmas\ThreeCanvas.js" />
     <Content Include="assets\vids\dock.mp4" />
     <Content Include="assets\vids\frontier.mp4" />
     <Content Include="assets\vids\river.mp4" />
@@ -7377,6 +7386,9 @@
       <DependentUpon>Finished.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Layout\SubLayout\Finished.ascx.designer.cs">
+      <DependentUpon>Finished.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs">
       <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7426,6 +7438,9 @@
     <Compile Include="Layout\SubLayout\Welcome.ascx.cs">
       <DependentUpon>Welcome.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\SubLayout\Welcome.ascx.designer.cs">
+      <DependentUpon>Welcome.ascx</DependentUpon>
     </Compile>
     <Compile Include="model\Survey.cs">
       <SubType>ASPXCodeBehind</SubType>

@@ -1,12 +1,12 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Finished.ascx.cs" Inherits="Website.Layout.SubLayout.Finished" %>
+﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="Finished.ascx.cs" Inherits="Website.Layout.SubLayout.Finished" %>
 <div class="row">
-    <div class="col-xs-6">
-        <img class="img-responsive" src="/assets/img/arrows.png" />
+        <div class="col-xs-6">
+            <img  id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+            <img id="progress" class="img-responsive" src="/assets/img/progress_f.png" />
+        </div>
     </div>
-    <div class="col-xs-4 col-xs-offset-2">
-        <img class="img-responsive" src="/assets/img/progress_f.png" />
-    </div>
-</div>
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <h2>
@@ -21,13 +21,17 @@
         </h3>
     </div>
 </div>
-<div class="row">
+ <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2" ID="PrizeText" runat="server">
+        </div>
+    </div>
+<div class="row top-buffer">
     <div class="col-xs-12 col-sm-3 col-sm-offset-2">
-        <img class="img-responsive" src="/assets/img/amazon-com-logo.png" />
+        <asp:Image class="img-responsive" ID="PrizeImage" runat="server"/>
     </div>
     <div class="col-xs-12 col-sm-6">
         <form id="form1" runat="server">
-            <asp:Button class="btn-xlg btn-success" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
+            <asp:Button class="btn-xlg btn-success btn-block-finish" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
         </form>
     </div>
 </div>

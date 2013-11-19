@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {DB219A11-588F-413F-8124-A537EBABB701}
+id: {450A497D-424F-4E83-828C-0139CF0EFBAB}
 database: master
-path: /sitecore/templates/SBOS/Signup/Fields/Subtitle
-parent: {EB1706A9-ECFF-4780-B87E-1BFD49BA94D6}
-name: Subtitle
+path: /sitecore/templates/SBOS/Finish/Fields/PrizeText
+parent: {D0AFC1CB-6B38-45AB-94FA-26E2909C2684}
+name: PrizeText
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -29,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+300
 ----version----
 language: en
 version: 1
-revision: d7f01ed0-4883-449b-a959-a598c5072ff2
+revision: 8d89b07d-fa30-4724-915a-44b0d3e674d0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +41,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20131004T151257
+20131118T213635
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-d7f01ed0-4883-449b-a959-a598c5072ff2
+8d89b07d-fa30-4724-915a-44b0d3e674d0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131118T215532:635204085324484302
+20131118T214446:635204078868808766
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

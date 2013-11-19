@@ -10,25 +10,16 @@
 namespace Website.Layout.SubLayout {
     
     
-    public partial class Signup {
+    public partial class Finished {
         
         /// <summary>
-        /// form1 control.
+        /// Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// SignupTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SignupTitle;
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer Title;
         
         /// <summary>
         /// Subtitle control.
@@ -37,7 +28,7 @@ namespace Website.Layout.SubLayout {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Subtitle;
+        protected global::Sitecore.Web.UI.WebControls.FieldRenderer Subtitle;
         
         /// <summary>
         /// PrizeText control.
@@ -58,49 +49,13 @@ namespace Website.Layout.SubLayout {
         protected global::System.Web.UI.WebControls.Image PrizeImage;
         
         /// <summary>
-        /// Name control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Name;
-        
-        /// <summary>
-        /// Company control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Company;
-        
-        /// <summary>
-        /// JobTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText JobTitle;
-        
-        /// <summary>
-        /// Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Email;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// Buttonlink control.
