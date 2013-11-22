@@ -21,6 +21,11 @@ namespace Website.Layout.SubLayout
                 {
                     Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
                     PrizeImage.ImageUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+
+                }
+                else
+                {
+                    PrizeImage.Visible = false;
                 }
             }
         }

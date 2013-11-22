@@ -1,13 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="SingleAnswerQuestionPicture.ascx.cs" Inherits="Website.Layout.SubLayout.SingleAnswerQuestionPicture" %>
 <div class="row">
-    <div class="col-xs-6">
-        <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
-    </div>
-    <div class="col-xs-4 col-xs-offset-2">
-        <img id="progress" class="img-responsive" src="/assets/img/progress_b.png" />
-    </div>
-</div>
-<div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <h3>
             <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />

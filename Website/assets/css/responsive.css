@@ -1,4 +1,8 @@
 ﻿@media screen and (max-width: 767px) {
+    .navbar-fixed-bottom {
+        display: none;
+    }
+
     h1 {
         font-size: 1.4em;
     }
@@ -23,6 +27,13 @@
         font-size: 1.6em;
     }
 
+    .btn-block {
+        font-size: 1em;
+        height: 4em;
+        white-space: normal;
+    }
+
+
     .labeltext {
         text-align: left;
         font-size: large;
@@ -36,22 +47,22 @@
     }
 
         .mmodelcontent span {
-            font-size:1em;
+            font-size: 1em;
             display: inline-block;
             vertical-align: top;
             line-height: normal;
         }
 
     .mmodelheader {
-        font-size:1.4em;
+        font-size: 1.4em;
         height: 1.4em;
         line-height: 1.4em;
         text-align: center;
         color: white;
-        padding-left:1em;
+        padding-left: 1em;
     }
 
-     .top-buffer {
+    .top-buffer {
         margin-top: 0.8em;
     }
 
@@ -61,6 +72,10 @@
 
     .top-buffer-xs {
         margin-top: 0.25em;
+    }
+
+    .dialwrapper {
+        height: 20em;
     }
 }
 
@@ -96,26 +111,26 @@
     }
 
     .mmodelcontent {
-        height: 6.3em;
-        line-height: 6.3em;
+        height: 6.4em;
+        line-height: 6.4em;
         text-align: left;
         background-color: white;
     }
 
         .mmodelcontent span {
-            font-size:1em;
+            font-size: 1.1em;
             display: inline-block;
             vertical-align: middle;
             line-height: normal;
         }
 
     .mmodelheader {
-        font-size:1.3em;
-        height: 4.8em;
-        line-height: 4.8em;
+        font-size: 1.1em;
+        height: 5.8em;
+        line-height: 5.8em;
         text-align: left;
         color: white;
-        padding-left:1em;
+        padding-left: 1em;
     }
 
     .top-buffer {
@@ -133,37 +148,35 @@
     .btn-xlg {
         font-size: 3em;
         height: 2em;
-        width: 6em;
+        white-space: normal;
     }
 
     .btn-block {
         font-size: 1.3em;
         height: 3.2em;
+        white-space: normal;
     }
 
     .btn-block-sm {
         font-size: 1em;
         height: 7em;
+        white-space: normal;
     }
 
     .btn-block-lg {
         font-size: 1.3em;
         height: 3.6em;
+        white-space: normal;
     }
 
-    .btn-block-start {
-        font-size: 4.5em;
-        width: 6em;
+    .btn-jumbo {
+        font-size: 3em;
         height: 2.5em;
+        white-space: normal;
     }
 
-    .btn-block-report {
-        width: 12em;
-    }
-
-    .btn-block-finish {
-        width: 12em;
-        height: 5.5em;
+    .dialwrapper {
+        height: 25em;
     }
 }
 /*kiosk*/
@@ -195,26 +208,26 @@
     }
 
     .mmodelcontent {
-        height: 6.3em;
-        line-height: 6.3em;
+        height: 6.1em;
+        line-height: 6.1em;
         text-align: left;
         background-color: white;
     }
 
         .mmodelcontent span {
-            font-size:1.5em;
+            font-size: 1.2em;
             display: inline-block;
             vertical-align: middle;
             line-height: normal;
         }
 
     .mmodelheader {
-        font-size:2em;
-        height: 3.1em;
-        line-height: 3.1em;
+        font-size: 1.6em;
+        height: 3.8em;
+        line-height: 3.8em;
         text-align: left;
         color: white;
-        padding-left:1em;
+        padding-left: 1em;
     }
 
     .top-buffer {
@@ -232,36 +245,35 @@
     .btn-xlg {
         font-size: 4.5em;
         height: 1.8em;
-        width: 6em;
+        white-space: normal;
     }
 
     .btn-block {
-        font-size: 3em;
-        height: 2.4em;
+        font-size: 2em;
+        height: 3em;
+        white-space: normal;
     }
 
     .btn-block-sm {
         font-size: 2.5em;
         height: 4em;
+        white-space: normal;
     }
 
     .btn-block-lg {
         font-size: 2.5em;
         height: 3em;
+        white-space: normal;
     }
 
-    .btn-block-start {
-        width: 12em;
+    .btn-jumbo {
+        font-size: 6em;
         height: 5em;
+        white-space: normal;
     }
 
-    .btn-block-report {
-        width: 12em;
-    }
-
-    .btn-block-finish {
-        width: 12em;
-        height: 7em;
+    .dialwrapper {
+        height: 30em;
     }
 }
 
@@ -281,12 +293,19 @@ body {
 }
 
 .ownit {
-        height: 6.5em;
-        line-height: 6.5em;
+    height: 6.5em;
+    line-height: 6.5em;
+}
+
+    .ownit span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
     }
 
-        .ownit span {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: normal;
-        }
+.dialwrapper-inner {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}

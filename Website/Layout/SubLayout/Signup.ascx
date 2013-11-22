@@ -1,13 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="Signup.ascx.cs" Inherits="Website.Layout.SubLayout.Signup" %>
-<form id="form1" runat="server">
-    <div class="row">
-        <div class="col-xs-6">
-            <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
-        </div>
-        <div class="col-xs-4 col-xs-offset-2">
-            <img id="progress" class="img-responsive" src="/assets/img/progress_s.png" />
-        </div>
-    </div>
+<form id="form1" runat="server">    
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-2" id="SignupTitle" runat="server">
         </div>
@@ -21,10 +13,10 @@
         </div>
     </div>
     <div class="row top-buffer">
-        <div class="col-xs-3 col-xs-offset-1">
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
             <asp:Image class="img-responsive" ID="PrizeImage" runat="server"/>
         </div>
-        <div class="col-xs-8">
+        <div class="col-xs-12 col-sm-8">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 labeltext">
                     Name

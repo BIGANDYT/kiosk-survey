@@ -24,7 +24,7 @@ namespace Website.Layout.SubLayout
         private Item Email7Life = Sitecore.Context.Database.GetItem("{2AB56DDC-B4F9-4FE2-AE89-E7341E79B97E}");
 
         protected void Page_Load(object sender, EventArgs e)
-        {            
+        {
             if (!IsPostBack)
             {
                 Sitecore.Data.Items.Item PrizeTexttext = master.GetItem(Sitecore.Context.Item["PrizeText"]);
@@ -37,6 +37,10 @@ namespace Website.Layout.SubLayout
                 {
                     Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
                     PrizeImage.ImageUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                }
+                else
+                {
+                    PrizeImage.Visible = false;
                 }
                 SetCurrentUser();
                 var currentUserMaturity = CurrentUser["Qualifier"].ToString();

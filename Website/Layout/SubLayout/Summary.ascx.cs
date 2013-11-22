@@ -13,12 +13,14 @@ namespace Website.Layout.SubLayout
     {
         public System.Web.Script.Serialization.JavaScriptSerializer serializer;
         public List<Item> qualifiers;
+        public Item[] masterList;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             ClientScriptManager cs = Page.ClientScript;
             SetCurrentUser();
-            qualifiers = GetQualifier(master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']"));
+            masterList = master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']");
+            qualifiers = GetQualifier(masterList);
             Item qualifier = qualifiers[0];
             stopper.Value = qualifier.Name;
             Heading.InnerHtml = "<h2>You are</h2>";
@@ -34,10 +36,12 @@ namespace Website.Layout.SubLayout
             StringBuilder sb = new StringBuilder();
             sb.Append("<script>");
             sb.Append("var levels = new Array;");
+            sb.Append("var levelsIds = new Array;");
             qualifiers.Reverse();
             foreach (Item item in qualifiers)
             {
                 sb.Append("levels.push('" + item["Heading"] + "');");
+                sb.Append("levelsIds.push('" + item.ID + "');");
             }
             sb.Append("</script>");
             cs.RegisterStartupScript(this.GetType(), "LevelsScript", sb.ToString());

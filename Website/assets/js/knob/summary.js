@@ -3,46 +3,44 @@
     $(document.getElementById('content_0_SubHeading')).hide();
     $(document.getElementById('content_0_SubDescription')).hide();
     $('.dial').val(0).trigger('change').delay(2000);    
-    var myKnob = $(".dial").knob({
+    var myKnob = $(".knob").knob({
         'min': 0,
         'max': 100,
         'readOnly': true,
-        'width': 200,
-        'height': 200,
         'fgColor': myColor,
         'dynamicDraw': true,
         'thickness': 0.4,
         'tickColorizeValues': true,
-        'displayInput': false
+        'displayInput': false,
+        'bgColor':"#FFFFFF"
     })
 
     var tmr = self.setInterval(function () { myDelay() }, 30);
     var m = 0;
     var i = 0;
     var myColor = '#F99501';
-    function myDelay() {       
-        m += 1;
+    function myDelay() {        
         switch (m) {
-            case 15:
+            case 14:
                 updater(i++)
                 break;
-            case 16:
+            case 28:
                 myColor = '#F4572D';
                 updater(i++)
                 break;
-            case 32:
+            case 42:
                 myColor = '#C5341F';
                 updater(i++)
                 break;
-            case 48:
+            case 56:
                 myColor = '#B83C81';
                 updater(i++)
                 break;
-            case 64:
+            case 70:
                 myColor = '#803A9A';
                 updater(i++)
                 break;
-            case 80:
+            case 84:
                 myColor = '#1C7FC1';
                 updater(i++)
                 break;
@@ -50,9 +48,10 @@
                 myColor = '#008B48';
                 updater(i++);
                 break;
-        }
-        $('.dial').trigger('configure', { 'fgColor': myColor });
-        $('.dial').val(m).trigger('change');
+        }        
+        $('.knob').trigger('configure', { 'fgColor': myColor });
+        $('.knob').val(m).trigger('change');
+        m += 1;
     }
 
     function updater(i) {
