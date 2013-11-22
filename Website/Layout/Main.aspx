@@ -5,8 +5,9 @@
 <head>
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
-    <script src="/assets/js/jquery-1.9.1.min.js"></script>    
+    <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/knob/jquery.knob.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
     <title>Customer Experience Maturity Assessment</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
@@ -20,9 +21,15 @@
             color: #0078ff;
         }
     </style>
+    <script type="text/javascript">
+        function openErrorModal() {
+            $('#errorModal').modal('show');
+        }
+    </script>
 </head>
 <body oncontextmenu="return false;" onload="init()">
 
+    <script src="/assets/js/bigvideo/jquery-ui-1.8.22.custom.min.js"></script>
     <script type="text/javascript" src="/assets/js/xmas/ThreeCanvas.js"></script>
     <script type="text/javascript" src="/assets/js/xmas/Snow.js"></script>
     <script type="text/javascript" src="/assets/js/xmas/SnowLoader.js"></script>
@@ -39,8 +46,8 @@
         <div class="col-xs-6 col-sm-6">
             <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
         </div>
-        <div class="col-xs-12 col-sm-4 col-sm-offset-2">            
-           
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+
             <img id="progress" class="img-responsive" src="/assets/img/progress_<%= Sitecore.Context.Item["Stage"] %>.png" />
         </div>
     </div>
@@ -54,7 +61,8 @@
             <img class="img-responsive" src="/assets/img/sitecore-50.png" />
         </div>
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 ownit">
-            <span><img class="img-responsive" src="/assets/img/ownit.png" /></span>
+            <span>
+                <img class="img-responsive" src="/assets/img/ownit.png" /></span>
         </div>
     </nav>
 </body>
