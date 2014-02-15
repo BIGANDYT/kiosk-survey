@@ -14,11 +14,14 @@ namespace Website.code
 
         public static string GetRegion(){
 
+            // Grabs the context from the requesting session
             HttpContext context = HttpContext.Current;
 
+            // Works on the current domain name minus http:// etc.
             var incomingDomain = context.Request.Url.DnsSafeHost.ToString();
             var detectedRegion = incomingDomain.Split('.')[0];
            
+            // returns a split of the region, if no specific region it just returns "survey" in the reports.
             return detectedRegion;
         }
 
