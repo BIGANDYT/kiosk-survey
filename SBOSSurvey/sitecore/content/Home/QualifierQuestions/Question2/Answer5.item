@@ -12,15 +12,15 @@ templatekey: Answer
 ----version----
 language: en
 version: 1
-revision: 5f7e1eaa-f79e-4f16-a4b0-82931579285e
+revision: 5ecc024d-5284-40d5-87dd-158883927b74
 
 ----field----
 field: {1159BA59-262C-471C-980A-55CFC371A5F4}
 name: Answer
 key: answer
-content-length: 70
+content-length: 82
 
-Above + KPI*s aligned with Customer Lifecycle across Multiple Channels
+All as previous plus KPIs aligned with customer lifecycle across multiple channels
 ----field----
 field: {2E55412B-2A32-4489-A4A5-7DCF66DBED34}
 name: Levels
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5f7e1eaa-f79e-4f16-a4b0-82931579285e
+5ecc024d-5284-40d5-87dd-158883927b74
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130901T202944:635136641845680783
+20130930T095559:635161317591238276
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

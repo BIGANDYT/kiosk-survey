@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: ac3a11fa-c46e-4340-86d5-f5e486f0ea55
+revision: 6a2201aa-f575-4562-8e9d-6dbd0936b0a8
 
 ----field----
 field: {3D3DB6A1-37C6-4A74-ACFD-410C2AAF214B}
@@ -83,7 +83,7 @@ name: ModelText
 key: modeltext
 content-length: 143
 
-Organizations being to align digital initiatives with strategic objectives, where digital focus are shifting towards achieving strategic goals.
+Organizations begin to align digital initiatives with strategic objectives, where digital focus are shifting towards achieving strategic goals.
 ----field----
 field: {F49B28F8-7338-43C8-8E77-E6C84C5E5E3C}
 name: AlternateHeading
@@ -95,9 +95,9 @@ Align
 field: {37E3A644-911F-408A-A6B0-1F4DD36B41B8}
 name: height
 key: height
-content-length: 2
+content-length: 1
 
-22
+5
 ----field----
 field: {FCD45952-68F7-414B-ACFA-D0CB773F480A}
 name: color
@@ -111,21 +111,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20130902T120250
+20130902T120200
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ac3a11fa-c46e-4340-86d5-f5e486f0ea55
+6a2201aa-f575-4562-8e9d-6dbd0936b0a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130924T150206:635156317267326689
+20131112T120454:635198546949260769
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

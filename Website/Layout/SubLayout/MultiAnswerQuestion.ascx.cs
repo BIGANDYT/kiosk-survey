@@ -11,35 +11,26 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using Website.model;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class MultiAnswerQuestion : System.Web.UI.UserControl
+    public partial class MultiAnswerQuestion : Survey
     {
-
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-
+        public Item[] items = null;
+        String radioValue;
         protected void Page_Load(object sender, EventArgs e)
         {
-            String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
-            CurrentUser = master.GetItem(currentUserId);
-            AnswerRepeater.DataSource = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
-            AnswerRepeater.DataBind();
-        }
-
-        protected void Restart_Click(object sender, CommandEventArgs e)
-        {
-            using (new Sitecore.SecurityModel.SecurityDisabler())
+            SetCurrentUser();
+            if (!IsPostBack || String.IsNullOrWhiteSpace(radioValue))
             {
-                CurrentUser.Delete();
+                items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
             }
-            Response.Redirect(Sitecore.Context.Site.StartPath);
         }
-
+        
         public void Next_Click(Object sender, EventArgs e)
         {
-            String radioValue = Request.Form[Sitecore.Context.Item.ID.ToString()];
+            radioValue = Request.Form["buttonvalue"];
             if (!String.IsNullOrWhiteSpace(radioValue))
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
@@ -51,9 +42,14 @@ namespace Website.Layout.SubLayout
                         Item answerItem = master.GetItem(answer);
                         answerItem.CloneTo(newQuestion, answerItem.Name, false);
                     }
-                    Response.Redirect(Sitecore.Context.Item["Next Page"]);
+                    NextPage();
                 }
             }
+        }
+
+        public void Restart_Click(object sender, CommandEventArgs e)
+        {
+            Restart();
         }
     }
 }

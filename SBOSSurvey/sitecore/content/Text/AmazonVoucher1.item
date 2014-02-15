@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {CABAAEC4-2496-46E9-9107-BF37E6F1BA79}
+database: master
+path: /sitecore/content/Text/AmazonVoucher1
+parent: {49788662-04D8-4A40-9547-B872D9CE148B}
+name: AmazonVoucher1
+master: {00000000-0000-0000-0000-000000000000}
+template: {1443390F-C297-4CD4-9A53-3F0DF3B6DE8B}
+templatekey: Text
+
+----version----
+language: en
+version: 1
+revision: d661ed80-a025-4450-aa42-5ba88e62448b
+
+----field----
+field: {80C200F0-F58D-4D54-9C37-DD86778C4D93}
+name: Text
+key: text
+content-length: 135
+
+<h4>You get the chance to win an Amazon voucher worth &pound;250 and also get your comprehensive report emailed to you at the end.</h4>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131118T210633
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d661ed80-a025-4450-aa42-5ba88e62448b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131118T211235:635204059550440786
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

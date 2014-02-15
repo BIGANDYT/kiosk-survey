@@ -1,53 +1,66 @@
-﻿using Sitecore.Data;
-using Sitecore.Data.Items;
-using Sitecore.Diagnostics;
+﻿using Sitecore.Data.Items;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
+using Website.model;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using System.Web.UI;
+using System.Text;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Summary : System.Web.UI.UserControl
+    public partial class Summary : Survey
     {
-
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+        public System.Web.Script.Serialization.JavaScriptSerializer serializer;
+        public List<Item> qualifiers;
+        public Item[] masterList;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            String currentUserId = Sitecore.Context.ClientData.GetValue("CurrentUser").ToString();
-            CurrentUser = master.GetItem(currentUserId);
-            Item qulaifier = GetQualifier();
-            stopper.Value = qulaifier.Name;
-            Heading.InnerText = qulaifier["Heading"];
-            Description.InnerText = qulaifier["Description"];
-            SubHeading.InnerText = qulaifier["SubHeading"];
-            SubDescription.InnerText = qulaifier["SubDescription"];
+            ClientScriptManager cs = Page.ClientScript;
+            SetCurrentUser();
+            masterList = master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']");
+            qualifiers = GetQualifier(masterList);
+            Item qualifier = qualifiers[0];
+            stopper.Value = qualifier.Name;
+            Heading.InnerHtml = "<h2>You are</h2>";
+            Description.InnerHtml = "<h4>" + qualifier["Description"] + "</h4>";
+            SubHeading.InnerHtml = "<h2>" + qualifier["SubHeading"] + "</h2>";
+            SubDescription.InnerHtml = "<h4>" + qualifier["SubDescription"] + "</h4>";
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 CurrentUser.Editing.BeginEdit();
-                CurrentUser["Qualifier"] = qulaifier.Name;
+                CurrentUser["Qualifier"] = qualifier.Name;
                 CurrentUser.Editing.EndEdit();
             }
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<script>");
+            sb.Append("var levels = new Array;");
+            sb.Append("var levelsIds = new Array;");
+            qualifiers.Reverse();
+            foreach (Item item in qualifiers)
+            {
+                sb.Append("levels.push('" + item["Heading"] + "');");
+                sb.Append("levelsIds.push('" + item.ID + "');");
+            }
+            sb.Append("</script>");
+            cs.RegisterStartupScript(this.GetType(), "LevelsScript", sb.ToString());
         }
 
-        private Sitecore.Data.Items.Item GetQualifier()
+        private List<Item> GetQualifier(Item[] qualifiers)
         {
-            Item[] qualifiers = master.SelectItems("/sitecore/content/Qualifiers//*[@@templatekey='qualifier']");           
             Array.Reverse(qualifiers);
+            List<Item> items = new List<Item>();
+            items.AddRange(qualifiers);
             foreach (Item qualifier in qualifiers)
             {
-                if (Equals(qualifier, CurrentUser))
+                if (Equals(qualifier, CurrentUser) || qualifier.ID.ToString() == "{EC712628-FA63-45B7-8AFB-039F53500457}")
                 {
-                    return qualifier;
+                    break;
                 }
+                items.Remove(qualifier);
             }
-            // return default  initiate
-            return master.GetItem("{EC712628-FA63-45B7-8AFB-039F53500457}");
+            return items;
         }
 
         public bool Equals(Item obj, Item obj2)
@@ -89,12 +102,12 @@ namespace Website.Layout.SubLayout
 
         public void Next_Click(Object sender, EventArgs e)
         {
-            Response.Redirect(Sitecore.Context.Item["Next Page"]);
+            NextPage();
         }
 
-        protected void Restart_Click(object sender, CommandEventArgs e)
-        {            
-            Response.Redirect(Sitecore.Context.Site.StartPath);
+        public void Restart_Click(object sender, CommandEventArgs e)
+        {
+            Restart();
         }
     }
 }

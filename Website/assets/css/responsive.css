@@ -1,0 +1,311 @@
+﻿@media screen and (max-width: 767px) {
+    .navbar-fixed-bottom {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .btn-xxlg {
+        font-size: 1.4em;
+    }
+
+    .btn-xlg {
+        font-size: 1.6em;
+    }
+
+    .btn-block {
+        font-size: 1em;
+        height: 4em;
+        white-space: normal;
+    }
+
+
+    .labeltext {
+        text-align: left;
+        font-size: large;
+    }
+
+    .mmodelcontent {
+        height: 6.7em;
+        line-height: 6.7em;
+        text-align: center;
+        background-color: white;
+    }
+
+        .mmodelcontent span {
+            font-size: 1em;
+            display: inline-block;
+            vertical-align: top;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size: 1.4em;
+        height: 1.4em;
+        line-height: 1.4em;
+        text-align: center;
+        color: white;
+        padding-left: 1em;
+    }
+
+    .top-buffer {
+        margin-top: 0.8em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 0.5em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.25em;
+    }
+
+    .dialwrapper {
+        height: 20em;
+    }
+}
+
+/*piepad*/
+@media screen and (min-width:768px) and (max-width: 1069px) {
+    h1 {
+        font-size: 400%;
+    }
+
+    h2 {
+        font-size: 185%;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    h4 {
+        font-size: 100%;
+    }
+
+    .btn-xxlg {
+        font-size: 50px;
+    }
+
+    .btn-xlg {
+        font-size: 35px;
+    }
+
+    .labeltext {
+        text-align: right;
+        font-size: x-large;
+    }
+
+    .mmodelcontent {
+        height: 6.4em;
+        line-height: 6.4em;
+        text-align: left;
+        background-color: white;
+    }
+
+        .mmodelcontent span {
+            font-size: 1.1em;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size: 1.1em;
+        height: 5.8em;
+        line-height: 5.8em;
+        text-align: left;
+        color: white;
+        padding-left: 1em;
+    }
+
+    .top-buffer {
+        margin-top: 0.2em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 1em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.4em;
+    }
+
+    .btn-xlg {
+        font-size: 3em;
+        height: 2em;
+        white-space: normal;
+    }
+
+    .btn-block {
+        font-size: 1.3em;
+        height: 3.2em;
+        white-space: normal;
+    }
+
+    .btn-block-sm {
+        font-size: 1em;
+        height: 7em;
+        white-space: normal;
+    }
+
+    .btn-block-lg {
+        font-size: 1.3em;
+        height: 3.6em;
+        white-space: normal;
+    }
+
+    .btn-jumbo {
+        font-size: 3em;
+        height: 2.5em;
+        white-space: normal;
+    }
+
+    .dialwrapper {
+        height: 25em;
+    }
+}
+/*kiosk*/
+@media screen and (min-width:1070px) {
+    h1 {
+        font-size: 600%;
+    }
+
+    h2 {
+        font-size: 400%;
+    }
+
+    h3 {
+        font-size: 300%;
+    }
+
+    h4 {
+        font-size: 200%;
+    }
+
+    .labeltext {
+        text-align: right;
+        font-size: 4em;
+    }
+
+    .form-control {
+        font-size: 4em;
+        height: 1.5em;
+    }
+
+    .mmodelcontent {
+        height: 6.1em;
+        line-height: 6.1em;
+        text-align: left;
+        background-color: white;
+    }
+
+        .mmodelcontent span {
+            font-size: 1.2em;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+    .mmodelheader {
+        font-size: 1.6em;
+        height: 3.8em;
+        line-height: 3.8em;
+        text-align: left;
+        color: white;
+        padding-left: 1em;
+    }
+
+    .top-buffer {
+        margin-top: 1.4em;
+    }
+
+    .top-buffer-sm {
+        margin-top: 0.5em;
+    }
+
+    .top-buffer-xs {
+        margin-top: 0.5em;
+    }
+
+    .btn-xlg {
+        font-size: 4.5em;
+        height: 1.8em;
+        white-space: normal;
+    }
+
+    .btn-block {
+        font-size: 2em;
+        height: 3em;
+        white-space: normal;
+    }
+
+    .btn-block-sm {
+        font-size: 2.5em;
+        height: 4em;
+        white-space: normal;
+    }
+
+    .btn-block-lg {
+        font-size: 2.5em;
+        height: 3em;
+        white-space: normal;
+    }
+
+    .btn-jumbo {
+        font-size: 6em;
+        height: 5em;
+        white-space: normal;
+    }
+
+    .dialwrapper {
+        height: 30em;
+    }
+}
+
+body {
+    background-color: #E8E8E8;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background: -moz-linear-gradient(left, #a52d1d 36%, #d81b06 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(36%,#a52d1d), color-stop(100%,#d81b06)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #a52d1d 36%,#d81b06 100%); /* IE10+ */
+    background: linear-gradient(to right, #a52d1d 36%,#d81b06 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a52d1d', endColorstr='#d81b06',GradientType=1 ); /* IE6-9 */
+}
+
+.ownit {
+    height: 6.5em;
+    line-height: 6.5em;
+}
+
+    .ownit span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+.dialwrapper-inner {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}

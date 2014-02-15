@@ -1,0 +1,2 @@
+﻿<%@ Control Language="c#" AutoEventWireup="true" CodeBehind="EmailTest.ascx.cs" Inherits="Website.Layout.SubLayout.EmailTest" %>
+<asp:Button ID="SendEmail" runat="server" Text="SendEmail!" OnClick="SendEmail_Click" />

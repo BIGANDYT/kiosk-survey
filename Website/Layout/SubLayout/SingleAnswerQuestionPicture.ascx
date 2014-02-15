@@ -1,38 +1,43 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="SingleAnswerQuestionPicture.ascx.cs" Inherits="Website.Layout.SubLayout.SingleAnswerQuestionPicture" %>
-<div class="bs-docs-grid, wrapper">
-    <div class="row-fluid show-grid">
-        <div class="span12 question">
-            <h1>
-                <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
-            </h1>
-        </div>
+<div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h3>
+            <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
+        </h3>
     </div>
-
-    <div class="row" style="text-align: center">
-        <asp:Repeater ID="AnswerRepeater" runat="server">
-            <ItemTemplate>
-                <div class="mwrapper">
-                    <div class="mcol">
-                        <input type="radio" class="maturity" name='<%# Sitecore.Context.Item.ID %>' id='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' value='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>'/>
-                        <label for='<%# ((Sitecore.Data.Items.Item)(Container.DataItem)).ID %>' style="background: <%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Fields["color"] %>; height: <%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Fields["height"] %>em;">
-                            <div class="mcoltop"> <%# ((Sitecore.Data.Items.Item)(Container.DataItem))["AlternateHeading"] %></div>
-                            <div class="mcolmiddle"> <%# ((Sitecore.Data.Items.Item)(Container.DataItem))["ModelText"] %></div>        
-                            <div class="mcolbottom">&#10004;</div>                                           
-                        </label>                        
-                    </div>
-                </div>
-            </ItemTemplate>
-        </asp:Repeater>
-    </div>
-
-    <div class="row-fluid show-grid">
-        <div class="span4">
-            <asp:Button class="emailbutton" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
-        </div>
-        <div class="span4">            
-        </div>
-        <div class="span4 text-right">
-            <asp:Button class="emailbutton" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
-        </div>
-    </div> 
 </div>
+<div class="btn-group-lg" data-toggle="buttons-radio">
+    <% foreach (var answer in items)
+       { %>
+    <div id="<%= answer.ID %>" class="row answer top-buffer-xs">        
+        <div style="background-color: <%= answer["color"] %>;" class="col-xs-12 col-sm-<%= Convert.ToInt32(answer["height"]) - 2 %> mmodelheader">
+            <span><%= answer["AlternateHeading"] %></span>
+        </div>
+        <div class="col-xs-12 col-sm-<%= 14 - Convert.ToInt32(answer["height"]) %> mmodelcontent">
+            <span><%= answer["ModelText"] %></span>
+        </div>
+    </div>
+    <%} %>
+</div>
+<form id="form1" runat="server">
+    <div class="row top-buffer-sm">
+        <div class="col-xs-6 col-sm-3 col-sm-offset-2">
+            <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
+        </div>
+        <div class="col-xs-6 col-sm-6" style="text-align: right">
+            <asp:Button class="btn-xlg btn-success" ID="Next" Text="Next" OnCommand="Next_Click" runat="server" />
+        </div>
+    </div>
+    <input type="hidden" name="buttonvalue" id="buttonvalue" />
+</form>
+<div>
+</div>
+<script>
+    $(".answer").click(function () {
+        $("input[name=buttonvalue]").val(this.id);
+        $(".mmodelcontent").css("color", "black");
+        $(".mmodelcontent").css("background-color", "white");
+        $(this).find(".mmodelcontent").css("background-color", "red");
+        $(this).find(".mmodelcontent").css("color", "white");
+    });
+</script>

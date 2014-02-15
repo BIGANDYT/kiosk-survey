@@ -13,9 +13,9 @@ templatekey: Sample Item
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 0
+content-length: 86
 
-
+<tracking><event id="{A24224EF-39EF-4127-8B61-A345924159B5}" name="Home" /></tracking>
 ----field----
 field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
 name: __Editors
@@ -316,7 +316,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: a7accdc9-7130-4f0e-ab0e-7a91cd591791
+revision: 97093ccd-a4f8-438a-bfec-65bf042e1ed7
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -347,6 +347,13 @@ content-length: 32
 
 
 		<p>Welcome to Sitecore</p>
+
+----field----
+field: {C26B265D-FAF3-4B2E-95F2-ED8F648DA233}
+name: PrizeImage
+key: prizeimage
+content-length: 0
+
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -410,14 +417,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7accdc9-7130-4f0e-ab0e-7a91cd591791
+97093ccd-a4f8-438a-bfec-65bf042e1ed7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130926T121645:635157946059216723
+20131118T232217:635204137375532484
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -425,6 +432,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: ja-JP
 version: 1

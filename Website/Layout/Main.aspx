@@ -1,73 +1,69 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.Main" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.Main" EnableEventValidation="false" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title></title>
-
-    <link href="/assets/css/Main.css" rel="stylesheet" />
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <script src="/assets/js/bootstrap.js"></script>
-    <script src="/assets/js/attendee/attendee.js"></script>
-    <script src="/assets/js/attendee/jquery.knob.js"></script>
+    <script src="/assets/js/knob/jquery.knob.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <title>Customer Experience Maturity Assessment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <style type="text/css">
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
 
-    <link href="/assets/css/radio/radio.css" rel="stylesheet" />
-    <link href="/assets/css/radio/maturitymodel.css" rel="stylesheet" />
-
-    <script src="/assets/js/jquery.fittext.js"></script>
-
-</head>
-<body>
-
-    <div id="wrap">
-        <div class="container-fluid wrapmain">           
-            <div class="row-fluid">
-                <div class="span6">
-                    <img class="arrows" src="/assets/img/arrows.png" />
-                </div>                
-                <asp:Repeater ID="ProgressRepeater" runat="server">
-                    <ItemTemplate>
-                        <div class="span1">
-                            <div class="circle <%# circle(((Sitecore.Data.Items.Item)(Container.DataItem)).Name) %>">
-                            </div>
-                            <div class="stage"><%# ((Sitecore.Data.Items.Item)(Container.DataItem)).Name %></div>                            
-                            <div class="line <%# line(((Sitecore.Data.Items.Item)(Container.DataItem)).Name) %>"></div>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>                   
-            </div>
-            <div class="row-fluid">
-                <div class="span1"></div>
-                <div class="span10">
-                    <div class="content">
-                        <form id="form1" runat="server">
-
-                            <sc:Placeholder ID="content" Key="content" runat="server" />
-
-                        </form>
-                    </div>
-                </div>
-                <div class="span1"></div>
-            </div>
-        </div>
-        <div id="push"></div>
-    </div>
-    <div id="footer">
-        <div class="row-fluid">
-            <div class="span6">
-                <div class="logo">
-                    <img src="/assets/img/sitecore.png" />
-                </div>
-            </div>
-            <div class="span6">
-                <div class="ownit">Own the Experience</div>
-            </div>
-        </div>
-    </div>    
-    <script>
-        jQuery(".responsive_text").fitText(2)
+        a {
+            color: #0078ff;
+        }
+    </style>
+    <script type="text/javascript">
+        function openErrorModal() {
+            $('#errorModal').modal('show');
+        }
     </script>
+</head>
+<body oncontextmenu="return false;" onload="init()">
+     <script src="/assets/js/bigvideo/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="/assets/js/xmas/ThreeCanvas.js"></script>
+    <script type="text/javascript" src="/assets/js/xmas/Snow.js"></script>
+    <script type="text/javascript" src="/assets/js/xmas/SnowLoader.js"></script>
+    <style>
+        section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+    </style>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6">
+            <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+
+            <img id="progress" class="img-responsive" src="/assets/img/progress_<%= Sitecore.Context.Item["Stage"] %>.png" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <sc:Placeholder ID="content" Key="content" runat="server" />
+        </div>
+    </div>
+    <nav class="footer navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="col-xs-12 col-sm-6">
+            <img class="img-responsive" src="/assets/img/sitecore-50.png" />
+        </div>
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1 ownit">
+            <span>
+                <img class="img-responsive" src="/assets/img/ownit.png" /></span>
+        </div>
+    </nav>
 </body>
 </html>
+

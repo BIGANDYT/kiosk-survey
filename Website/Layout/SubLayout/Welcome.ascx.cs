@@ -4,26 +4,36 @@ using System.Linq;
 using System.Web;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
+using Website.model;
+using Sitecore.Links;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class Welcome : System.Web.UI.UserControl
+    public partial class Welcome : Survey
     {
-        private Sitecore.Data.Items.Item CurrentUser { get; set; }
-        private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                Sitecore.Data.Fields.ImageField imageField = Sitecore.Context.Item.Fields["PrizeImage"];
+                if (imageField != null && imageField.MediaItem != null)
+                {
+                    Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
+                    PrizeImage.ImageUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+
+                }
+                else
+                {
+                    PrizeImage.Visible = false;
+                }
+            }
+        }
 
         protected void Buttonlink_Click(object sender, EventArgs e)
         {
-            Sitecore.Data.Items.Item parent = master.GetItem("/sitecore/content/Attendees");
-            TemplateItem attendeeTemplate = Sitecore.Configuration.Factory.GetDatabase("master").Templates["{AD71F430-184A-4DDE-B84C-E28FA6FCB5D0}"];
-            using (new Sitecore.SecurityModel.SecurityDisabler())
-            {
-                Log.Info("ANDYT" + "CREATING ITEM", this);
-                Item newAttendee = parent.Add(Guid.NewGuid().ToString(), attendeeTemplate);               
-                Sitecore.Context.ClientData.SetValue("CurrentUser", newAttendee.ID.ToString());
-                Log.Info("ANDYT" + "ITEM CREATED", this);
-            }  
-            Response.Redirect(Sitecore.Context.Item["Next Page"]);
+            CreateUser();
+            NextPage();
         }
     }
 }

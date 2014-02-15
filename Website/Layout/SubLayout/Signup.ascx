@@ -1,73 +1,88 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="Signup.ascx.cs" Inherits="Website.Layout.SubLayout.Signup" %>
-<div class="row-fluid">
-    <div class="span10 offset1">
-        <div class="title">
-            Give your full details to email a comprehensive report that is tailored to you.
+
+<form id="form1" runat="server">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-2" id="SignupTitle" runat="server">
         </div>
     </div>
-</div>
-<div class="row-fluid">
-    <div class="span2 offset1">
-        <div class="signup">
-            Name
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2" id="Subtitle" runat="server">
         </div>
     </div>
-    <div class="span6">
-        <div class="signupinput">
-            <input class="input-xxlarge" type="text" runat="server" id="Name" autocomplete="off" required>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2" id="PrizeText" runat="server">
         </div>
     </div>
-    <div class="span2">
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="span2 offset1">
-        <div class="signup">
-            Company
+    <div class="row top-buffer">
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+            <asp:Image class="img-responsive" ID="PrizeImage" runat="server" />
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Name
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" type="text" id="Name" autocomplete="off" runat="server" clientidmode="Static" required>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Company
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" type="text" runat="server" id="Company" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Job Title
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" type="text" runat="server" id="JobTitle" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Email
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" runat="server" id="Email" autocomplete="off" type="email" required>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="span6">
-        <div class="signupinput">
-            <input class="input-xxlarge" type="text" runat="server" id="Company" autocomplete="off" required>
+    <div class="row top-buffer">
+        <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+            <asp:Button class="btn-xlg btn-success" ID="Button1" Text="Restart" OnClick="Restart_Click" OnClientClick="forcesubmit()" runat="server" />
+        </div>
+        <div class="col-xs-6 col-sm-5 col-md-5" style="text-align: right">
+            <asp:Button class="btn-xlg btn-success" ID="Buttonlink" Text="Start" OnClick="Email_Click" runat="server" />
         </div>
     </div>
-    <div class="span2">
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="span2 offset1">
-        <div class="signup">
-            Job Title
+    <!-- Modal -->
+    <div id="errorModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Please enter the required fields</h4>
+                </div>
+                <div class="modal-body">
+                    <% for (var i = 0; i < errors.Count; i++) { %>
+                    <div><%= errors[i] %></div>
+                    <% } %>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
     </div>
-    <div class="span6">
-        <div class="signupinput">
-            <input class="input-xxlarge" type="text" runat="server" id="JobTitle" autocomplete="off" required>
-        </div>
-    </div>
-    <div class="span2">
-    </div>
-</div>
-<div class="row-fluid">
-    <div class="span2 offset1">
-        <div class="signup">
-            Email
-        </div>
-    </div>
-    <div class="span6">
-        <div class="signupinput">
-            <input class="input-xxlarge" runat="server" id="Email" autocomplete="off" type="email" required>
-        </div>
-    </div>
-</div>
-<div class="row-fluid">    
-    <div class="span4 offset2" onclick="forcesubmit()">
-        <asp:Button class="emailbutton" ID="Button1" Text="Restart" OnClick="Restart_Click" runat="server" />
-    </div>
-    <div class="span4 offset2">
-        <asp:Button class="emailbutton" ID="Buttonlink" Text="Start" OnClick="Email_Click" runat="server" />
-    </div>
-</div>
+    <!-- /.modal -->
+</form>
 <script>
     function forcesubmit() {
         $('input').removeAttr("required")

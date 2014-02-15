@@ -6,8 +6,8 @@ path: /sitecore/content/Home/Signup
 parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
 name: Signup
 master: {00000000-0000-0000-0000-000000000000}
-template: {1702BA38-6FC2-48F4-83B4-74C7A0E8BE9D}
-templatekey: Results
+template: {03FA8BFA-5077-46ED-903C-4D48196BA3F6}
+templatekey: Signup
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -20,13 +20,13 @@ content-length: 3
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 439
+content-length: 380
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{266313A4-94EE-4018-A9BA-6667E9FF86F6}"><p:d /></r><p uid="{496AA836-9A64-4846-8134-E6DEE2457476}" p:before="r[@uid='{F89FB3F6-0F79-4AEC-8CFB-524061F740AD}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{F89FB3F6-0F79-4AEC-8CFB-524061F740AD}" s:id="{663F8BB7-2456-4255-957F-51E2453C0BC5}" s:ph="content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><p uid="{496AA836-9A64-4846-8134-E6DEE2457476}" p:before="r[@uid='{F89FB3F6-0F79-4AEC-8CFB-524061F740AD}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{F89FB3F6-0F79-4AEC-8CFB-524061F740AD}" s:id="{663F8BB7-2456-4255-957F-51E2453C0BC5}" s:ph="content" /></d></r>
 ----version----
 language: en
 version: 1
-revision: cd9809b9-16c7-4d1a-8250-174062f06cb6
+revision: b2ea119c-ce96-4330-870a-82294bbb349a
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -36,12 +36,40 @@ content-length: 51
 
 /sitecore/content/Home/QualifierQuestions/Question1
 ----field----
+field: {5A43A62F-8E51-43CF-B279-A69440CB5CAB}
+name: Title
+key: title
+content-length: 0
+
+
+----field----
 field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
 name: Stage
 key: stage
 content-length: 5
 
 Start
+----field----
+field: {DB219A11-588F-413F-8124-A537EBABB701}
+name: Subtitle
+key: subtitle
+content-length: 38
+
+{A72D22EF-86D6-4C73-A96F-CFA3E186B4D8}
+----field----
+field: {2A46239F-2483-45D6-916E-DF5B30630951}
+name: PrizeText
+key: prizetext
+content-length: 0
+
+
+----field----
+field: {CD0C1270-ED1D-456C-8887-8DA485727B65}
+name: PrizeImage
+key: prizeimage
+content-length: 0
+
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cd9809b9-16c7-4d1a-8250-174062f06cb6
+b2ea119c-ce96-4330-870a-82294bbb349a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130926T083009:635157810096523276
+20131118T232346:635204138268632484
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {00034E69-A434-43A1-B146-EBFE85C066CC}
+database: master
+path: /sitecore/content/Home/Email Campaign/Message Types/Adhoc
+parent: {2BA08476-8037-4A08-AC9D-BA95D6740295}
+name: Adhoc
+master: {F8FAE92A-4F10-470C-AD5C-7ED9E6B636AF}
+template: {FA257176-AA15-4999-91C5-C03F3BDA5027}
+templatekey: Ad-hoc Type Folder
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: ca7c6cc9-24a5-4391-b68d-c6b7c57b8c96
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+One Time Message
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130930T104737
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ca7c6cc9-24a5-4391-b68d-c6b7c57b8c96
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130930T104737:635161348574823662
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

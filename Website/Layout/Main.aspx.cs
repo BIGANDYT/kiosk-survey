@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Sitecore.Links;
+using Sitecore.Security.Domains;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Website.code;
 
 namespace Website.Layout
 {
@@ -53,11 +57,14 @@ namespace Website.Layout
 
         private Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
 
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+
             activated = false;
-            ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
-            ProgressRepeater.DataBind();
+            //ProgressRepeater.DataSource = master.SelectItems(Sitecore.Context.Site.RootPath + "//*[@@templatekey='stage']");
+            //ProgressRepeater.DataBind();
         }
+
     }
 }
