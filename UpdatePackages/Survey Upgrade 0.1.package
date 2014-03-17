@@ -1,0 +1,82 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Survey Upgrade</PackageName>
+      <Author>Andrew Thompson</Author>
+      <Version>0.1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher>SitecoreUk</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Filters/Attendee/{EE7699DE-CD7F-45A3-8B27-B942F1CCE367}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Parameters/SitecoreRegion/{1CBCBAAC-A459-4B45-95E6-C52281411EA5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Parameters/SitecoreRegion/benelux/{87A751E9-EE97-471A-99EC-01976935C85B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Parameters/SitecoreRegion/survey/{B2BF97E4-BCCD-4569-800C-413385901EA8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Parameters/SitecoreRegion/sweden/{664F9D97-6615-4581-9C18-F8D21A076E79}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Parameters/SitecoreRegion/usa/{3399F3AF-A3A1-4987-B966-3E4070B7F959}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Scanners/Attendees/{B68AD8C0-B7EB-4F92-BE3A-CF02B8EA13EE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Configuration/Viewer/AttendeeViewer/{708BBA8B-A4D4-4CE5-AE79-A5506494058C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/ASR/Reports/Attendees/{D93C09C4-59CC-4030-95C6-04818B9BC4FF}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/ASR.Reports.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
