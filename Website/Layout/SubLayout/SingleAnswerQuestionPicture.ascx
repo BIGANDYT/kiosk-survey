@@ -37,7 +37,7 @@
         $("input[name=buttonvalue]").val(this.id);
         $(".mmodelcontent").css("color", "black");
         $(".mmodelcontent").css("background-color", "white");
-        $(this).find(".mmodelcontent").css("background-color", "red");
+        $(this).find(".mmodelcontent").css("background-color", "rgb(101, 31, 118)");
         $(this).find(".mmodelcontent").css("color", "white");
     });
 </script>

@@ -26,6 +26,11 @@
             $('#errorModal').modal('show');
         }
     </script>
+    <script>
+   	 $(document).ready(
+	        setTimeout("location.href = '<%= Sitecore.Context.Site.StartPath %>';", 240000)
+	    );    
+	</script>
 </head>
 <body oncontextmenu="return false;" onload="init()">
      <script src="/assets/js/bigvideo/jquery-ui-1.8.22.custom.min.js"></script>
@@ -55,13 +60,12 @@
             <sc:Placeholder ID="content" Key="content" runat="server" />
         </div>
     </div>
-    <nav class="footer navbar navbar-default navbar-fixed-bottom" role="navigation">
-        <div class="col-xs-12 col-sm-6">
-            <img class="img-responsive" src="/assets/img/sitecore-50.png" />
+    <nav class="footer navbar navbar-default navbar-fixed-bottom" role="navigation" style="">
+        <div class="col-xs-12 col-sm-6" style="color:#FFF;padding-top:5px;padding-left:30px;">
+            <h3>Sitecore Customer Experience Maturity Survey</h3>
         </div>
-        <div class="col-xs-12 col-sm-5 col-sm-offset-1 ownit">
-            <span>
-                <img class="img-responsive" src="/assets/img/ownit.png" /></span>
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                <img style="height:100px; padding:15px;" class="img-responsive pull-right" src="/assets/img/Sitecore-logo-tagline-allwhite.png" />
         </div>
     </nav>
 </body>

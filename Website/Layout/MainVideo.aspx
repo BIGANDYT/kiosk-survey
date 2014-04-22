@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <title>Customer Experience Maturity Assessment</title>    
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
-<body oncontextmenu="return false;">
-   
+<body oncontextmenu="return false;">   
     <sc:Placeholder ID="content" Key="content" runat="server" />
     <!-- BigVideo Dependencies -->
     <script src="/assets/js/jquery-1.9.1.min.js"></script>

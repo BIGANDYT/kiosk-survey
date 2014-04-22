@@ -50,6 +50,14 @@
                     <input class="form-control" runat="server" id="Email" autocomplete="off" type="email" required>
                 </div>
             </div>
+            <div class="row top-buffer">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Country
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" type="text" runat="server" id="Country" autocomplete="off" required>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row top-buffer">

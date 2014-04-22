@@ -60,6 +60,7 @@ namespace Website.Layout.SubLayout
                     CurrentUser.Fields["Company"].Value = Company.Value;
                     CurrentUser.Fields["Email"].Value = Email.Value;
                     CurrentUser.Fields["JobTitle"].Value = JobTitle.Value;
+                    CurrentUser.Fields["Country"].Value = Country.Value;
                     CurrentUser.Fields["SitecoreRegion"].Value = MultiRegion.GetRegion();
                     CurrentUser.Editing.EndEdit();
                     Log.Info("attendee updated", this);

@@ -8,20 +8,15 @@ using Sitecore.Diagnostics;
 using Sitecore.Modules.EmailCampaign;
 using Website.model;
 using System.Web.UI.WebControls;
+using Website.code;
 
 namespace Website.Layout.SubLayout
 {
     public partial class Finished : Survey
     {
-
-        // Email Constants
-        private Item Email1Init = Sitecore.Context.Database.GetItem("{AF16E079-3565-4AC1-A8A8-8A1B73506C7D}");
-        private Item Email2Radi = Sitecore.Context.Database.GetItem("{A3E4831C-C36C-4539-B4CA-968F17620513}");
-        private Item Email3Alig = Sitecore.Context.Database.GetItem("{2E89CD57-426E-4E24-A71A-81FD1D901C26}");
-        private Item Email4Opti = Sitecore.Context.Database.GetItem("{7210D193-AE45-4F05-95CA-43B670EFC4C5}");
-        private Item Email5Nurt = Sitecore.Context.Database.GetItem("{C37B7713-769E-4C93-AF89-11CA35CE241D}");
-        private Item Email6Enga = Sitecore.Context.Database.GetItem("{64716F69-EC72-4E3D-857C-CB015CDB5252}");
-        private Item Email7Life = Sitecore.Context.Database.GetItem("{2AB56DDC-B4F9-4FE2-AE89-E7341E79B97E}");
+        // TODO: move this to do a lookup on the folder item, add a property to the emails and then match in the method.
+        private String[] Survey = { "{AF16E079-3565-4AC1-A8A8-8A1B73506C7D}","{A3E4831C-C36C-4539-B4CA-968F17620513}","{2E89CD57-426E-4E24-A71A-81FD1D901C26}","{7210D193-AE45-4F05-95CA-43B670EFC4C5}","{C37B7713-769E-4C93-AF89-11CA35CE241D}","{64716F69-EC72-4E3D-857C-CB015CDB5252}","{2AB56DDC-B4F9-4FE2-AE89-E7341E79B97E}" };
+        private String[] Sweden = { "{30C0E079-F9ED-464E-AEF1-D7D91B7408B8}","{E310B220-E46E-48F7-B6C7-D812DD4578DB}","{294552B5-4C4C-4E7B-ACCB-F8ADE0B32BD4}","{40593D5D-9343-4E6C-9273-C4EC31605486}","{C7DFC2F2-EB4E-4ED2-B259-D84EDDC07077}","{30C0E079-F9ED-464E-AEF1-D7D91B7408B8}","{B78C00BB-AED4-4990-95FA-6F8500EC54D9}" };
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,47 +27,60 @@ namespace Website.Layout.SubLayout
                 {
                     PrizeText.InnerHtml = PrizeTexttext.Fields["Text"].Value;
                 }
-                Sitecore.Data.Fields.ImageField imageField = Sitecore.Context.Item.Fields["PrizeImage"];
-                if (imageField != null && imageField.MediaItem != null)
-                {
-                    Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
-                    PrizeImage.ImageUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
-                }
-                else
-                {
-                    PrizeImage.Visible = false;
-                }
+                //Sitecore.Data.Fields.ImageField imageField = Sitecore.Context.Item.Fields["PrizeImage"];
+                //if (imageField != null && imageField.MediaItem != null)
+                //{
+                //    Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
+                //    PrizeImage.ImageUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                //}
+                //else
+                //{
+                //    PrizeImage.Visible = false;
+               // }
                 SetCurrentUser();
                 var currentUserMaturity = CurrentUser["Qualifier"].ToString();
                 var currentUserEmailAdd = CurrentUser["Email"].ToString();
                 var currentUserName = CurrentUser["Name"].ToString();
-
-                switch (currentUserMaturity)
+                Item emailId = null;
+                switch (MultiRegion.GetRegion().ToLower())
                 {
-                    case "Initiator": //Initiate
-                        SendEmail(Email1Init, currentUserEmailAdd, currentUserName);
+                    case "survey":
+                        emailId = GetLevel(currentUserMaturity, currentUserEmailAdd, currentUserName, Survey);
                         break;
-                    case "Promoter": //Radiate
-                        SendEmail(Email2Radi, currentUserEmailAdd, currentUserName);
+                    case "benelux":
+                        emailId = GetLevel(currentUserMaturity, currentUserEmailAdd, currentUserName, Survey);
                         break;
-                    case "Aligner": //Align
-                        SendEmail(Email3Alig, currentUserEmailAdd, currentUserName);
-                        break;
-                    case "Optimizer": //Optimise
-                        SendEmail(Email4Opti, currentUserEmailAdd, currentUserName);
-                        break;
-                    case "Nurturer": //Nurture
-                        SendEmail(Email5Nurt, currentUserEmailAdd, currentUserName);
-                        break;
-                    case "Engager": //Engage
-                        SendEmail(Email6Enga, currentUserEmailAdd, currentUserName);
-                        break;
-                    case "Lifetime Customer Champion": //Lifetime
-                        SendEmail(Email7Life, currentUserEmailAdd, currentUserName);
+                    case "sweden":
+                        emailId = GetLevel(currentUserMaturity, currentUserEmailAdd, currentUserName, Sweden);
                         break;
                     default:
+                        emailId = GetLevel(currentUserMaturity, currentUserEmailAdd, currentUserName, Survey);
                         break;
                 }
+                SendEmail(emailId, currentUserEmailAdd, currentUserName);
+            }
+        }
+
+        private Item GetLevel(string currentUserMaturity, string currentUserEmailAdd, string currentUserName, String[] EmailIDs)
+        {
+            switch (currentUserMaturity)
+            {
+                case "Initiator": //Initiate
+                    return Sitecore.Context.Database.GetItem(EmailIDs[0]);
+                case "Promoter": //Radiate
+                    return Sitecore.Context.Database.GetItem(EmailIDs[1]);
+                case "Aligner": //Align
+                    return Sitecore.Context.Database.GetItem(EmailIDs[2]);
+                case "Optimizer": //Optimise
+                    return Sitecore.Context.Database.GetItem(EmailIDs[3]);
+                case "Nurturer": //Nurture
+                    return Sitecore.Context.Database.GetItem(EmailIDs[4]);
+                case "Engager": //Engage
+                    return Sitecore.Context.Database.GetItem(EmailIDs[5]);
+                case "Lifetime Customer Champion": //Lifetime
+                    return Sitecore.Context.Database.GetItem(EmailIDs[6]);
+                default:
+                    return Sitecore.Context.Database.GetItem(EmailIDs[0]);
             }
         }
 

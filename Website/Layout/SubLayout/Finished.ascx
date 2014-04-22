@@ -18,10 +18,10 @@
         </div>
     </div>
 <div class="row top-buffer">
-    <div class="col-xs-12 col-sm-3 col-sm-offset-2">
+    <!--<div class="col-xs-12 col-sm-3 col-sm-offset-2">
         <asp:Image class="img-responsive" ID="PrizeImage" runat="server"/>
-    </div>
-    <div class="col-xs-12 col-sm-6">
+    </div>-->
+    <div class="col-xs-8 col-xs-offset-2">
         <form id="form1" runat="server">
             <asp:Button class="btn-xlg btn-success btn-block btn-jumbo" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
         </form>

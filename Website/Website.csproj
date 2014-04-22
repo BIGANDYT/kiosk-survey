@@ -87,6 +87,7 @@
   <ItemGroup>
     <Content Include="assets\css\bigvideo\bigvideo.css" />
     <Content Include="assets\css\bootstrap\bootstrap.min.css" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\css\jquery-ui.css" />
     <Content Include="assets\css\responsive.css" />
     <Content Include="assets\img\amazon-com-logo-small.png" />
@@ -95,6 +96,7 @@
     <Content Include="assets\img\glyphicons-halflings-white.png" />
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
+    <Content Include="assets\img\Logo Black with tagline.png" />
     <Content Include="assets\img\maturitymodel.PNG" />
     <Content Include="assets\img\bigvideo\poster.png" />
     <Content Include="assets\img\progress_Business.png" />
@@ -103,6 +105,7 @@
     <Content Include="assets\img\progress_Start.png" />
     <Content Include="assets\img\rowfit.png" />
     <Content Include="assets\img\sitecore-50.png" />
+    <Content Include="assets\img\Sitecore-logo-tagline-allwhite.png" />
     <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />
     <Content Include="assets\img\xmas\bg.jpg" />
@@ -395,6 +398,11 @@
   <ItemGroup>
     <Folder Include="layouts\debug\" />
     <Folder Include="xsl\WebEdit\System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\css\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
