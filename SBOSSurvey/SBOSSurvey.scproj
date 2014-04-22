@@ -152,8 +152,83 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Align.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Engage.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Initiate.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Lifetime.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Nurture.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Optimise.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Radiate.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Align.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Engage.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Initiate.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Lifetime.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Nurture.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Optimise.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Radiate.item">
+      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
