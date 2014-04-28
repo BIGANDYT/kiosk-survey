@@ -2,7 +2,7 @@
 version: 1
 id: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden
 parent: {8E963CB2-332C-492F-AAF1-C9A480392BEE}
 name: Sweden
 master: {00000000-0000-0000-0000-000000000000}

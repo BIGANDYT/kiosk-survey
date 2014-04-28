@@ -2,7 +2,7 @@
 version: 1
 id: {1CB0305A-93A4-4F96-955F-E7DAC75DB2A0}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Initiate
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Initiate
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Initiate
 master: {00000000-0000-0000-0000-000000000000}

@@ -1,4 +1,5 @@
-﻿using Sitecore.Data.Items;
+﻿using Sitecore.Collections;
+using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,22 @@ namespace Website.Layout.SubLayout
             {
                 PrizeImage.Visible = false;
             }
+
+            ChildList childList = Sitecore.Context.Database.GetItem("/sitecore/system/Dictionary/Lookups/Countries").GetChildren();
+            ListItemCollection listItemCollection = new ListItemCollection();
+
+            foreach (Item child in childList)
+            {
+                //Use any field name, like Value, for ListItem Text and or Value properties.
+                ListItem li = new ListItem();
+                li.Text = child["Phrase"].ToString(); //Field name is Phrase
+                li.Value = child["Key"].ToString(); //Item ID Property, could be field name though
+                listItemCollection.Add(li);
+            }
+
+            Country.DataSource = listItemCollection;
+            Country.DataBind();
+
             SetCurrentUser();
         }
 
@@ -60,7 +77,7 @@ namespace Website.Layout.SubLayout
                     CurrentUser.Fields["Company"].Value = Company.Value;
                     CurrentUser.Fields["Email"].Value = Email.Value;
                     CurrentUser.Fields["JobTitle"].Value = JobTitle.Value;
-                    CurrentUser.Fields["Country"].Value = Country.Value;
+                    CurrentUser.Fields["Country"].Value = Country.SelectedItem.ToString();
                     CurrentUser.Fields["SitecoreRegion"].Value = MultiRegion.GetRegion();
                     CurrentUser.Editing.EndEdit();
                     Log.Info("attendee updated", this);

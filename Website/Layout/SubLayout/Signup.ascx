@@ -55,7 +55,7 @@
                     Country
                 </div>
                 <div class="col-xs-12 col-sm-7">
-                    <input class="form-control" type="text" runat="server" id="Country" autocomplete="off" required>
+                    <asp:DropDownList ClientIDMode="static" type="text" ID="Country" CssClass="form-control" DataTextField="text" DataValueField="value" runat="server"></asp:DropDownList>
                 </div>
             </div>
         </div>

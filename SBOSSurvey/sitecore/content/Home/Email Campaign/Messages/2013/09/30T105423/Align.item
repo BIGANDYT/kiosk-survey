@@ -2,7 +2,7 @@
 version: 1
 id: {2E89CD57-426E-4E24-A71A-81FD1D901C26}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Align
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Align
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Align
 master: {00000000-0000-0000-0000-000000000000}

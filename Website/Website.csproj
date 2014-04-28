@@ -384,7 +384,6 @@
     <Content Include="App_Config\Prefetch\Common.config" />
     <Content Include="App_Config\Prefetch\Core.config" />
     <Content Include="App_Config\Prefetch\Master.config" />
-    <Content Include="App_Config\Prefetch\Web.config" />
     <Content Include="App_Config\Prototypes.config" />
     <Content Include="App_Config\Security\Domains.config" />
     <Content Include="App_Config\Security\GlobalRoles.config" />
@@ -403,6 +402,9 @@
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\css\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Prefetch\Webdb.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

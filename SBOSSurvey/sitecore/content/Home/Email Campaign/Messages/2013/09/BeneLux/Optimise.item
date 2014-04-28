@@ -2,7 +2,7 @@
 version: 1
 id: {71E53885-B4F0-452B-8A8D-18ADBE40675A}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Optimise
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Optimise
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Optimise
 master: {00000000-0000-0000-0000-000000000000}

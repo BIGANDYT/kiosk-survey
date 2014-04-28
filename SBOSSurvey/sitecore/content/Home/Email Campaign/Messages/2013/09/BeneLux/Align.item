@@ -2,7 +2,7 @@
 version: 1
 id: {92FE820F-CD12-4D31-8C54-D577D627919B}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Align
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Align
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Align
 master: {00000000-0000-0000-0000-000000000000}

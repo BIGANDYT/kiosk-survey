@@ -2,7 +2,7 @@
 version: 1
 id: {7210D193-AE45-4F05-95CA-43B670EFC4C5}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Optimise
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Optimise
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Optimise
 master: {00000000-0000-0000-0000-000000000000}

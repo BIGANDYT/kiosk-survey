@@ -2,7 +2,7 @@
 version: 1
 id: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux
 parent: {8E963CB2-332C-492F-AAF1-C9A480392BEE}
 name: BeneLux
 master: {00000000-0000-0000-0000-000000000000}

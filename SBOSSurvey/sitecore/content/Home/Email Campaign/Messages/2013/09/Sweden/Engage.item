@@ -2,7 +2,7 @@
 version: 1
 id: {30C0E079-F9ED-464E-AEF1-D7D91B7408B8}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden/Engage
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden/Engage
 parent: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 name: Engage
 master: {00000000-0000-0000-0000-000000000000}

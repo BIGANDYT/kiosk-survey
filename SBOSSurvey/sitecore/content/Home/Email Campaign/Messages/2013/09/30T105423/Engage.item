@@ -2,7 +2,7 @@
 version: 1
 id: {64716F69-EC72-4E3D-857C-CB015CDB5252}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Engage
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Engage
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Engage
 master: {00000000-0000-0000-0000-000000000000}

@@ -2,7 +2,7 @@
 version: 1
 id: {AF16E079-3565-4AC1-A8A8-8A1B73506C7D}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Initiate
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Initiate
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Initiate
 master: {00000000-0000-0000-0000-000000000000}

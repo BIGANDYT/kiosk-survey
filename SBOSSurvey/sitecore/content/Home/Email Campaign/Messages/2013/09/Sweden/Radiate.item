@@ -2,7 +2,7 @@
 version: 1
 id: {E310B220-E46E-48F7-B6C7-D812DD4578DB}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden/Radiate
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden/Radiate
 parent: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 name: Radiate
 master: {00000000-0000-0000-0000-000000000000}

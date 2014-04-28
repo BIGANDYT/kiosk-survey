@@ -2,7 +2,7 @@
 version: 1
 id: {C37B7713-769E-4C93-AF89-11CA35CE241D}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Nurture
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Nurture
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Nurture
 master: {00000000-0000-0000-0000-000000000000}

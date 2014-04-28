@@ -2,7 +2,7 @@
 version: 1
 id: {B78C00BB-AED4-4990-95FA-6F8500EC54D9}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden/Lifetime
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden/Lifetime
 parent: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 name: Lifetime
 master: {00000000-0000-0000-0000-000000000000}

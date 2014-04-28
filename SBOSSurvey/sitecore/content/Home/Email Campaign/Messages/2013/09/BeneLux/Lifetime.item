@@ -2,7 +2,7 @@
 version: 1
 id: {77091528-4B49-44DC-84E6-2C037607B05F}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Lifetime
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Lifetime
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Lifetime
 master: {00000000-0000-0000-0000-000000000000}

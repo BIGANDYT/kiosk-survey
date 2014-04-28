@@ -2,7 +2,7 @@
 version: 1
 id: {411B41B1-06A5-4632-ADA0-4F2746C4BA3C}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Radiate
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Radiate
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Radiate
 master: {00000000-0000-0000-0000-000000000000}

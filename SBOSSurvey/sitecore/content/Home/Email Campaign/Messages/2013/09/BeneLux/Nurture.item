@@ -2,7 +2,7 @@
 version: 1
 id: {3A76BCAD-F572-4E28-A6CC-C36D657C6931}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/BeneLux/Nurture
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/BeneLux/Nurture
 parent: {5E0357F0-0CB8-42E9-852D-62C267749D5E}
 name: Nurture
 master: {00000000-0000-0000-0000-000000000000}

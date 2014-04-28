@@ -316,94 +316,22 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 97093ccd-a4f8-438a-bfec-65bf042e1ed7
+revision: ed45dfb8-cc3c-4cda-a3c9-9d4546597560
 
-----field----
-field: {9FCA13DB-B568-4925-B569-5147F4D47724}
-name: Next Page
-key: next page
-content-length: 29
-
-/sitecore/content/Home/Signup
-----field----
-field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
-name: Stage
-key: stage
-content-length: 5
-
-Start
 ----field----
 field: {75577384-3C97-45DA-A847-81B00500E250}
 name: Title
 key: title
-content-length: 8
+content-length: 4
 
-Sitecore
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 32
-
-
-		<p>Welcome to Sitecore</p>
-
-----field----
-field: {C26B265D-FAF3-4B2E-95F2-ED8F648DA233}
-name: PrizeImage
-key: prizeimage
-content-length: 0
-
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 0
-
-
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 58
-
-The Home item is the default starting point for a website.
-----field----
-field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
-name: __Short description
-key: __short description
-content-length: 20
-
-Welcome to Sitecore.
-----field----
-field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
-name: __Valid from
-key: __valid from
-content-length: 0
-
-
-----field----
-field: {4C346442-E859-4EFD-89B2-44AEDF467D21}
-name: __Valid to
-key: __valid to
-content-length: 0
-
-
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
+Home
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20080407T135900
+20140424T150252
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -417,103 +345,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-97093ccd-a4f8-438a-bfec-65bf042e1ed7
+ed45dfb8-cc3c-4cda-a3c9-9d4546597560
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131118T232217:635204137375532484
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
-----version----
-language: ja-JP
-version: 1
-revision: 06f9a18a-9d66-4af8-a24a-f0ed55f9ef92
-
-----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 23
-
-サイトコア Web プラットフォームへようこそ
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 40
-
-<p>このたびはサイトコア製品をご利用いただき誠にありがとうございます。</p>
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 3
-
-ホーム
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 30
-
-ホーム アイテムは Web サイトのデフォルトの開始場所です
-----field----
-field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
-name: __Short description
-key: __short description
-content-length: 23
-
-サイトコア Web プラットフォームへようこそ
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 34
-
-20130424T133859:635024075390481107
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-06f9a18a-9d66-4af8-a24a-f0ed55f9ef92
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 34
-
-20130424T133904:635024075442346147
+20140424T150252:635339485723001471
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

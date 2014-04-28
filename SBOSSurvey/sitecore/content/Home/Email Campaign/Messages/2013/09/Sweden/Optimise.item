@@ -2,7 +2,7 @@
 version: 1
 id: {40593D5D-9343-4E6C-9273-C4EC31605486}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden/Optimise
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden/Optimise
 parent: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 name: Optimise
 master: {00000000-0000-0000-0000-000000000000}

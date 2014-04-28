@@ -2,7 +2,7 @@
 version: 1
 id: {A3E4831C-C36C-4539-B4CA-968F17620513}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/30T105423/Radiate
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/30T105423/Radiate
 parent: {23725868-92C0-4DD1-B1A3-531C671AF5CD}
 name: Radiate
 master: {00000000-0000-0000-0000-000000000000}

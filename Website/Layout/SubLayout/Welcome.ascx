@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="Welcome.ascx.cs" Inherits="Website.Layout.SubLayout.Welcome" %>
 <div class="row">
     <div class="col-xs-3 pull-right">
-        <img class="img-responsive" src="/assets/img/Logo Black with tagline.png" />
+        <img class="img-responsive" src="/assets/img/Logo Black with tagline.png" style="padding:30px;" />
     </div>
 </div>
 <div class="row">

@@ -9,6 +9,7 @@ using Sitecore.Modules.EmailCampaign;
 using Website.model;
 using System.Web.UI.WebControls;
 using Website.code;
+using System.Web.Security;
 
 namespace Website.Layout.SubLayout
 {
@@ -89,9 +90,21 @@ namespace Website.Layout.SubLayout
             // Define the manager root LIVE: {8021493A-C5FE-4582-BE97-3F137295C432}
             var managerRootItem = Sitecore.Context.Database.GetItem("{8021493A-C5FE-4582-BE97-3F137295C432}");
             var managerRoot = Factory.GetManagerRootFromItem(managerRootItem);
-
+            Contact contact = null;
             // Get a fake account on the go and pass in the email address
-            var contact = Sitecore.Modules.EmailCampaign.Contact.GetAnonymousFromEmail(EmailAddress, managerRoot);
+            MembershipUserCollection users = Membership.FindUsersByEmail(EmailAddress);
+            if (users.Count > 0)
+            {
+                foreach (MembershipUser m in users)
+                {
+                     contact = Contact.FromName(m.UserName);
+                     break;
+                }
+            }
+            else
+            {
+                contact = Sitecore.Modules.EmailCampaign.Contact.GetAnonymousFromEmail(EmailAddress, managerRoot);
+            }
             if (contact != null && contact.Profile != null)
             {
                 contact.Profile.FullName = emailName;

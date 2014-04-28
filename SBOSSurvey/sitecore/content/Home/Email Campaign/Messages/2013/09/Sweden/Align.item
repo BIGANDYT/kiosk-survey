@@ -2,7 +2,7 @@
 version: 1
 id: {294552B5-4C4C-4E7B-ACCB-F8ADE0B32BD4}
 database: master
-path: /sitecore/content/Home/Email Campaign/Messages/2013/09/Sweden/Align
+path: /sitecore/content/Attendees/Home/Email Campaign/Messages/2013/09/Sweden/Align
 parent: {9ACAF2A0-1723-49FD-B168-A7A7E2B5C1A2}
 name: Align
 master: {00000000-0000-0000-0000-000000000000}
