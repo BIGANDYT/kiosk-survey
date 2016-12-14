@@ -2,12 +2,13 @@
 
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
+<head>    
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/survey.css">
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <script src="/assets/js/jquery-1.9.1.min.js"></script>
     <script src="/assets/js/knob/jquery.knob.js"></script>
-    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>    
     <title>Customer Experience Maturity Assessment</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
@@ -26,11 +27,11 @@
             $('#errorModal').modal('show');
         }
     </script>
-    <script>
+    <!--<script>
    	 $(document).ready(
 	        setTimeout("location.href = '<%= Sitecore.Context.Site.StartPath %>';", 240000)
 	    );    
-	</script>
+	</script>-->
 </head>
 <body oncontextmenu="return false;" onload="init()">
      <script src="/assets/js/bigvideo/jquery-ui-1.8.22.custom.min.js"></script>
@@ -46,9 +47,9 @@
             overflow: hidden;
         }
     </style>
-    <div class="row">
+    <div class="row header">
         <div class="col-xs-6 col-sm-6">
-            <img id="arrows" class="img-responsive" src="/assets/img/arrows.png" />
+            <img id="arrows" class="img-responsive logo" src="/assets/img/logo.svg" />
         </div>
         <div class="col-xs-12 col-sm-4 col-sm-offset-2">
 
@@ -61,11 +62,8 @@
         </div>
     </div>
     <nav class="footer navbar navbar-default navbar-fixed-bottom" role="navigation" style="">
-        <div class="col-xs-12 col-sm-6" style="color:#FFF;padding-top:5px;padding-left:30px;">
-            <h3>Sitecore Customer Experience Maturity Survey</h3>
-        </div>
-        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-                <img style="height:100px; padding:15px;" class="img-responsive pull-right" src="/assets/img/Sitecore-logo-tagline-allwhite.png" />
+        <div class="col-xs-12 col-sm-6" style="padding-top:5px;padding-left:30px;">
+            <h3>Avanade Customer Experience Maturity Survey</h3>
         </div>
     </nav>
 </body>

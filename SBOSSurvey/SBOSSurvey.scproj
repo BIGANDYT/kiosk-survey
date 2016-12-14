@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -20,15 +20,19 @@
     <Name>SBOSSurvey</Name>
     <RootNamespace>SBOSSurvey</RootNamespace>
     <SitecoreDatabase>master</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>D:\Websites\_poc\SBOS\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://SBOS/</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\Websites\sbos.survey\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://sbos.survey</SitecoreWebUrl>
     <SitecoreAccessGuid>574f3076-393d-4408-8a05-09d7c1b6be91</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -44,9 +48,6 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
@@ -59,226 +60,6 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home.item">
       <Icon>/temp/IconCache/Network/16x16/home.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign.item">
-      <Icon>/temp/IconCache/Network/32x32/mail_earth.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types.item">
-      <Icon>/temp/IconCache/people/32x32/pens.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types\Adhoc.item">
-      <Icon>/temp/IconCache/applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types\Adhoc\Default.item">
-      <Icon>/temp/IconCache/people/32x32/target3.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types\Periodical.item">
-      <Icon>/temp/IconCache/applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types\Trickle.item">
-      <Icon>/temp/IconCache/applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Message Types\Trickle\Default.item">
-      <Icon>/temp/IconCache/applications/32x32/flash.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages.item">
-      <Icon>/temp/IconCache/network/32x32/mailbox_full.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Align.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Engage.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Initiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Lifetime.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Nurture.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Optimise.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\30T105423\Radiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Align.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Engage.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Initiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Lifetime.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Nurture.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Optimise.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\BeneLux\Radiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Align.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Engage.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Initiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Lifetime.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Nurture.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Optimise.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\2013\09\Sweden\Radiate.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages.item">
-      <Icon>/temp/IconCache/Applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Self-Service Subscription.item">
-      <Icon>/temp/IconCache/Applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Self-Service Subscription\Subscription Confirmation.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Self-Service Subscription\Subscription Notification.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Self-Service Subscription\Unsubscribe From All Notification.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Self-Service Subscription\Unsubscribe Notification.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Status Messages.item">
-      <Icon>/temp/IconCache/Applications/32x32/folder.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Status Messages\Dispatch Completed.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Messages\Service Messages\Status Messages\Trickle Notification.item">
-      <Icon>/temp/IconCache/Applications/32x32/text_rich_colored.png</Icon>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Email Campaign\Recipient Lists.item">
-      <Icon>/temp/IconCache/people/32x32/user1_earth.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -1332,6 +1113,15 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Website\Website.csproj">
+      <Project>{4953aaa9-9f2a-4a27-b95d-53a514e60418}</Project>
+      <Name>Website</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

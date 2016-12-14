@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Website</RootNamespace>
     <AssemblyName>Website</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -25,6 +25,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,14 +47,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sitecore.Analytics.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\lib\Sitecore.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sitecore.Buckets.dll</HintPath>
+      <HintPath>..\lib\Sitecore.Buckets.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Buckets.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -63,12 +68,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.EmailCampaign, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Sitecore.EmailCampaign.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Sitecore.Kernel">
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -87,16 +87,15 @@
   <ItemGroup>
     <Content Include="assets\css\bigvideo\bigvideo.css" />
     <Content Include="assets\css\bootstrap\bootstrap.min.css" />
-    <Content Include="assets\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\css\jquery-ui.css" />
     <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\survey.css" />
     <Content Include="assets\img\amazon-com-logo-small.png" />
     <Content Include="assets\img\amazon-com-logo.png" />
     <Content Include="assets\img\arrows.png" />
     <Content Include="assets\img\glyphicons-halflings-white.png" />
     <Content Include="assets\img\glyphicons-halflings.png" />
     <Content Include="assets\img\lgo.png" />
-    <Content Include="assets\img\Logo Black with tagline.png" />
     <Content Include="assets\img\maturitymodel.PNG" />
     <Content Include="assets\img\bigvideo\poster.png" />
     <Content Include="assets\img\progress_Business.png" />
@@ -105,7 +104,6 @@
     <Content Include="assets\img\progress_Start.png" />
     <Content Include="assets\img\rowfit.png" />
     <Content Include="assets\img\sitecore-50.png" />
-    <Content Include="assets\img\Sitecore-logo-tagline-allwhite.png" />
     <Content Include="assets\img\sitecore-red.png" />
     <Content Include="assets\img\sitecore.png" />
     <Content Include="assets\img\xmas\bg.jpg" />
@@ -132,19 +130,12 @@
     <Content Include="assets\js\xmas\ThreeCanvas.js" />
     <Content Include="assets\vids\video1-new.mp4" />
     <Content Include="bin\AjaxMin.dll" />
-    <Content Include="bin\AntiXSSLibrary.dll" />
-    <Content Include="bin\AntiXSSLibrary.xml" />
     <Content Include="bin\ASR.dll" />
     <Content Include="bin\ASR.Reports.dll" />
-    <Content Include="bin\ChilkatDotNet2.dll" />
-    <Content Include="bin\ComponentArt.Web.UI.dll" />
     <Content Include="bin\CorePoint.DomainObjects.dll" />
     <Content Include="bin\dotless.Core.dll" />
     <Content Include="bin\HedgehogDevelopment.SitecoreProject.Service.dll" />
-    <Content Include="bin\HtmlAgilityPack.dll" />
-    <Content Include="bin\HtmlAgilityPack.xml" />
     <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="bin\ITHit.WebDAV.Server.dll" />
     <Content Include="bin\Lucene.Net.Contrib.Analyzers.dll" />
     <Content Include="bin\Lucene.Net.Contrib.Core.dll" />
     <Content Include="bin\Lucene.Net.Contrib.FastVectorHighlighter.dll" />
@@ -155,79 +146,34 @@
     <Content Include="bin\Lucene.Net.Contrib.SimpleFacetedSearch.dll" />
     <Content Include="bin\Lucene.Net.Contrib.Snowball.dll" />
     <Content Include="bin\Lucene.Net.Contrib.SpellChecker.dll" />
-    <Content Include="bin\Lucene.Net.dll" />
-    <Content Include="bin\Lucene.Net.xml" />
     <Content Include="bin\Microsoft.Practices.Unity.dll" />
     <Content Include="bin\Microsoft.Practices.Unity.xml" />
-    <Content Include="bin\MoreLinq.dll" />
-    <Content Include="bin\MoreLinq.pdb" />
-    <Content Include="bin\MoreLinq.xml" />
-    <Content Include="bin\Mvp.Xml.dll" />
     <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\Newtonsoft.Json.xml" />
-    <Content Include="bin\RadEditor.Net2.dll" />
     <Content Include="bin\Sitecore.Analytics.dll" />
     <Content Include="bin\Sitecore.Apps.Loader.dll" />
-    <Content Include="bin\Sitecore.Automation.MarketingAutomation.dll" />
     <Content Include="bin\Sitecore.Buckets.Client.dll" />
     <Content Include="bin\Sitecore.Buckets.dll" />
-    <Content Include="bin\Sitecore.Client.dll" />
-    <Content Include="bin\Sitecore.Client.Extensions.Compiler.dll" />
     <Content Include="bin\Sitecore.Client.Extensions.Compiler.pdb" />
-    <Content Include="bin\Sitecore.Client.Extensions.dll" />
-    <Content Include="bin\Sitecore.Client.Extensions.pdb" />
-    <Content Include="bin\Sitecore.Client.XML" />
     <Content Include="bin\Sitecore.ContentSearch.Client.dll" />
     <Content Include="bin\Sitecore.ContentSearch.dll" />
     <Content Include="bin\Sitecore.ContentSearch.Linq.Lucene.dll" />
     <Content Include="bin\Sitecore.ContentSearch.LuceneProvider.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.App.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.Data.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.Domain.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.Presentation.dll" />
-    <Content Include="bin\Sitecore.EmailCampaign.Presentation.UI.dll" />
-    <Content Include="bin\Sitecore.Kernel.dll" />
-    <Content Include="bin\Sitecore.Kernel.xml" />
-    <Content Include="bin\Sitecore.Logging.dll" />
     <Content Include="bin\Sitecore.Mvc.Analytics.dll" />
     <Content Include="bin\Sitecore.Mvc.DeviceSimulator.dll" />
     <Content Include="bin\Sitecore.Mvc.dll" />
     <Content Include="bin\Sitecore.Mvc.ExperienceEditor.dll" />
     <Content Include="bin\sitecore.nexus.dll" />
-    <Content Include="bin\Sitecore.NVelocity.dll" />
     <Content Include="bin\Sitecore.Oracle.dll" />
     <Content Include="bin\Sitecore.Publishing.WebDeploy.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Core.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.HedgehogDevelopment.Diagrammer.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Lucene.2313.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Lucene.2941.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Lucene.3030.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.MediaUploader.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Speak.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.TemplateAssigner.dll" />
-    <Content Include="bin\Sitecore.Rocks.Server.Validation.dll" />
     <Content Include="bin\Sitecore.Security.AntiCsrf.dll" />
-    <Content Include="bin\Sitecore.SegmentBuilder.dll" />
-    <Content Include="bin\Sitecore.Shell.MarketingAutomation.dll" />
-    <Content Include="bin\Sitecore.Speak.dll" />
     <Content Include="bin\Sitecore.Speak.pdb" />
-    <Content Include="bin\Sitecore.Speak.WebSite.dll" />
     <Content Include="bin\Sitecore.Speak.WebSite.pdb" />
     <Content Include="bin\Sitecore.Update.dll" />
-    <Content Include="bin\Sitecore.Zip.dll" />
-    <Content Include="bin\Stimulsoft.Base.dll" />
     <Content Include="bin\Stimulsoft.Database.dll" />
-    <Content Include="bin\Stimulsoft.Report.dll" />
-    <Content Include="bin\Telerik.Web.UI.dll" />
     <Content Include="bin\Telerik.Web.UI.Skins.dll" />
-    <Content Include="bin\Telerik.Web.UI.xml" />
     <Content Include="bin\WebFormsMvp.dll" />
     <Content Include="bin\WebFormsMvp.Unity.dll" />
     <Content Include="bin\WebFormsMvp.xml" />
-    <Content Include="bin\Website.dll" />
-    <Content Include="bin\Website.pdb" />
     <Content Include="Default.aspx" />
     <Content Include="default.css" />
     <Content Include="default.js" />
@@ -346,7 +292,6 @@
     <Content Include="App_Config\ConnectionStringsOracle.config" />
     <Content Include="App_Config\FieldTypes.config" />
     <Content Include="App_Config\Icons.config" />
-    <Content Include="App_Config\Include\DataFolder.config.example" />
     <Content Include="App_Config\Include\EventHandler.config.example" />
     <Content Include="App_Config\Include\ForwardingSecurityEvents.config.example" />
     <Content Include="App_Config\Include\ja-JP.config.example" />
@@ -356,7 +301,6 @@
     <Content Include="App_Config\Include\Sitecore.Analytics.ExcludeRobots.config" />
     <Content Include="App_Config\Include\Sitecore.AntiCsrf.config" />
     <Content Include="App_Config\Include\Sitecore.Buckets.config" />
-    <Content Include="App_Config\Include\Sitecore.Buckets.Scaling.config.example" />
     <Content Include="App_Config\Include\Sitecore.Buckets.WarmupQueries.config.example" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.DefaultIndexConfiguration.config" />
@@ -367,10 +311,6 @@
     <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Master.config.example" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Web.config.example" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config.example" />
-    <Content Include="App_Config\Include\Sitecore.Mvc.config.disabled" />
-    <Content Include="App_Config\Include\Sitecore.MvcAnalytics.config.disabled" />
-    <Content Include="App_Config\Include\Sitecore.MvcExperienceEditor.config.disabled" />
-    <Content Include="App_Config\Include\Sitecore.MvcSimulator.config.disabled" />
     <Content Include="App_Config\Include\Sitecore.PipelineProfiling.config.disabled" />
     <Content Include="App_Config\Include\Sitecore.Shell.MarketingAutomation.config" />
     <Content Include="App_Config\Include\Sitecore.WebDAV.config" />
@@ -399,12 +339,19 @@
     <Folder Include="xsl\WebEdit\System\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\css\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="assets\css\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="assets\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Config\Prefetch\Webdb.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Prefetch\Webdb.config" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\WeblySleekUILight.woff" />
+    <Content Include="assets\fonts\weblysleekuisb.ttf" />
+    <Content Include="assets\fonts\weblysleekuisb.woff" />
+    <Content Include="assets\fonts\WeblySleek_UI_Normal.eot" />
+    <Content Include="assets\fonts\WeblySleek_UI_Normal.ttf" />
+    <Content Include="assets\fonts\WeblySleek_UI_Normal.woff" />
+    <None Include="Properties\PublishProfiles\Debug.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

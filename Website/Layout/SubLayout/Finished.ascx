@@ -23,7 +23,7 @@
     </div>-->
     <div class="col-xs-8 col-xs-offset-2">
         <form id="form1" runat="server">
-            <asp:Button class="btn-xlg btn-success btn-block btn-jumbo" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
+            <asp:Button class="btn-xlg btn-survey btn-block btn-jumbo" ID="Buttonlink" Text="Next User Click Here" OnClick="Restart_Click" runat="server" />
         </form>
     </div>
 </div>

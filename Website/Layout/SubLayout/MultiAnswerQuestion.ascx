@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="True" CodeBehind="MultiAnswerQuestion.ascx.cs" Inherits="Website.Layout.SubLayout.MultiAnswerQuestion" %>
-<div class="row">
+<div class="row question">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <h3>
             <sc:FieldRenderer ID="FieldRenderer1" FieldName="Question" runat="server" />
@@ -39,10 +39,10 @@
     </div>
     <div class="row top-buffer">
         <div class="col-xs-6 col-sm-3 col-sm-offset-2">
-            <asp:Button class="btn-xlg btn-success" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
+            <asp:Button class="btn-xlg btn-survey" ID="Restart" Text="Restart" OnCommand="Restart_Click" runat="server" />
         </div>
         <div class="col-xs-6 col-sm-5 col-md-5" style="text-align: right">
-            <asp:Button class="btn-xlg btn-success" ID="Next" Text="Next" OnCommand="Next_Click" OnClientClick="getChecked()" runat="server" />
+            <asp:Button class="btn-xlg btn-survey" ID="Next" Text="Next" OnCommand="Next_Click" OnClientClick="getChecked()" runat="server" />
         </div>
     </div>
     <input type="hidden" name="buttonvalue" id="buttonvalue" />

@@ -2,10 +2,11 @@
 
 <!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/assets/css/bigvideo/bigvideo.css">
+<head>    
+    <link rel="stylesheet" href="/assets/css/bigvideo/bigvideo.css">    
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/survey.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">   
     <title>Customer Experience Maturity Assessment</title>    
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>

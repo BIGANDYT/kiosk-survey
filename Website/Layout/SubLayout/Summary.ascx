@@ -14,7 +14,7 @@
         </div>
         <input id="stopper" type="hidden" runat="server">
     </div>
-    <div class="col-xs-12  col-sm-7">
+    <div class="col-xs-12  col-sm-7 summarytext">
         <div class="col-xs-12">
             <div id="Heading" runat="server"></div>
         </div>

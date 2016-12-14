@@ -5,7 +5,7 @@ using System.Web;
 
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Modules.EmailCampaign;
+//using Sitecore.Modules.EmailCampaign;
 using Website.model;
 using System.Web.UI.WebControls;
 using Website.code;
@@ -88,41 +88,41 @@ namespace Website.Layout.SubLayout
         private void SendEmail(Item emailId, string EmailAddress, string emailName)
         {
             // Define the manager root LIVE: {8021493A-C5FE-4582-BE97-3F137295C432}
-            var managerRootItem = Sitecore.Context.Database.GetItem("{8021493A-C5FE-4582-BE97-3F137295C432}");
-            var managerRoot = Factory.GetManagerRootFromItem(managerRootItem);
-            Contact contact = null;
+            //var managerRootItem = Sitecore.Context.Database.GetItem("{8021493A-C5FE-4582-BE97-3F137295C432}");
+            //var managerRoot = Factory.GetManagerRootFromItem(managerRootItem);
+            //Contact contact = null;
             // Get a fake account on the go and pass in the email address
-            MembershipUserCollection users = Membership.FindUsersByEmail(EmailAddress);
-            if (users.Count > 0)
-            {
-                foreach (MembershipUser m in users)
-                {
-                     contact = Contact.FromName(m.UserName);
-                     break;
-                }
-            }
-            else
-            {
-                contact = Sitecore.Modules.EmailCampaign.Contact.GetAnonymousFromEmail(EmailAddress, managerRoot);
-            }
-            if (contact != null && contact.Profile != null)
-            {
-                contact.Profile.FullName = emailName;
+            //MembershipUserCollection users = Membership.FindUsersByEmail(EmailAddress);
+            //if (users.Count > 0)
+            //{
+            //    foreach (MembershipUser m in users)
+            //    {
+            //         contact = Contact.FromName(m.UserName);
+            //         break;
+            //    }
+            //}
+            //else
+            //{
+            //    contact = Sitecore.Modules.EmailCampaign.Contact.GetAnonymousFromEmail(EmailAddress, managerRoot);
+            //}
+            //if (contact != null && contact.Profile != null)
+            //{
+                //contact.Profile.FullName = emailName;
 
                 //Fetch message and get message item
-                var itmMessage = emailId;
-                var mi = Factory.GetMessage(itmMessage);
+                //var itmMessage = emailId;
+                //var mi = Factory.GetMessage(itmMessage);
 
                 //get sending manager
-                var sm = new AsyncSendingManager(mi);
+                //var sm = new AsyncSendingManager(mi);
 
                 //SendStandardmessage for triggered message
-                var result = sm.SendStandardMessage(contact);
-            }
-            else
-            {
-                Log.Error(String.Format("Error Sending Email, contact or profile was null, Email: {0}, EmailName: {1}", EmailAddress, emailName), this);
-            }
+                //var result = sm.SendStandardMessage(contact);
+            //}
+            //else
+            //{
+                //Log.Error(String.Format("Error Sending Email, contact or profile was null, Email: {0}, EmailName: {1}", EmailAddress, emailName), this);
+            //}
         }
 
         protected void Restart_Click(object sender, EventArgs e)

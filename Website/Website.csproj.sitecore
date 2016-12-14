@@ -1,17 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project>
+﻿<Project>
   <PropertyGroup>
     <Site Server="kiosk72" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
-  <ItemGroup>
-    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{F8C6935F-D20F-48A3-BCF5-CC48F4E662B3}</Item>
-    </File>
-    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-    <File Include="Layout\MainVideo.aspx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-      <Item DatabaseName="master">{31596FE5-F178-4F45-9A2A-9DA6A59517D7}</Item>
-    </File>
-    <File Include="Layout\MainVideo.aspx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
-  </ItemGroup>
+  <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{F8C6935F-D20F-48A3-BCF5-CC48F4E662B3}</Item>
+  </File>
+  <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Layout\MainVideo.aspx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{31596FE5-F178-4F45-9A2A-9DA6A59517D7}</Item>
+  </File>
+  <File Include="Layout\MainVideo.aspx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
 </Project>
