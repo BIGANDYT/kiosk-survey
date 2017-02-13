@@ -47,6 +47,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -56,6 +60,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Sitecore.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\lib\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Outcome">
+      <HintPath>..\..\..\Websites\sbos.survey\Website\bin\Sitecore.Analytics.Outcome.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Sitecore.Buckets.dll</HintPath>
@@ -63,6 +74,12 @@
     <Reference Include="Sitecore.Buckets.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Sitecore.Buckets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Cintel">
+      <HintPath>..\lib\Sitecore.Cintel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Cintel.Client">
+      <HintPath>..\lib\Sitecore.Cintel.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -80,6 +97,30 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Xml.Linq" />
@@ -197,6 +238,8 @@
     <Content Include="Layout\SubLayout\QualifierQuestion.ascx" />
     <Content Include="Layout\SubLayout\Signup.ascx" />
     <Content Include="Layout\SubLayout\Welcome.ascx" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\Survey\Survey.js" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\Survey\SurveyTab.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -204,17 +247,22 @@
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="code\dataprovider\ConstructSurveyDataTable.cs" />
+    <Compile Include="code\dataprovider\GetSurvey.cs" />
+    <Compile Include="code\dataprovider\PopulateSurveyWithXdbData.cs" />
+    <Compile Include="code\dataprovider\SurveyResultTransformer .cs" />
+    <Compile Include="code\facet\maturity\IMaturityFacet.cs" />
+    <Compile Include="code\facet\maturity\MaturityFacet.cs" />
+    <Compile Include="code\facet\survey\SurveyFacetModel.cs" />
+    <Compile Include="code\facet\survey\SurveyElement.cs" />
+    <Compile Include="code\facet\survey\SurveyFacet.cs" />
+    <Compile Include="code\facet\survey\ISurveyFacet.cs" />
+    <Compile Include="code\facet\survey\ISurveyElement.cs" />
     <Compile Include="code\MultiRegion.cs" />
-    <Compile Include="Layout\Main.aspx.designer.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Layout\MainVideo.aspx.cs">
-      <DependentUpon>MainVideo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\MainVideo.aspx.designer.cs">
-      <DependentUpon>MainVideo.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="code\ReCaptchaClass.cs" />
+    <Compile Include="code\repository\SurveyRepository.cs" />
+    <Compile Include="code\repository\maturity\MaturityRepository.cs" />
+    <Compile Include="code\repository\survey\SurveyService.cs" />
     <Compile Include="Layout\SubLayout\EmailTest.ascx.cs">
       <DependentUpon>EmailTest.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,111 +271,40 @@
       <DependentUpon>Finished.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\Finished.ascx.designer.cs">
-      <DependentUpon>Finished.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.cs">
       <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\SubLayout\SingleAnswerQuestionPicture.ascx.designer.cs">
-      <DependentUpon>SingleAnswerQuestionPicture.ascx</DependentUpon>
     </Compile>
     <Compile Include="Layout\SubLayout\Summary.ascx.cs">
       <DependentUpon>Summary.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\Summary.ascx.designer.cs">
-      <DependentUpon>Summary.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Layout\SubLayout\SingleAnswerQuestion.ascx.cs">
       <DependentUpon>SingleAnswerQuestion.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\SubLayout\SingleAnswerQuestion.ascx.designer.cs">
-      <DependentUpon>SingleAnswerQuestion.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Layout\Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.cs">
       <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\MultiAnswerQuestion.ascx.designer.cs">
-      <DependentUpon>MultiAnswerQuestion.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Layout\SubLayout\QualifierQuestion.ascx.cs">
       <DependentUpon>QualifierQuestion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\SubLayout\QualifierQuestion.ascx.designer.cs">
-      <DependentUpon>QualifierQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Layout\SubLayout\Signup.ascx.cs">
       <DependentUpon>Signup.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layout\SubLayout\Signup.ascx.designer.cs">
-      <DependentUpon>Signup.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Layout\SubLayout\Welcome.ascx.cs">
       <DependentUpon>Welcome.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Layout\SubLayout\Welcome.ascx.designer.cs">
-      <DependentUpon>Welcome.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="model\Survey.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Commands.config" />
     <Content Include="App_Config\ConnectionStrings.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\ConnectionStringsOracle.config" />
-    <Content Include="App_Config\FieldTypes.config" />
-    <Content Include="App_Config\Icons.config" />
-    <Content Include="App_Config\Include\EventHandler.config.example" />
-    <Content Include="App_Config\Include\ForwardingSecurityEvents.config.example" />
-    <Content Include="App_Config\Include\ja-JP.config.example" />
-    <Content Include="App_Config\Include\LiveMode.config.example" />
-    <Content Include="App_Config\Include\ScalabilitySettings.config.example" />
-    <Content Include="App_Config\Include\Sitecore.Analytics.config" />
-    <Content Include="App_Config\Include\Sitecore.Analytics.ExcludeRobots.config" />
-    <Content Include="App_Config\Include\Sitecore.AntiCsrf.config" />
-    <Content Include="App_Config\Include\Sitecore.Buckets.config" />
-    <Content Include="App_Config\Include\Sitecore.Buckets.WarmupQueries.config.example" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.config" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.DefaultIndexConfiguration.config" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Core.config" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Master.config" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Web.config" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Core.config.example" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Master.config.example" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Web.config.example" />
-    <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config.example" />
-    <Content Include="App_Config\Include\Sitecore.PipelineProfiling.config.disabled" />
-    <Content Include="App_Config\Include\Sitecore.Shell.MarketingAutomation.config" />
-    <Content Include="App_Config\Include\Sitecore.WebDAV.config" />
-    <Content Include="App_Config\Include\SitecoreSettings.config.example" />
-    <Content Include="App_Config\Include\SiteDefinition.config.example" />
-    <Content Include="App_Config\Include\WebDeploy.config.example" />
-    <Content Include="App_Config\Include\XslExtension.config.example" />
-    <Content Include="App_Config\LanguageDefinitions.config" />
-    <Content Include="App_Config\MimeTypes.config" />
-    <Content Include="App_Config\Portraits.config" />
-    <Content Include="App_Config\Prefetch\Common.config" />
-    <Content Include="App_Config\Prefetch\Core.config" />
-    <Content Include="App_Config\Prefetch\Master.config" />
-    <Content Include="App_Config\Prototypes.config" />
-    <Content Include="App_Config\Security\Domains.config" />
-    <Content Include="App_Config\Security\GlobalRoles.config" />
-    <Content Include="App_Config\XamlSharp.config" />
     <Content Include="bin\ChilkatDotNet2.x32" />
     <Content Include="bin\ChilkatDotNet2.x64" />
     <Content Include="bin\ComponentArt.UIFramework.lic" />
@@ -339,9 +316,6 @@
     <Folder Include="xsl\WebEdit\System\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Prefetch\Webdb.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -351,6 +325,9 @@
     <Content Include="assets\fonts\WeblySleek_UI_Normal.eot" />
     <Content Include="assets\fonts\WeblySleek_UI_Normal.ttf" />
     <Content Include="assets\fonts\WeblySleek_UI_Normal.woff" />
+    <Content Include="App_Config\Include\survey\Survey.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\Debug.pubxml" />
   </ItemGroup>
   <PropertyGroup>

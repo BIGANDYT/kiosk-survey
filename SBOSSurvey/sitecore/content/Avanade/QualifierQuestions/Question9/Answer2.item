@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {44F5D823-3588-46B7-849D-5BCA65A8B604}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question9/Answer2
+parent: {ED0E9910-347F-4CBA-90DA-DF130275A4F5}
+name: Answer2
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+created: 20170209T140218:636222457387970000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 272
+
+<tracking>
+  <profile id="{64162CEA-B6A9-4DE7-ADF5-BD9B7AD56E43}" name="Avanade Maturity" presets="answer2|100||">
+    <key name="Initiating" value="2" />
+    <key name="Value-Adding" value="0" />
+    <key name="Differentiating" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 6c4d243e-504a-4f02-b1f1-e1136cfec512
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 164
+
+Considered opportunistic, near last to adopt new innovations in market; innovations to customer experience are based on limited data and gut instincts of leadership
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T140218Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6c4d243e-504a-4f02-b1f1-e1136cfec512
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T093008Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

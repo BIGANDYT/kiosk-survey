@@ -14,16 +14,21 @@
         </div>
     </div>
     <div class="row top-buffer">
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-            <asp:Image class="img-responsive" ID="PrizeImage" runat="server" />
-        </div>
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 labeltext">
-                    Name
+                    Firstname
                 </div>
                 <div class="col-xs-12 col-sm-7">
-                    <input class="form-control" type="text" id="Name" autocomplete="off" runat="server" clientidmode="Static" required>
+                    <input class="form-control" type="text" id="Firstname" autocomplete="off" runat="server" clientidmode="Static" required>
+                </div>
+            </div>
+            <div class="row  top-buffer">
+                <div class="col-xs-12 col-sm-3 labeltext">
+                    Surname
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <input class="form-control" type="text" id="Surname" autocomplete="off" runat="server" clientidmode="Static" required>
                 </div>
             </div>
             <div class="row top-buffer">
@@ -49,15 +54,12 @@
                 <div class="col-xs-12 col-sm-7">
                     <input class="form-control" runat="server" id="Email" autocomplete="off" type="email" required>
                 </div>
-            </div>
-            <div class="row top-buffer">
-                <div class="col-xs-12 col-sm-3 labeltext">
-                    Country
-                </div>
-                <div class="col-xs-12 col-sm-7">
-                    <asp:DropDownList ClientIDMode="static" type="text" ID="Country" CssClass="form-control" DataTextField="text" DataValueField="value" runat="server"></asp:DropDownList>
-                </div>
-            </div>
+            </div>  
+            <div class="row top-buffer">               
+                <div class="col-xs-12 col-sm-offset-3 col-sm-7">
+                    <div class="g-recaptcha" data-sitekey="6LfCAxMUAAAAALF4k8V2a8bqXleClyd9VfAWI1uO"></div> 
+                </div>                
+            </div>           
         </div>
     </div>
     <div class="row top-buffer">
@@ -90,6 +92,7 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
 </form>
 <script>
     function forcesubmit() {

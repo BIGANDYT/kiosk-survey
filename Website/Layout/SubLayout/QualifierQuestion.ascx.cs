@@ -1,94 +1,62 @@
-﻿using Sitecore.Data;
+﻿using Sitecore.Analytics;
+using Sitecore.Analytics.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Globalization;
 using Sitecore.Links;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using Website.model;
+using Website.code.facet;
+using Website.code.repository;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class QualifierQuestion : Survey
+    public class QualifierQuestion : System.Web.UI.UserControl
     {
         public Item[] items = null;
-        String radioValue;
+        String answerId;
+        public Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+        public SurveyRepository answerRepo = new SurveyRepository();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetCurrentUser();
-            radioValue = Request.Form["buttonvalue"];
-            if (!IsPostBack || String.IsNullOrWhiteSpace(radioValue))
-            {
+            answerId = Request.Form["buttonvalue"];
+            if (!IsPostBack || String.IsNullOrWhiteSpace(answerId))
+            {                
                 items = master.SelectItems(Sitecore.Context.Item.Paths.Path + "//*[@@templatekey='answer']");
+                if (Sitecore.Analytics.Tracker.IsActive)
+                {
+                    Sitecore.Analytics.Tracker.Current.Interaction.CurrentPage.Cancel();
+                }            
+                if (Sitecore.Analytics.Tracker.IsActive)
+                {
+                    Sitecore.Analytics.Tracker.Current.Interaction.CurrentPage.Cancel();
+                }
             }
         }
 
         protected void Next_Click(object sender, CommandEventArgs e)
         {
-            Log.Info("ANDYT ANSWER USERR" + CurrentUser.Name, this);
-            Log.Info("ANDYT ANSWER COMMANDARG" + (String)e.CommandArgument, this);
 
-            radioValue = Request.Form["buttonvalue"];
+            answerId = Request.Form["buttonvalue"];
 
-            if (!String.IsNullOrWhiteSpace(radioValue))
+            if (!String.IsNullOrWhiteSpace(answerId))
             {
-
-                Sitecore.Data.Items.Item answer = master.GetItem(radioValue);
-                Sitecore.Data.Fields.MultilistField multilistField = answer.Fields["Levels"];
-
-                if (multilistField != null)
-                {
-
-                    //Iterate over all the selected items by using the property TargetIDs
-
-                    foreach (var id in multilistField.TargetIDs)
-                    {
-
-                        Item targetItem = master.Items[id];
-                        int value = 0;
-                        if (String.IsNullOrEmpty(targetItem["Value"]) == false)
-                        {
-                            value = System.Convert.ToInt32(targetItem["Value"]);
-                        }
-                        int oldValue = 0;
-                        if (String.IsNullOrEmpty(CurrentUser[targetItem["Type"]]) == false)
-                        {
-                            oldValue = System.Convert.ToInt32(CurrentUser[targetItem["Type"]]);
-                        }
-                        using (new Sitecore.SecurityModel.SecurityDisabler())
-                        {
-                            CurrentUser.Editing.BeginEdit();
-                            CurrentUser[targetItem["Type"]] = (oldValue + value).ToString();                            
-                            CurrentUser.Editing.EndEdit();
-                        }
-                        Log.Info("ANDYT LEVEL: " + CurrentUser[targetItem["Type"]], this);
-                    }
-                }
-                //now save the qestion and asnwer
-                using (new Sitecore.SecurityModel.SecurityDisabler())
-                {
-                    CurrentUser.Editing.BeginEdit();
-                    Item newQuestion = Sitecore.Context.Item.CloneTo(CurrentUser, Sitecore.Context.Item.Name, false);
-                    answer.CloneTo(newQuestion, answer.Name, false);
-                    CurrentUser.Editing.EndEdit();
-                }
-                Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
-                if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
-                {
-                    NextPage();
-                }
+                Sitecore.Data.Items.Item answer = master.GetItem(answerId);
+                TrackingFieldProcessor.Process(answer);
+                SurveyFacetModel answerModel = new SurveyFacetModel(Sitecore.Context.Item.Fields["Question"].Value, answer.Fields["Answer"].Value);
+                answerRepo.SetAnswer(Tracker.Current.Contact, answerModel);
+            }
+            Log.Info("ANDYT ANSWER next" + Sitecore.Context.Item["Next Page"].ToString(), this);
+            if (!String.IsNullOrEmpty(Sitecore.Context.Item["Next Page"]))
+            {
+                Sitecore.Data.Fields.InternalLinkField lf = Sitecore.Context.Item.Fields["Next Page"];
+                Response.Redirect(LinkManager.GetItemUrl(lf.TargetItem));
             }
         }
 
+
         public void Restart_Click(object sender, CommandEventArgs e)
         {
-            Restart();
+            Response.Redirect(Sitecore.Context.Site.StartPath);
         }
     }
 }

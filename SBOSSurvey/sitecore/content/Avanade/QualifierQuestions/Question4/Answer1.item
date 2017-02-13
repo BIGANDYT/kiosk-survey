@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {7569E989-5165-4901-BB1A-3431446536D4}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question4/Answer1
+parent: {48B60546-AE0B-4127-81F7-14A17BD41B5E}
+name: Answer1
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+created: 20170209T135844:636222455240770000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 272
+
+<tracking>
+  <profile id="{64162CEA-B6A9-4DE7-ADF5-BD9B7AD56E43}" name="Avanade Maturity" presets="answer1|100||">
+    <key name="Initiating" value="1" />
+    <key name="Value-Adding" value="0" />
+    <key name="Differentiating" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 3d285c7a-1ec8-4d44-91cb-3ad3b2d5415f
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 105
+
+Limited analytics and reporting based on marketing channels and functions; data silos; limited governance
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T135844Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3d285c7a-1ec8-4d44-91cb-3ad3b2d5415f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T092951Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

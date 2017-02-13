@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {A9948C84-1CCD-40F7-A5F5-0F2B7AACEDED}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question5/Answer2
+parent: {E0BBF373-57DF-4097-AA02-3A01ECBB2540}
+name: Answer2
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+created: 20170209T135920:636222455605670000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 272
+
+<tracking>
+  <profile id="{64162CEA-B6A9-4DE7-ADF5-BD9B7AD56E43}" name="Avanade Maturity" presets="answer2|100||">
+    <key name="Initiating" value="2" />
+    <key name="Value-Adding" value="0" />
+    <key name="Differentiating" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 780a201a-e0b2-4770-9591-700d2e75f706
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 120
+
+Our service department is managed by a scope and KPI's that feed into our overall Customer growth & satisfaction (KPI's)
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T135920Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+780a201a-e0b2-4770-9591-700d2e75f706
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T093008Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

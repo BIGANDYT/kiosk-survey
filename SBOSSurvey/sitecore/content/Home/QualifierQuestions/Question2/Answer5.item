@@ -10,10 +10,27 @@ template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
 templatekey: Answer
 created: 20161213T112653:636172252139530000
 
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 386
+
+<tracking>
+  <profile id="{C56515E7-C922-42F0-94AB-E832766C19F4}" name="Maturity">
+    <key name="Lifetime Customers" value="0" />
+    <key name="Initiate" value="1" />
+    <key name="Radiate" value="1" />
+    <key name="Align" value="1" />
+    <key name="Optimize" value="0" />
+    <key name="Nurture" value="0" />
+    <key name="Engage" value="1" />
+  </profile>
+</tracking>
 ----version----
 language: en
 version: 1
-revision: 5ecc024d-5284-40d5-87dd-158883927b74
+revision: 9ba701a7-bf06-4c41-8a73-175392015f93
 
 ----field----
 field: {1159BA59-262C-471C-980A-55CFC371A5F4}
@@ -23,33 +40,26 @@ content-length: 82
 
 All as previous plus KPIs aligned with customer lifecycle across multiple channels
 ----field----
-field: {2E55412B-2A32-4489-A4A5-7DCF66DBED34}
-name: Levels
-key: levels
-content-length: 155
-
-{C0D32946-F2A8-49A1-836D-C095E9D8102B}|{483875E7-9A7F-4304-B19E-6D34916E03E3}|{0B5C5D69-C44D-4C9D-A253-C3C70BEC9792}|{C3F29A92-A263-499C-B434-0D67CE61BE52}
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20130831T202856
+20130831T192856Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-5ecc024d-5284-40d5-87dd-158883927b74
+9ba701a7-bf06-4c41-8a73-175392015f93
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20130930T095559:635161317591238276
+20170126T124421Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

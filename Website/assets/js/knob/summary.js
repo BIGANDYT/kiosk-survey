@@ -2,10 +2,11 @@
     $(document.getElementById('content_0_Description')).hide();
     $(document.getElementById('content_0_SubHeading')).hide();
     $(document.getElementById('content_0_SubDescription')).hide();
-    $('.dial').val(0).trigger('change').delay(2000);    
+    $('.dial').val(0).trigger('change').delay(2000);
+    var max = 100;
     var myKnob = $(".knob").knob({
         'min': 0,
-        'max': 100,
+        'max': max,
         'readOnly': true,
         'fgColor': myColor,
         'dynamicDraw': true,
@@ -14,53 +15,35 @@
         'displayInput': false,
         'bgColor':"#FFFFFF"
     })
-
-    var tmr = self.setInterval(function () { myDelay() }, 30);
-    var m = 0;
+    var interval = Math.round(max / (levels.length-1));
+    var intervalCheck = interval;
+    var tmr = self.setInterval(function () { tester() }, 30);
+    var dialValue = 0;
     var i = 0;
-    var myColor = '#F99501';
-    function myDelay() {        
-        switch (m) {
-            case 14:
-                updater(i++)
-                break;
-            case 28:
-                myColor = '#F4572D';
-                updater(i++)
-                break;
-            case 42:
-                myColor = '#C5341F';
-                updater(i++)
-                break;
-            case 56:
-                myColor = '#B83C81';
-                updater(i++)
-                break;
-            case 70:
-                myColor = '#803A9A';
-                updater(i++)
-                break;
-            case 84:
-                myColor = '#1C7FC1';
-                updater(i++)
-                break;
-            case 100:
-                myColor = '#008B48';
-                updater(i++);
-                break;
-        }        
-        $('.knob').trigger('configure', { 'fgColor': myColor });
-        $('.knob').val(m).trigger('change');
-        m += 1;
-    }
+    var myColor = levelColors[i];
+    $("#content_0_Heading").html("<h2>" + levels[i] + "</h2>");
+    $('.knob').trigger('configure', { 'fgColor': myColor });
+    function tester() { 
+        if (dialValue == intervalCheck) {            
+            updater(i);  
+        } else {
+            dialValue += 1;
+        }
+        $('.knob').val(dialValue).trigger('change');        
+    }   
 
     function updater(i) {
+        i++;
         $("#content_0_Heading").html("<h2>" + levels[i] + "</h2>");
-        if (i == levels.length - 1) {
+        if (levels[i] == stopper) {
             window.clearInterval(tmr);
             $(document.getElementById('content_0_Description')).fadeIn("slow");
             $(document.getElementById('content_0_SubHeading')).fadeIn("slow");
             $(document.getElementById('content_0_SubDescription')).fadeIn("slow");
         }
+        intervalCheck = intervalCheck + interval;
+        myColor = levelColors[i];
+        dialValue += 1;
+        $('.knob').trigger('configure', { 'fgColor': myColor });
     }
 });

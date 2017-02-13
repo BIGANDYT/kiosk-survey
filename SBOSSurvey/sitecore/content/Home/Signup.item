@@ -11,6 +11,13 @@ templatekey: Signup
 created: 20161213T112656:636172252162000000
 
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 97
+
+<tracking><event id="{7CE84471-85A5-409A-A439-82D7EC0B0085}" name="CompletedSignUp" /></tracking>
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -27,7 +34,7 @@ content-length: 380
 ----version----
 language: en
 version: 1
-revision: b2ea119c-ce96-4330-870a-82294bbb349a
+revision: b07479a3-7cde-4a22-985d-12f4d610df81
 
 ----field----
 field: {9FCA13DB-B568-4925-B569-5147F4D47724}
@@ -47,9 +54,9 @@ content-length: 0
 field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
 name: Stage
 key: stage
-content-length: 5
+content-length: 0
 
-Start
+
 ----field----
 field: {DB219A11-588F-413F-8124-A537EBABB701}
 name: Subtitle
@@ -84,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b2ea119c-ce96-4330-870a-82294bbb349a
+b07479a3-7cde-4a22-985d-12f4d610df81
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131118T232346:635204138268632484
+20170124T184937Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

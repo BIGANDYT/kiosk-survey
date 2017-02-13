@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {10D08A02-FCF4-42DB-82DC-375EF4DF6E9F}
+database: master
+path: /sitecore/content/Avanade/Summary
+parent: {A3B3B174-6A01-4C54-87E4-6B844947F26E}
+name: Summary
+master: {00000000-0000-0000-0000-000000000000}
+template: {1702BA38-6FC2-48F4-83B4-74C7A0E8BE9D}
+templatekey: Results
+created: 20170209T084624:636222267843430000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 100
+
+<tracking><event id="{FC5DB58E-DFF5-431B-B521-BCA90464CF89}" name="Finished Questions" /></tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
+----version----
+language: en
+version: 1
+revision: 70012a40-9766-422c-ad37-2d2ffb9624a1
+
+----field----
+field: {9FCA13DB-B568-4925-B569-5147F4D47724}
+name: Next Page
+key: next page
+content-length: 34
+
+/sitecore/content/Avanade/Finished
+----field----
+field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
+name: Stage
+key: stage
+content-length: 0
+
+
+----field----
+field: {FCCA6D59-0F86-4E51-A78F-DEB3A9EC77C8}
+name: Profile
+key: profile
+content-length: 88
+
+/sitecore/system/Marketing Control Panel/Profiles/Survey/Avanade Survey/Avanade Maturity
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130902T102109
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+70012a40-9766-422c-ad37-2d2ffb9624a1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T115940Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

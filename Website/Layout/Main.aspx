@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="Main.aspx.cs" Inherits="Website.Layout.Main" EnableEventValidation="false" %>
-
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="en">
 <head>    
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
@@ -32,6 +30,7 @@
 	        setTimeout("location.href = '<%= Sitecore.Context.Site.StartPath %>';", 240000)
 	    );    
 	</script>-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>    
 </head>
 <body oncontextmenu="return false;" onload="init()">
      <script src="/assets/js/bigvideo/jquery-ui-1.8.22.custom.min.js"></script>

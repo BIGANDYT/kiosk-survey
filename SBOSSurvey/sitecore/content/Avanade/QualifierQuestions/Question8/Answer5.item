@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {EDBA2959-639F-4956-8D42-9BC1D1203F53}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question8/Answer5
+parent: {75807C17-CAC9-4946-B9DA-CDBD95729A28}
+name: Answer5
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+created: 20170209T140116:636222456763870000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 272
+
+<tracking>
+  <profile id="{64162CEA-B6A9-4DE7-ADF5-BD9B7AD56E43}" name="Avanade Maturity" presets="answer5|100||">
+    <key name="Initiating" value="5" />
+    <key name="Value-Adding" value="3" />
+    <key name="Differentiating" value="1" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 3e754ce3-abb0-4ed7-9f93-7291a516d69a
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 113
+
+Organization completes full-scale change management practices as a standard output of business and process change
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T140116Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3e754ce3-abb0-4ed7-9f93-7291a516d69a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T093052Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {657B3EC0-F688-4C8E-A279-4EDB2CF6F260}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question1/Answer2
+parent: {88469650-BEAC-4C60-B618-A7804435D13E}
+name: Answer2
+master: {00000000-0000-0000-0000-000000000000}
+template: {03BFAD3A-EDF9-4F23-B9D1-C4C5DA7FAFE3}
+templatekey: Answer
+created: 20170209T135514:636222453148670000
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 272
+
+<tracking>
+  <profile id="{64162CEA-B6A9-4DE7-ADF5-BD9B7AD56E43}" name="Avanade Maturity" presets="answer2|100||">
+    <key name="Initiating" value="2" />
+    <key name="Value-Adding" value="0" />
+    <key name="Differentiating" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 73a3496f-3587-43ac-9fdc-4d496f10ec94
+
+----field----
+field: {1159BA59-262C-471C-980A-55CFC371A5F4}
+name: Answer
+key: answer
+content-length: 106
+
+Actively Investing and Maturing - divisional strategies, connecting some but not all experiences, and data
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T135514Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+73a3496f-3587-43ac-9fdc-4d496f10ec94
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170210T092148Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

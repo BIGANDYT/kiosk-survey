@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {F73A9B3A-18D1-4113-A5BD-A2E37528D620}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question10
+parent: {A70063D8-DA16-4BF0-B4FB-138BCD87E3EF}
+name: Question10
+master: {00000000-0000-0000-0000-000000000000}
+template: {52A2D57F-236A-485E-B5AD-99C3C59BC9B9}
+templatekey: QualifierQuestion
+created: 20170209T134343:636222446237370000
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----version----
+language: en
+version: 1
+revision: 933d8a5e-b0da-47b5-bad9-f597b44f8727
+
+----field----
+field: {9FCA13DB-B568-4925-B569-5147F4D47724}
+name: Next Page
+key: next page
+content-length: 33
+
+/sitecore/content/Avanade/Summary
+----field----
+field: {35F4ECD2-59EB-4A02-A524-42FB75FECD5A}
+name: Question
+key: question
+content-length: 89
+
+Does the technology support your CX vision and adaptable to changing business conditions?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T134343Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+933d8a5e-b0da-47b5-bad9-f597b44f8727
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170209T140934Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

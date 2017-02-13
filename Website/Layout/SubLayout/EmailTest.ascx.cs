@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Website.Layout.SubLayout
 {
-    public partial class EmailTest : System.Web.UI.UserControl
+    public class EmailTest : System.Web.UI.UserControl
     {
         protected void SendEmail_Click(object sender, EventArgs e)
         {

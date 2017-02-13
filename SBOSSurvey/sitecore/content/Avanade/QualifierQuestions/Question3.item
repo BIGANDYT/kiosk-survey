@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {E4EA2290-0AF0-4088-9D84-D4DBB4DB83B5}
+database: master
+path: /sitecore/content/Avanade/QualifierQuestions/Question3
+parent: {A70063D8-DA16-4BF0-B4FB-138BCD87E3EF}
+name: Question3
+master: {00000000-0000-0000-0000-000000000000}
+template: {52A2D57F-236A-485E-B5AD-99C3C59BC9B9}
+templatekey: QualifierQuestion
+created: 20170209T134343:636222446234200000
+
+----version----
+language: en
+version: 1
+revision: 6e128e4a-3b91-45bb-a7db-0fc12a571999
+
+----field----
+field: {9FCA13DB-B568-4925-B569-5147F4D47724}
+name: Next Page
+key: next page
+content-length: 54
+
+/sitecore/content/Avanade/QualifierQuestions/Question4
+----field----
+field: {35F4ECD2-59EB-4A02-A524-42FB75FECD5A}
+name: Question
+key: question
+content-length: 86
+
+Where would you gauge your capabilities with content and the channels they flow into ?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170209T134343Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6e128e4a-3b91-45bb-a7db-0fc12a571999
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170209T140857Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

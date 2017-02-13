@@ -6,17 +6,17 @@ path: /sitecore/content/Home
 parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
 name: Home
 master: {00000000-0000-0000-0000-000000000000}
-template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
-templatekey: Sample Item
+template: {8CC1FBE4-C8F8-435C-AAF7-AFD98A244987}
+templatekey: Survey
 created: 20160729T132116:636053952760000000
 
 ----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 86
+content-length: 96
 
-<tracking><event id="{A24224EF-39EF-4127-8B61-A345924159B5}" name="Home" /></tracking>
+<tracking><event id="{72F6693C-AA6D-4AE8-9165-ED64861657BD}" name="Started Survey" /></tracking>
 ----field----
 field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
 name: __Editors
@@ -84,9 +84,9 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 794
+content-length: 254
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{31596FE5-F178-4F45-9A2A-9DA6A59517D7}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><p uid="{4A0A5ECE-F83B-4461-B568-2394132BB16B}" p:before="r[@uid='{E4252665-31B1-4E84-9D7E-FAB4DC19F974}']" s:key="content" s:md="/sitecore/layout/Placeholder Settings/content" /><r uid="{E4252665-31B1-4E84-9D7E-FAB4DC19F974}" s:id="{68CFFC13-5DF4-4986-8EEC-98430956D4B5}" s:ph="content" /><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d><d id="{46D2F427-4CE5-4E1F-BA10-EF3636F43534}"><r uid="{A08C9132-DBD1-474F-A2CA-6CA26A4AA650}" s:cac="0" s:cnd="" s:mvt="" s:vbd="0" s:vbdev="0" s:vbl="0" s:vbp="0" s:vbqs="0" s:vbu="0" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{31596FE5-F178-4F45-9A2A-9DA6A59517D7}"><r id="{68CFFC13-5DF4-4986-8EEC-98430956D4B5}" ph="content" uid="{7DEE511F-23A0-4E57-BC8A-FAB5615DBB42}" /></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -156,20 +156,6 @@ version: 1
 revision: 4ff05bae-1bea-4b47-bcef-a4ab50b5fae4
 
 ----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 8
-
-Sitecore
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 29
-
-<p>Velkommen til Sitecore</p>
-----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
@@ -238,20 +224,6 @@ version: 1
 revision: 73cfc17d-224b-4f77-81bc-e169858b6322
 
 ----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 8
-
-Sitecore
-----field----
-field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
-name: Text
-key: text
-content-length: 30
-
-<p>Willkommen bei Sitecore</p>
-----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
@@ -317,15 +289,22 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: ed45dfb8-cc3c-4cda-a3c9-9d4546597560
+revision: ac791a59-8081-4a04-a147-e014e3da1a53
 
 ----field----
-field: {75577384-3C97-45DA-A847-81B00500E250}
-name: Title
-key: title
-content-length: 4
+field: {9FCA13DB-B568-4925-B569-5147F4D47724}
+name: Next Page
+key: next page
+content-length: 29
 
-Home
+/sitecore/content/Home/Signup
+----field----
+field: {3227E2B7-5DEE-49F8-A01C-B2870C29924B}
+name: Stage
+key: stage
+content-length: 5
+
+Start
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -346,14 +325,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed45dfb8-cc3c-4cda-a3c9-9d4546597560
+ac791a59-8081-4a04-a147-e014e3da1a53
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140424T150252:635339485723001471
+20170126T181822Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

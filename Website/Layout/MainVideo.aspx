@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="MainVideo.aspx.cs" Inherits="Website.Layout.MainVideo" EnableEventValidation="false" %>
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>    
     <link rel="stylesheet" href="/assets/css/bigvideo/bigvideo.css">    
